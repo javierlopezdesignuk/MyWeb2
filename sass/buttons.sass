@@ -1,0 +1,28 @@
+@import 'variables.sass'
+
+.button
+    display: inline-block
+    padding: 1rem 3rem
+    font-size: 1.2rem
+    margin: 1.5rem 0
+    font-weight: 400
+    
+
+
+.primaryButton
+    @extend .button
+
+    color: $fontSecColor
+    background-color: $priColor
+
+    &:hover
+        background-color: -50
+        
+
+.secondaryButton
+    @extend .button
+
+    background-color: none
+    color: $priColor
+    box-shadow: inset 0 0 0 1px $priColor
+
