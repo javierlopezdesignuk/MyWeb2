@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+h2, h3 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}

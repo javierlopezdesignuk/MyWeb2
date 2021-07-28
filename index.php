@@ -19,6 +19,7 @@
             <img class="logo__nav" src="images/logo.svg" alt="My Logo">
             <div class="menu__nav">menu</div>
         </div>
+        <div id="themeToggle">🌞</div>
 
         <ul class="menu">
             <li><a href="index.php">Home</a></li>
@@ -46,4 +47,18 @@
 
 
 </body>
+<script>
+const toggle = document.querySelector("#themeToggle");
+toggle.addEventListener("click", modeSwitch);
+
+let isLight = true;
+
+function modeSwitch() {
+  isLight = !isLight;
+  isLight ? toggle.innerText = "🌞" : toggle.innerText = "🌚";
+  var rootElement = document.body;
+  rootElement.classList.toggle("lightMode");
+}
+
+</script>
 </html>

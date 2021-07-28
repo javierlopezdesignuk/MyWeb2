@@ -1,0 +1,12 @@
+Version log.
+
+____________Errors
+* - In css add variables in the class LightMode to get dark mode fully working!!
+    Change Icons to something more stylised.
+
+
+____________Walkthrough.
+
+ OK - 1. Vanilla JS dark/light mode.
+2. Dropdown menu.
+3. Home Template
