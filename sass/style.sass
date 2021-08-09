@@ -4,6 +4,7 @@
 @import 'buttons.sass'
 
 
+
 body
     background-color: $bgPriColor
     // background-color: #333
@@ -35,7 +36,7 @@ nav
         bottom: 1rem
         left: 1rem
 
-header
+header, .container__sellarea, .services, .process
     width: 100%
     height: 90vh
     display: grid
@@ -45,7 +46,7 @@ header
     
     .container__header
         width: 90%
-        max-width: 1000px
+        max-width: $wrapper
         display: flex
         padding: 1rem
         justify-content: space-between
@@ -61,8 +62,123 @@ header
             font-size: 1.3rem
             margin-bottom: 1rem
 
+
     .myPic
         // width: 350px
         // height: 450px
         // background-color: red
         
+
+.container__sellarea
+    background-color: $bgSecColor
+    height: auto
+    padding: 15rem 0
+    
+    .box__sellarea
+        width: 850px
+        max-width: $wrapper
+
+
+        .title__sellarea
+            -webkit-text-stroke: 1px $bgPriColor
+            width: 580px
+            margin: 0 0 3rem 0
+
+        .info__sellarea
+            width: 100%
+            color: $fontPriColor
+            display: flex
+            justify-content: space-between
+            // align-items: center
+
+            p
+                max-width: 415px
+
+            .image__sellarea
+                position: relative
+                width: 305px
+                height: 305px
+                background-color: grey
+                z-index: 100
+
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 66%
+                    height: 66%
+                    top: 17%
+                    left: 200px
+                    background-color: rgba($priColor, 0.3)
+                    z-index: -1
+
+.services
+    background-color: $bgSecColor
+    // border: 2px solid red
+    height: auto
+    padding: 15rem 0
+
+    
+    .container__services
+        // border: 2px solid blue
+
+        .box__services
+            width: 850px
+            max-width: $wrapper
+
+            .title__services
+                position: relative
+                -webkit-text-stroke: 1px $bgPriColor
+                width: 580px
+                background: transparent !important
+                margin: 0 0 8rem 0
+                z-index: 100
+
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 200rem
+                    height: 100%
+                    top: -1.5rem
+                    right: 15rem
+                    padding: 3rem
+                    background-color: rgba($priColor,0.3)
+                    z-index: -1
+
+
+            .boxcards__services
+                color: $fontPriColor
+                display: flex
+                justify-content: space-between
+                margin: 
+
+                .card__services
+                    padding: 0 1rem 1rem 0.5rem
+
+                    .img__service
+                        width: 90px
+                        height: 90px
+                        background-color: grey
+                        margin: 1rem 0
+
+.process
+    background-color: $bgSecColor
+    border: 2px solid red
+    height: auto
+    padding: 15rem 0
+    color: $fontPriColor
+
+    .container__process
+        
+        .box__process
+            width: 850px
+            max-width: $wrapper
+            position: relative
+            border: 2px solid blue
+
+            .extra__process
+                border: 1px solid purple
+                background-color: $priColor
+                position: absolute
+                top: 0
+                right: 0
+                width: 200px

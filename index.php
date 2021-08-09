@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javierlopez.design</title>
+    <link rel="stylesheet" href="css/style.css">
 
     <?php
         include_once("includes/HTML_headers.php");
@@ -43,6 +44,106 @@
             <img class="myPic" src="images/mypic.png" alt="mypic">
         </div>
     </header>
+
+
+<!-- SellArea -->
+
+    <div class="sellarea">
+        <div class="container__sellarea">
+            <div class="box__sellarea">
+                <h2 class="title__sellarea">Your goal doesn't fit just any website</h2>
+
+                    <div class="info__sellarea">
+                        <p>Your business is more than just a brand new logotype or a website. 
+                            And often we don’t  realise how impactful is a a first sight and the 
+                            feeling that it provides. That’s why a website built from a <strong>process</strong> 
+                            and applied a tailored solution will attract the desired leads, 
+                            whatever your goal is. When I say process, I don’t mean just a beautiful 
+                            website, although is definitely an important point and might not be 
+                            avoided, but we must ensure that the performance and the best developing 
+                            practices will be applied to convey nice looking and a bring the leads 
+                            wanted to your business.</p>
+                        <div class="image__sellarea"></div>
+                    </div>    
+            </div>
+        </div>
+    </div>
+
+<!-- What I do... -->
+
+    <div class="services">
+        <div class="container__services">
+            <div class="box__services">
+                <h2 class="title__services">What I do!</h2>
+
+                <div class="boxcards__services">
+                    <div class="card__services">
+                        <div class="img__service"></div>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
+                    </div>
+                    <div class="card__services">
+                        <div class="img__service"></div>
+                        <h3>Analysis</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
+                    </div>
+                    <div class="card__services">
+                        <div class="img__service"></div>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+
+<!-- My process... -->
+
+<div class="process">
+    <div class="container__process">
+        <div class="box__process">
+            <h2 class="title__process">My process</h2>
+            
+            <div class="extra__process">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ab officia nobis repellat earum perspiciatis magnam quos provident nostrum repellendus.</p>
+                <a href="">My process -></a>
+            </div>
+
+            <div class="boxcards__process">
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <h3>Discovery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <h3>Discovery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <h3>Discovery</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 
