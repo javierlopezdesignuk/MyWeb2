@@ -55,14 +55,15 @@
 
                     <div class="info__sellarea">
                         <p>Your business is more than just a brand new logotype or a website. 
-                            And often we don’t  realise how impactful is a a first sight and the 
+                            And often we don’t realise how impactful is a a first sight and the 
                             feeling that it provides. That’s why a website built from a <strong>process</strong> 
-                            and applied a tailored solution will attract the desired leads, 
-                            whatever your goal is. When I say process, I don’t mean just a beautiful 
+                            and applied a <strong>tailored solution</strong> will attract the desired leads, 
+                            whatever your goal is.<BR><BR>
+                            When I say process, I don’t mean just a beautiful 
                             website, although is definitely an important point and might not be 
-                            avoided, but we must ensure that the performance and the best developing 
-                            practices will be applied to convey nice looking and a bring the leads 
-                            wanted to your business.</p>
+                            avoided, but we must ensure that the <strong>performance, the best developing 
+                            practices and a curated user experience</strong> will be applied to convey nice 
+                            looking and bring the leads wanted to your business.</p>
                         <div class="image__sellarea"></div>
                     </div>    
             </div>
@@ -109,32 +110,88 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ab officia nobis repellat earum perspiciatis magnam quos provident nostrum repellendus.</p>
                 <a href="">My process -></a>
             </div>
-
+            
             <div class="boxcards__process">
                 <div class="card__process">
                     <div class="img__process"></div>
-                    <h3>Discovery</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
-
+                    <div class="cardInfo__process">
+                        <span class="num__process">1</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    </div>
                 </div>
                 <div class="card__process">
                     <div class="img__process"></div>
-                    <h3>Discovery</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
-                    
+                    <div class="cardInfo__process">
+                        <span class="num__process">2</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo</p>
+                    </div>
                 </div>
                 <div class="card__process">
                     <div class="img__process"></div>
-                    <h3>Discovery</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
-                    
+                    <div class="cardInfo__process">
+                        <span class="num__process">3</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
                 </div>
-
-
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <div class="cardInfo__process">
+                        <span class="num__process">4</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, bland</p>
+                    </div>
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <div class="cardInfo__process">
+                        <span class="num__process">5</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    </div>
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <div class="cardInfo__process">
+                        <span class="num__process">6</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    </div>
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <div class="cardInfo__process">
+                        <span class="num__process">7</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    </div>
+                </div>
+                <div class="card__process">
+                    <div class="img__process"></div>
+                    <div class="cardInfo__process">
+                        <span class="num__process">8</span>
+                        <h3>Discovery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sed repellendus maxime sint quae tenetur, repellat illo, blanditiis suscipit voluptates ad non harum iure magni perspiciatis impedit soluta facere! Iste.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
+</div>
+<div class="process">
+    <div class="container__process">
+        <div class="box__process">
+            <h2 class="title__process">My process</h2>
+   
+   
+   
+   
+        </div>
+    </div>
+
 </div>
 
 

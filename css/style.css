@@ -23,7 +23,7 @@ h1 {
   color: white;
 }
 
-h2 {
+h2, .process .container__process .box__process .boxcards__process .card__process .num__process {
   font-size: 4rem;
   line-height: 3rem;
   font-family: 'Abril Fatface', cursive;
@@ -34,7 +34,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-p {
+p, .process .container__process .box__process .title__process::after {
   font-weight: 300;
   font-size: 1rem;
 }
@@ -143,7 +143,7 @@ header .container__header h1, .container__sellarea .container__header h1, .servi
   margin-bottom: 1rem;
 }
 
-header .container__header p, .container__sellarea .container__header p, .services .container__header p, .process .container__header p {
+header .container__header p, header .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process header .container__header .title__process::after, .container__sellarea .container__header p, .container__sellarea .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process .container__sellarea .container__header .title__process::after, .services .container__header p, .services .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process .services .container__header .title__process::after, .process .container__header p, .process .container__header .container__process .box__process .title__process::after, .process .container__process .box__process .container__header .title__process::after {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
@@ -176,7 +176,7 @@ header .container__header p, .container__sellarea .container__header p, .service
           justify-content: space-between;
 }
 
-.container__sellarea .box__sellarea .info__sellarea p {
+.container__sellarea .box__sellarea .info__sellarea p, .container__sellarea .box__sellarea .info__sellarea .process .container__process .box__process .title__process::after, .process .container__process .box__process .container__sellarea .box__sellarea .info__sellarea .title__process::after {
   max-width: 415px;
 }
 
@@ -254,24 +254,93 @@ header .container__header p, .container__sellarea .container__header p, .service
 
 .process {
   background-color: #d4d4d4;
-  border: 2px solid red;
+  border: 2px solid yellow;
   height: auto;
   padding: 15rem 0;
   color: #2c2c2f;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .process .container__process .box__process {
   width: 850px;
+  height: 650px;
   max-width: 1100px;
+}
+
+.process .container__process .box__process .title__process {
   position: relative;
-  border: 2px solid blue;
+}
+
+.process .container__process .box__process .title__process::after {
+  content: 'Scroll ->';
+  position: absolute;
+  bottom: -7rem;
+  right: 0;
+  margin: 0 0rem;
 }
 
 .process .container__process .box__process .extra__process {
-  border: 1px solid purple;
+  display: none;
   background-color: #009AD8;
   position: absolute;
   top: 0;
   right: 0;
   width: 200px;
+}
+
+.process .container__process .box__process .boxcards__process {
+  height: 450px;
+  width: 100%;
+  border: 1px dotted blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.process .container__process .box__process .boxcards__process::-webkit-scrollbar {
+  display: none;
+}
+
+.process .container__process .box__process .boxcards__process .card__process {
+  background-color: white;
+  margin: 0 0.5rem;
+  width: 250px;
+  height: 350px;
+  padding: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.process .container__process .box__process .boxcards__process .card__process:first-child {
+  margin-left: 35%;
+}
+
+.process .container__process .box__process .boxcards__process .card__process:last-child {
+  margin-right: 20rem;
+}
+
+.process .container__process .box__process .boxcards__process .card__process .num__process {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.process .container__process .box__process .boxcards__process .card__process .img__process {
+  height: 80px;
+  width: 80px;
+  background-color: grey;
 }

@@ -160,25 +160,95 @@ header, .container__sellarea, .services, .process
                         background-color: grey
                         margin: 1rem 0
 
+
+
+
 .process
     background-color: $bgSecColor
-    border: 2px solid red
+    border: 2px solid yellow
     height: auto
     padding: 15rem 0
     color: $fontPriColor
+    // overflow-x: hidden
+    width: 100%
+    overflow-x: hidden
+    position: relative
+     
 
     .container__process
-        
         .box__process
             width: 850px
+            height: 650px
             max-width: $wrapper
-            position: relative
-            border: 2px solid blue
 
+            .title__process
+                position: relative
+                &::after
+                    @extend p
+                    content: 'Scroll ->'
+                    position: absolute
+                    bottom: -7rem
+                    right: 0
+                    margin: 0 0rem
+
+            
             .extra__process
-                border: 1px solid purple
+
+                // hide it til page is done!!
+                display: none
                 background-color: $priColor
                 position: absolute
                 top: 0
                 right: 0
                 width: 200px
+
+            .boxcards__process
+                height: 450px
+                width: 100%
+                border: 1px dotted blue
+                display: flex
+                // justify-content: center
+                align-items: flex-end
+                position: absolute
+                left: 0
+                width: 100vw
+                overflow-x: scroll
+
+                &::-webkit-scrollbar
+                      display: none
+                
+
+
+                .card__process
+                    background-color: white
+                    margin: 0 0.5rem
+                    width: 250px
+                    height: 350px
+                    padding: 1rem
+                    flex-shrink: 0
+                    position: relative
+                    display: grid
+                    grid-template-rows: 1fr 2fr
+
+                    &:first-child
+                        margin-left: 35%
+                        
+                    &:last-child
+                        margin-right: 20rem
+
+
+                    .num__process
+                        @extend h2
+                        position: absolute
+                        top: 0.5rem
+                        right: 0.5rem
+
+                    .img__process
+                        height: 80px
+                        width: 80px
+                        background-color: grey
+                    
+                    // .cardInfo__process
+
+    
+ 
