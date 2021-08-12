@@ -34,13 +34,22 @@ h3 {
   font-size: 1.5rem;
 }
 
-p, .process .container__process .box__process .title__process::after {
+h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+p {
   font-weight: 300;
   font-size: 1rem;
 }
 
 strong {
   font-weight: 700;
+}
+
+.handwriteMessage, .process .container__process .box__process .title__process::after {
+  font-size: 1rem;
 }
 
 .button, .primaryButton, .secondaryButton {
@@ -80,6 +89,7 @@ nav {
   height: 80px;
   position: fixed;
   top: 0;
+  z-index: 10000;
 }
 
 nav .navigation {
@@ -108,21 +118,26 @@ nav .menu {
 }
 
 nav #themeToggle {
+  margin-left: auto;
+  margin-right: 1rem;
   position: fixed;
   bottom: 1rem;
   left: 1rem;
+  z-index: 10000;
+  cursor: pointer;
 }
 
-header, .container__sellarea, .services, .process {
+header, .container__sellarea, .services, .process, .cases, .tools, .contact {
   width: 100%;
-  height: 90vh;
+  min-height: 80vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
   color: #d4d4d4;
+  padding: 10rem 0;
 }
 
-header .container__header, .container__sellarea .container__header, .services .container__header, .process .container__header {
+header .container__header, .container__sellarea .container__header, .services .container__header, .process .container__header, .cases .container__header, .tools .container__header, .contact .container__header {
   width: 90%;
   max-width: 1100px;
   display: -webkit-box;
@@ -134,16 +149,16 @@ header .container__header, .container__sellarea .container__header, .services .c
           justify-content: space-between;
 }
 
-header .container__header .box__header, .container__sellarea .container__header .box__header, .services .container__header .box__header, .process .container__header .box__header {
+header .container__header .box__header, .container__sellarea .container__header .box__header, .services .container__header .box__header, .process .container__header .box__header, .cases .container__header .box__header, .tools .container__header .box__header, .contact .container__header .box__header {
   margin: 7rem 0 auto 0;
 }
 
-header .container__header h1, .container__sellarea .container__header h1, .services .container__header h1, .process .container__header h1 {
+header .container__header h1, .container__sellarea .container__header h1, .services .container__header h1, .process .container__header h1, .cases .container__header h1, .tools .container__header h1, .contact .container__header h1 {
   line-height: 3.5rem;
   margin-bottom: 1rem;
 }
 
-header .container__header p, header .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process header .container__header .title__process::after, .container__sellarea .container__header p, .container__sellarea .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process .container__sellarea .container__header .title__process::after, .services .container__header p, .services .container__header .process .container__process .box__process .title__process::after, .process .container__process .box__process .services .container__header .title__process::after, .process .container__header p, .process .container__header .container__process .box__process .title__process::after, .process .container__process .box__process .container__header .title__process::after {
+header .container__header p, .container__sellarea .container__header p, .services .container__header p, .process .container__header p, .cases .container__header p, .tools .container__header p, .contact .container__header p {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
@@ -176,7 +191,7 @@ header .container__header p, header .container__header .process .container__proc
           justify-content: space-between;
 }
 
-.container__sellarea .box__sellarea .info__sellarea p, .container__sellarea .box__sellarea .info__sellarea .process .container__process .box__process .title__process::after, .process .container__process .box__process .container__sellarea .box__sellarea .info__sellarea .title__process::after {
+.container__sellarea .box__sellarea .info__sellarea p {
   max-width: 415px;
 }
 
@@ -202,7 +217,6 @@ header .container__header p, header .container__header .process .container__proc
 .services {
   background-color: #d4d4d4;
   height: auto;
-  padding: 15rem 0;
 }
 
 .services .container__services .box__services {
@@ -254,13 +268,12 @@ header .container__header p, header .container__header .process .container__proc
 
 .process {
   background-color: #d4d4d4;
-  border: 2px solid yellow;
   height: auto;
-  padding: 15rem 0;
   color: #2c2c2f;
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  z-index: 0;
 }
 
 .process .container__process .box__process {
@@ -271,13 +284,17 @@ header .container__header p, header .container__header .process .container__proc
 
 .process .container__process .box__process .title__process {
   position: relative;
+  -webkit-text-stroke: 1px #2c2c2f;
+  width: 580px;
+  margin: 0 0 3rem 0;
+  color: #d4d4d4;
 }
 
 .process .container__process .box__process .title__process::after {
   content: 'Scroll ->';
   position: absolute;
-  bottom: -7rem;
-  right: 0;
+  bottom: -8rem;
+  right: -15rem;
   margin: 0 0rem;
 }
 
@@ -291,9 +308,8 @@ header .container__header p, header .container__header .process .container__proc
 }
 
 .process .container__process .box__process .boxcards__process {
-  height: 450px;
+  height: 460px;
   width: 100%;
-  border: 1px dotted blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +328,7 @@ header .container__header p, header .container__header .process .container__proc
 
 .process .container__process .box__process .boxcards__process .card__process {
   background-color: white;
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
   width: 250px;
   height: 350px;
   padding: 1rem;
@@ -323,6 +339,9 @@ header .container__header p, header .container__header .process .container__proc
   display: grid;
   -ms-grid-rows: 1fr 2fr;
       grid-template-rows: 1fr 2fr;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  z-index: 10;
 }
 
 .process .container__process .box__process .boxcards__process .card__process:first-child {
@@ -331,6 +350,22 @@ header .container__header p, header .container__header .process .container__proc
 
 .process .container__process .box__process .boxcards__process .card__process:last-child {
   margin-right: 20rem;
+}
+
+.process .container__process .box__process .boxcards__process .card__process:hover {
+  background-color: #009AD8;
+  color: #d4d4d4;
+}
+
+.process .container__process .box__process .boxcards__process .card__process::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: rgba(0, 154, 216, 0.4);
+  z-index: 0;
 }
 
 .process .container__process .box__process .boxcards__process .card__process .num__process {
@@ -343,4 +378,200 @@ header .container__header p, header .container__header .process .container__proc
   height: 80px;
   width: 80px;
   background-color: grey;
+}
+
+.cases {
+  background-color: #d4d4d4;
+  height: auto;
+  color: #2c2c2f;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.cases .container__cases .box__cases {
+  width: 850px;
+  height: 650px;
+  max-width: 1100px;
+}
+
+.cases .container__cases .box__cases .title__cases {
+  -webkit-text-stroke: 1px #2c2c2f;
+  width: 580px;
+  margin: 0 0 3rem 0;
+  color: #d4d4d4;
+}
+
+.cases .container__cases .box__cases .boxcards__cases {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases {
+  height: 300px;
+  position: relative;
+  border: 2px yellow solid;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .labelCard__cases {
+  position: absolute;
+  right: 0.5rem;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 154, 216, 0.4);
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .labelCard__cases .tags__cases {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .labelCard__cases .tags__cases li {
+  background-color: rgba(212, 212, 212, 0.4);
+  padding: 0.1rem 0.3rem;
+  list-style: none;
+  margin-right: 0.2rem;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .textCard__cases {
+  margin-bottom: 0.5rem;
+}
+
+.tools {
+  background-color: #d4d4d4;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.tools::before {
+  position: absolute;
+  content: '';
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 154, 216, 0.4);
+  z-index: -1;
+  top: calc(50% - 60px);
+}
+
+.tools .container__tools .box__tools {
+  width: 850px;
+  max-width: 1100px;
+}
+
+.tools .container__tools .box__tools .title__tools {
+  position: relative;
+  -webkit-text-stroke: 1px #2c2c2f;
+  width: 580px;
+  margin: 0 0 8rem 0;
+  z-index: 100;
+}
+
+.tools .container__tools .box__tools .boxcards__tools {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools {
+  height: 100px;
+  width: 100px;
+  background-color: #f0f0f0;
+  margin: 0.25rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools .img__tools {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateY(0.5rem) scale(1.5);
+          transform: translateY(0.5rem) scale(1.5);
+  -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
+  transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools .img__tools .iconify {
+  width: 100%;
+  height: auto;
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools .name__tools {
+  color: #009AD8;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
+  transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools:hover > .name__tools {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.tools .container__tools .box__tools .boxcards__tools .card__tools:hover > .img__tools {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.contact {
+  background-color: #d4d4d4;
+  height: auto;
+  color: #2c2c2f;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.contact .container__contact .box__contact {
+  width: 850px;
+  height: 650px;
+  max-width: 1100px;
+}
+
+.contact .container__contact .box__contact .title__contact {
+  position: relative;
+  -webkit-text-stroke: 1px #2c2c2f;
+  width: 580px;
+  margin: 0 0 3rem 0;
+  color: #d4d4d4;
+}
+
+.contact .container__contact .box__contact .info__contact {
+  background-color: white;
+  width: 350px;
 }

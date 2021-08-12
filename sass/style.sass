@@ -14,6 +14,8 @@ nav
     height: 80px
     position: fixed
     top: 0
+    z-index: 10000
+
 
     .navigation
         width: 100%
@@ -28,21 +30,27 @@ nav
             // width: 40px
             height: 60px
 
+        .menu__nav
     .menu
         display: none
 
     #themeToggle
+        margin-left: auto
+        margin-right: 1rem
         position: fixed
         bottom: 1rem
         left: 1rem
+        z-index: 10000
+        cursor: pointer
 
-header, .container__sellarea, .services, .process
+header, .container__sellarea, .services, .process, .cases, .tools, .contact
     width: 100%
-    height: 90vh
+    min-height: 80vh
     display: grid
     place-items: center
     color: $fontSecColor
     // background-color: $priColor
+    padding: 10rem 0
     
     .container__header
         width: 90%
@@ -115,7 +123,7 @@ header, .container__sellarea, .services, .process
     background-color: $bgSecColor
     // border: 2px solid red
     height: auto
-    padding: 15rem 0
+    // padding: 15rem 0
 
     
     .container__services
@@ -161,18 +169,16 @@ header, .container__sellarea, .services, .process
                         margin: 1rem 0
 
 
-
-
 .process
     background-color: $bgSecColor
-    border: 2px solid yellow
     height: auto
-    padding: 15rem 0
+    // padding: 15rem 0
     color: $fontPriColor
     // overflow-x: hidden
     width: 100%
     overflow-x: hidden
     position: relative
+    z-index: 0
      
 
     .container__process
@@ -183,12 +189,17 @@ header, .container__sellarea, .services, .process
 
             .title__process
                 position: relative
+                -webkit-text-stroke: 1px $bgPriColor
+                width: 580px
+                margin: 0 0 3rem 0
+                color: $bgSecColor
+
                 &::after
-                    @extend p
+                    @extend .handwriteMessage
                     content: 'Scroll ->'
                     position: absolute
-                    bottom: -7rem
-                    right: 0
+                    bottom: -8rem
+                    right: -15rem
                     margin: 0 0rem
 
             
@@ -203,9 +214,8 @@ header, .container__sellarea, .services, .process
                 width: 200px
 
             .boxcards__process
-                height: 450px
+                height: 460px
                 width: 100%
-                border: 1px dotted blue
                 display: flex
                 // justify-content: center
                 align-items: flex-end
@@ -221,7 +231,7 @@ header, .container__sellarea, .services, .process
 
                 .card__process
                     background-color: white
-                    margin: 0 0.5rem
+                    margin: 1rem 0.5rem
                     width: 250px
                     height: 350px
                     padding: 1rem
@@ -229,12 +239,29 @@ header, .container__sellarea, .services, .process
                     position: relative
                     display: grid
                     grid-template-rows: 1fr 2fr
+                    transition: 500ms ease-in-out
+                    z-index: 10
 
                     &:first-child
                         margin-left: 35%
                         
                     &:last-child
                         margin-right: 20rem
+
+                    &:hover
+                        background-color: $priColor
+                        color: $fontSecColor
+
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 100%
+                        height: 100%
+                        top: 0.5rem
+                        left: 0.5rem
+                        background-color: rgba($priColor, 0.4 )
+                        z-index: 0
+                        
 
 
                     .num__process
@@ -250,5 +277,173 @@ header, .container__sellarea, .services, .process
                     
                     // .cardInfo__process
 
+.cases
+    background-color: $bgSecColor
+    height: auto
+    // padding: 15rem 0
+    color: $fontPriColor
+    // overflow-x: hidden
+    width: 100%
+    overflow-x: hidden
+    position: relative
+    z-index: 0
+
+    .container__cases
     
- 
+        .box__cases
+            width: 850px
+            height: 650px
+            max-width: $wrapper
+    
+    
+            .title__cases
+                -webkit-text-stroke: 1px $bgPriColor
+                width: 580px
+                margin: 0 0 3rem 0
+                color: $bgSecColor
+        
+            .boxcards__cases
+                display: grid
+                grid-template-columns: 1fr 1fr
+                gap: 0.5rem
+
+                .card__cases
+                    height: 300px
+                    position: relative
+                    border: 2px yellow solid
+
+                    .labelCard__cases
+                        position: absolute
+                        right: 0.5rem
+                        left: 0.5rem
+                        bottom: 0.5rem
+                        padding: 0.5rem
+                        // margin: 0 0.5rem
+                        background-color: rgba($priColor, 0.4)
+
+                        .tags__cases
+                            font-size: 0.8rem
+                            display: flex
+                            margin: 0.5rem 0 0.2rem 0
+                                                        
+                            li
+                                background-color: rgba($bgSecColor, 0.4)
+                                padding: 0.1rem 0.3rem
+                                list-style: none
+                                margin-right: 0.2rem
+                        
+                    .textCard__cases
+                        margin-bottom: 0.5rem
+                    
+
+.tools
+    background-color: $bgSecColor
+    // border: 2px solid red
+    height: auto
+    // padding: 5rem 0
+    position: relative
+    z-index: 1
+
+    &::before
+        position: absolute
+        content: ''
+        height: 300px
+        width: 100%
+        background-color: rgba($priColor, 0.4)
+        z-index: -1
+        top: calc(50% - 60px)
+
+    
+    .container__tools
+        // border: 2px solid blue
+
+        .box__tools
+            width: 850px
+            max-width: $wrapper
+            
+            
+            .title__tools
+                position: relative
+                -webkit-text-stroke: 1px $bgPriColor
+                width: 580px
+                margin: 0 0 8rem 0
+                z-index: 100
+
+            .boxcards__tools
+                width: 100%
+                height: auto
+                display: flex
+                flex-flow: row wrap
+                justify-content: center
+
+                .card__tools
+                    height: 100px
+                    width: 100px
+                    background-color: #f0f0f0
+                    margin: 0.25rem
+                    flex-shrink: 0
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    overflow: hidden
+
+                    .img__tools
+                        width: 40px
+                        height: 40px
+                        transform: translateY(0.5rem) scale(1.5)
+                        // filter: grayscale(1)
+                        transition: 0.5s cubic-bezier(0.47,-0.38, 0.20, 2)
+                        // opacity: 0.5
+
+                        .iconify
+                            width: 100%
+                            height: auto
+
+                    .name__tools
+                        color: $priColor
+                        font-weight: 500
+                        margin-top: 0.25rem
+                        transform: translateY(40px)
+                        transition: 0.5s cubic-bezier(0.47,-0.38, 0.52, 1.46)
+
+
+                    &:hover > .name__tools
+                        transform: translateY(0)
+
+                    &:hover > .img__tools
+                        // filter: grayscale(0)
+                        // opacity: 1
+
+                        transform: translateY(0)
+
+
+.contact
+    background-color: $bgSecColor
+    height: auto
+    // padding: 15rem 0
+    color: $fontPriColor
+    // overflow-x: hidden
+    width: 100%
+    overflow-x: hidden
+    position: relative
+    z-index: 0
+     
+
+    .container__contact
+        .box__contact
+            width: 850px
+            height: 650px
+            max-width: $wrapper
+
+            .title__contact
+                position: relative
+                -webkit-text-stroke: 1px $bgPriColor
+                width: 580px
+                margin: 0 0 3rem 0
+                color: $bgSecColor
+
+
+            .info__contact
+                background-color: white
+                width: 350px

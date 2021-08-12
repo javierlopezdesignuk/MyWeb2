@@ -23,6 +23,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
 p {
   font-weight: 300;
   font-size: 1rem;
@@ -30,4 +35,8 @@ p {
 
 strong {
   font-weight: 700;
+}
+
+.handwriteMessage {
+  font-size: 1rem;
 }
