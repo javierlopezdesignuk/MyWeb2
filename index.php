@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javierlopez.design</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 
     <?php
         include_once("includes/HTML_headers.php");
@@ -15,24 +15,30 @@
 </head>
 <body>
     
+    <div id="themeToggle">🌞</div>
     <nav>
         <div class="navigation">
             <img class="logo__nav" src="images/logo.svg" alt="My Logo">
-            <div id="themeToggle">🌞</div>
-            <div class="menu__nav">menu</div>
-        </div>
+            <input type="checkbox" id="toggle-menu" class="nav-toggle">
+            <label for="toggle-menu" class="menu__nav">
+                <span></span>
 
-        <ul class="menu">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#casestudies">Case studies</a></li>
-            <li><a href="#contact">Get in touch!</a></li>
-        </ul>
+            </label>
+            <ul class="menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#casestudies">Case studies</a></li>
+                <li><a href="#contact">Get in touch!</a></li>
+            </ul>
+        </div>
+        
+        
     </nav>
     
     <header>
-        <div class="container__header">
+        <!-- <div class="container__header"> -->
+            <img class="myPic" src="images/mypic.png" alt="mypic">
             <div class="box__header">
 
                 <h1>Javier Lopez<BR>is not a designer.</h1>
@@ -41,8 +47,7 @@
                 <!-- <a class="secondaryButton" href="">See my CV</a> -->
                 <!-- <img src="" alt="myself"> -->
             </div>
-            <img class="myPic" src="images/mypic.png" alt="mypic">
-        </div>
+        <!-- </div> -->
     </header>
 
 
@@ -80,17 +85,17 @@
                 <div class="boxcards__services">
                     <div class="card__services">
                         <div class="img__service"></div>
-                        <h3>Branding</h3>
+                        <h3>Branding & Graphic design</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
                     </div>
                     <div class="card__services">
                         <div class="img__service"></div>
-                        <h3>Analysis</h3>
+                        <h3>Audits & Analysis</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
                     </div>
                     <div class="card__services">
                         <div class="img__service"></div>
-                        <h3>Web Development</h3>
+                        <h3>Web Design & Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque nulla repellendus? Facere quod ipsum officiis, asperiores provident, consequuntur aliquam omnis deleniti quaerat voluptatibus porro quia eum, nulla illum vitae.</p>
                     </div>
                 </div>

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4rem;
+  color: white;
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 3rem;
+  font-family: 'Abril Fatface', cursive;
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.handwriteMessage {
+  font-size: 1rem;
+}
+
+.button, .primaryButton, .secondaryButton {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+.primaryButton {
+  color: #d4d4d4;
+  background-color: #009AD8;
+}
+
+.primaryButton:hover {
+  background-color: -50;
+}
+
+.secondaryButton {
+  background-color: none;
+  color: #009AD8;
+  box-shadow: inset 0 0 0 1px #009AD8;
+}
+
+.linkbutton {
+  color: orange;
+}
+
+body {
+  background-color: #d4d4d4;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body #themeToggle {
+  margin-left: auto;
+  margin-right: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  nav {
+    background-color: rgba(44, 44, 47, 0.5);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+  }
+  nav .navigation {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  nav .navigation .logo__nav {
+    height: 40px;
+  }
+  nav .navigation .menu__nav {
+    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    width: 35px;
+  }
+  nav .navigation .menu__nav span {
+    background-color: #009AD8;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    transition: 300ms cubic-bezier(0.47, -0.38, 0.52, 1.46);
+  }
+  nav .navigation .menu__nav span::before, nav .navigation .menu__nav span::after {
+    background-color: #009AD8;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transition: 300ms cubic-bezier(0.47, -0.38, 0.52, 1.46);
+  }
+  nav .navigation .menu__nav span::after {
+    top: 0.5rem;
+    width: 80%;
+    right: 0;
+  }
+  nav .navigation .menu__nav span::before {
+    bottom: 0.5rem;
+    width: 70%;
+  }
+  nav .nav-toggle {
+    display: none;
+  }
+  nav .nav-toggle:checked ~ .menu {
+    display: flex;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  nav .nav-toggle:checked ~ .menu__nav span {
+    transform-origin: center center;
+    transform: rotate(405deg);
+    background-color: #d4d4d4;
+  }
+  nav .nav-toggle:checked ~ .menu__nav span::before, nav .nav-toggle:checked ~ .menu__nav span::after {
+    background-color: #d4d4d4;
+    width: 100%;
+    top: 0;
+    transform: rotate(90deg);
+  }
+  nav .menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #2c2c2f;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: 300ms cubic-bezier(0.47, -0.38, 0.52, 1.46);
+  }
+  nav .menu li {
+    list-style: none;
+    width: 100%;
+    margin: 0.5rem;
+  }
+  nav .menu li a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: #d4d4d4;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  nav .menu li:last-child > a {
+    color: #009AD8;
+  }
+  header {
+    padding: 8rem 1rem 4rem 1rem;
+    width: 100%;
+    min-height: 95vh;
+    background-color: #2c2c2f;
+    display: flex;
+    flex-direction: column;
+  }
+  header .myPic {
+    margin: 0 auto;
+    width: 200px;
+  }
+  header .box__header h1 {
+    line-height: 2.5rem;
+    margin: 1rem 0;
+  }
+  header .box__header p {
+    color: #d4d4d4;
+  }
+  .sellarea, .services, .process, .cases, .tools, .contact {
+    min-height: 90vh;
+    width: 100%;
+    padding: 4rem 0.5rem;
+  }
+  .sellarea .title__sellarea, .sellarea .title__services, .sellarea .title__process, .sellarea .title__cases, .sellarea .title__tools, .sellarea .title__contact, .services .title__sellarea, .services .title__services, .services .title__process, .services .title__cases, .services .title__tools, .services .title__contact, .process .title__sellarea, .process .title__services, .process .title__process, .process .title__cases, .process .title__tools, .process .title__contact, .cases .title__sellarea, .cases .title__services, .cases .title__process, .cases .title__cases, .cases .title__tools, .cases .title__contact, .tools .title__sellarea, .tools .title__services, .tools .title__process, .tools .title__cases, .tools .title__tools, .tools .title__contact, .contact .title__sellarea, .contact .title__services, .contact .title__process, .contact .title__cases, .contact .title__tools, .contact .title__contact {
+    -webkit-text-stroke: 1px #2c2c2f;
+    color: #d4d4d4;
+    margin-bottom: 2rem;
+  }
+  .sellarea .container__sellarea .box__sellarea .info__sellarea .image__sellarea {
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    height: 250px;
+    background-color: grey;
+    position: relative;
+  }
+  .sellarea .container__sellarea .box__sellarea .info__sellarea .image__sellarea::before {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 100%;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 154, 216, 0.4);
+    z-index: -1;
+  }
+  .services .container__services .box__services .title__services {
+    display: block;
+    position: relative;
+    padding: 1rem 0;
+  }
+  .services .container__services .box__services .title__services::before {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100%;
+    right: 40%;
+    top: 0;
+    background-color: rgba(0, 154, 216, 0.4);
+    z-index: -1;
+  }
+  .services .container__services .box__services .boxcards__services {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .services .container__services .box__services .boxcards__services .card__services {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid #009AD8;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .services .container__services .box__services .boxcards__services .card__services h3 {
+    margin-bottom: 0.5rem;
+  }
+  .services .container__services .box__services .boxcards__services .card__services .img__service {
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+    margin-bottom: 2rem;
+  }
+  .process {
+    overflow: hidden;
+  }
+  .process .container__process .box__process .extra__process {
+    display: none;
+  }
+  .process .container__process .box__process .boxcards__process {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+  }
+  .process .container__process .box__process .boxcards__process::-webkit-scrollbar {
+    display: none;
+  }
+  .process .container__process .box__process .boxcards__process .card__process {
+    position: relative;
+    border: 1px solid #009AD8;
+    margin: 1rem 0.25rem;
+    width: 220px;
+    height: 350px;
+    flex-shrink: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+  }
+  .process .container__process .box__process .boxcards__process .card__process:last-child {
+    margin-right: 1rem;
+  }
+  .process .container__process .box__process .boxcards__process .card__process .img__process {
+    width: 60px;
+    height: 60px;
+    background-color: grey;
+  }
+  .process .container__process .box__process .boxcards__process .card__process .cardInfo__process .num__process {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+/*# sourceMappingURL=style_mobile.css.map */
