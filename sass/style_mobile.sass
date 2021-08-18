@@ -144,6 +144,7 @@ body
         // align-items: center
         // justify-content: center
 
+
         .myPic
             margin: 0 auto 2rem auto
             width: 160px
@@ -158,16 +159,16 @@ body
 
 
     .sellarea, .services, .process, .cases, .tools, .contact
-        min-height: 90vh
+        min-height: 80vh
         // display: grid
         // place-items: center
         width: 100%
-        padding: 4rem 1rem
+        padding: 2rem 1rem
 
         .title__sellarea,.title__services, .title__process, .title__cases, .title__tools, .title__contact
             -webkit-text-stroke: 1px $bgPriColor
             color: $bgSecColor
-            margin-bottom: 2rem
+            margin-bottom: 3rem
 
         
     .sellarea
@@ -212,7 +213,7 @@ body
                         content: ''
                         width: 100vw
                         height: 100%
-                        right: 40%
+                        right: 25%
                         top: 0
                         background-color: rgba($priColor,0.4)  
                         z-index: -1
@@ -247,8 +248,10 @@ body
                             height: 60px
                             margin-bottom: 2rem
                             .iconify
-                                width: 100%
-                                height: 100%
+                                width: 60%
+                                height: 60%
+                                // color: #999
+
 
 
     .process
@@ -266,7 +269,7 @@ body
                     margin-left: -1rem
                     padding: 0 1rem
                     width: 100vw
-                    height: 380px
+                    height: 350px
                     display: flex
                     flex-flow: row nowrap
                     overflow-x: scroll
@@ -280,11 +283,11 @@ body
                         background-color: #eee
                         margin: 1rem 0.5rem
                         width: 220px
-                        height: 350px
+                        height: 300px
                         flex-shrink: 0
                         padding: 0.5rem
                         display: grid
-                        grid-template-rows: 1fr 1fr
+                        grid-template-rows: 1fr 1.5fr
                         transition: 200ms ease-in-out
 
                         .img__process
@@ -292,8 +295,8 @@ body
                             height: 60px
                             // background-color: grey
                             .iconify
-                                width: 100%
-                                height: 100%
+                                width: 60%
+                                height: 60%
                                 color: $priColor
 
                         .cardInfo__process
@@ -306,6 +309,7 @@ body
                                 position: absolute
                                 top: 0.5rem
                                 right: 0.5rem
+
 
                         &::before
                             position: absolute
@@ -371,14 +375,200 @@ body
                                                         
                             li
                                 background-color: rgba($bgSecColor, 0.4)
-                                padding: 0.1rem 0.3rem
+                                padding: 0.1rem 0.5rem
                                 list-style: none
                                 margin-right: 0.2rem
                                 margin-bottom: 0.2rem
+                                
                         
                         .textCard__cases
                             margin-bottom: 0.5rem
 
 
+    .tools
+        position: relative
+        z-index: 1
+        height: auto
 
 
+        &::before
+            position: absolute
+            content: ''
+            height: 50%
+            width: 100%
+            background-color: rgba($priColor, 0.4)
+            z-index: -1
+            top: 50%
+            left: 0
+            transform: translateY(-45%)
+
+        .container__tools
+            .box__tools
+
+                .title__tools
+                
+                .boxcards__tools
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-flow: row wrap
+                    justify-content: center
+                
+                .card__tools
+                    height: 80px
+                    width: 80px
+                    background-color: #f0f0f0
+                    margin: 0.25rem
+                    flex-shrink: 0
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    overflow: hidden
+
+                    .img__tools
+                        width: 30px
+                        height: 30px
+                        transform: translateY(0.5rem) scale(1.5)
+                        transition: 0.5s cubic-bezier(0.47,-0.38, 0.20, 2)
+
+                        .iconify
+                            width: 100%
+                            height: auto
+
+                    .name__tools
+                        color: $priColor
+                        font-weight: 500
+                        margin-top: 0.25rem
+                        transform: translateY(40px)
+                        transition: 0.5s cubic-bezier(0.47,-0.38, 0.52, 1.46)
+
+
+                    &:hover > .name__tools
+                        transform: translateY(0)
+
+                    &:hover > .img__tools
+                        // filter: grayscale(0)
+                        // opacity: 1
+
+                        transform: translateY(0)
+
+    .contact
+
+        .container__contact
+            
+            .box__contact
+                
+                .info__contact
+                    width: 240px
+                    margin: 0 auto
+                    background-color: white
+                    padding: 0.5rem
+
+
+                    .address__contactform, .email__contactform, .phone__contactform
+                        padding: 0.5rem 0
+                        display: flex
+                        // align-items: center
+                        gap: 0.5rem
+
+                        .icon__contactform
+                            margin-top: 2px
+                        
+                        a
+                            text-decoration: none
+                            transition: 300ms ease-in-out
+                            color: $fontPriColor
+
+                            &:hover
+                                color: $fontPriColor
+                .form__contact
+                    background-color: rgba($priColor , 0.4 )
+                    padding: 1rem
+
+                    .inputs__contactform
+                        width: 100%
+                        flex-flow: column nowrap
+                    h3
+                margin-bottom: 2rem
+
+                .input__contactform
+                    width: auto
+                    position: relative
+                    margin: 1.5rem auto
+                    
+
+                    label
+                        position: absolute
+                        top: 0.2rem
+                        left: 0.5rem
+                        color: $fontPriColor
+                        transform: translateY(0)
+                        transition: 300ms ease-in-out
+                    
+                    input, textarea
+                        width: 90%
+                        max-width: 450px
+                        margin: 0 auto
+                        border: none
+                        outline: none
+                        font-family: 'Nunito Sans', sans-serif
+                        font-size: 1rem
+                        border-bottom: 1px solid $fontPriColor
+                        padding: 0.25rem 0.5rem
+                        resize: none
+                        background-color: rgba(white, 0.5)
+                        transition: 500ms ease
+
+
+
+
+                        &:focus
+                            background-color: rgba(white,0.2)
+                            & + label
+                                transform: translateY(-1.5rem)
+                                font-size: 0.9rem
+
+                        &:valid
+                            // background-color: green
+                            & + label
+                                transform: translateY(-1.5rem)
+                                font-size: 0.9rem
+                        
+                        
+                        // &:not(:placeholder-shown)
+                        //     background-color: blue
+
+                        // // &:required:not(:valid)
+                        // //     background-color: blue
+                        // //     & + label
+                        // //         transform: translateY(-1.5rem)
+                        // //         font-size: 0.9rem
+
+                        // &:not(:empty)
+                        //     background-color: green
+
+
+
+
+                        // // &:valid
+                        // //     & + label
+                        // //         transform: translateY(-1.5rem)
+                        // //         font-size: 0.9rem
+                        // //         color: red
+
+
+
+                        // &:invalid
+                        //     background-color: red
+                        // //     // & + label
+                        // //         // transform: translateY(-1.2rem)
+
+                .emailSuccess
+                    display: none
+                    padding: 1rem
+                    border: 2px green solid
+                    background-color: rgba(white,0.6)
+                    
+                    p
+                        color: green

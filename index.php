@@ -425,11 +425,11 @@
                         <div class="img__tools"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-ai"></span></div>
                         <p class="name__tools">Ilustrator</p>
                     </div>
-                    <!-- <div class="card__tools">
-                        <div class="img__tools"></div>
-                        <p class="name__tools">tool name</p>
-                    </div>
                     <div class="card__tools">
+                        <div class="img__tools"><span class="iconify" data-icon="simple-icons:webflow"></span></div>
+                        <p class="name__tools">Webflow</p>
+                    </div>
+                    <!-- <div class="card__tools">
                         <div class="img__tools"></div>
                         <p class="name__tools">tool name</p>
                     </div>
@@ -491,10 +491,64 @@
         <div class="box__contact">
             <h2 class="title__contact">Let's collaborate!</h2>
                 <div class="info__contact">
-                    <h4>Javier Lopez</h4>
-                    <p>Denny, Falkirk</p>
-                    <p>07963772339</p>
-                    <p>hello@javierlopez.design</p>
+                    <!-- <h3>Contact info</h3> -->
+                    <div class="address__contactform">
+                        <span class="iconify icon__contactform" data-icon="el:map-marker" data-inline="false"></span>
+                        <p>290 Main st.
+                            <BR>FK1 2QA
+                            <BR> Falkirk
+                            <BR> Scotland
+                        </p>
+                    </div>
+                    <div class="email__contactform">
+                        <span class="iconify icon__contactform" data-icon="ic:baseline-alternate-email" data-inline="false"></span>
+                        <p>
+                            <a href="mailto:hello@javierlopez.design" class="secondary__button" target="_blank">hello@javierlopez.design</a>
+                        </p>
+                    </div>
+                    <div class="phone__contactform">
+                        <span class="iconify icon__contactform" data-icon="jam:phone" data-inline="false"></span>
+                        <p>
+                            <a href="tel:+447963772339">+44 7963 772 339</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form__contact" >
+                    <form action="" autocomplete="off">
+                        <input autocomplete="false" name="name" type="text" style="display:none;">
+                        <div class="inputs__contactform">
+                            <h3>Leave me a message</h3>
+                            <div class="input__contactform">
+                                <input type="text" id="name" name="name" autocomplete="disabled" required>
+                                <label for=" name">Name</label>
+                            </div>
+                            <div class="input__contactform ">
+                                <input type="email" id="email" name="email" autocomplete="disabled" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input__contactform ">
+                                <input type="phone" id="phone" name="phone" autocomplete="disabled" required>
+                                <label for="phone ">Phone</label>
+                            </div>
+                            <div class="input__contactform ">
+                                <textarea name="message" id="message" cols="30" rows="3" required></textarea>
+                                <label for="message ">Let me know about our next project!</label>
+                            </div>
+                            <div class="input__contactform ">
+                                <button class="primaryButton" name="formSubmit">Get in touch!</button>
+                            </div>
+                        </div>
+                        <div class="emailSuccess">
+                            <p>Thanks! I got your request, I'll get in touch soon.</p>
+                        </div>
+
+
+
+                    </form>
+
+
+
                 </div>
                 
         </div>

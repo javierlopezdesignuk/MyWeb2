@@ -37,7 +37,7 @@ h2, .num__process {
 
 @media screen and (max-width: 520px) {
   h2, .num__process {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 2rem;
   }
 }
@@ -59,6 +59,11 @@ p {
 
 strong {
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #009AD8;
 }
 
 .handwriteMessage {
@@ -266,14 +271,14 @@ body #themeToggle {
     color: #d4d4d4;
   }
   .sellarea, .services, .process, .cases, .tools, .contact {
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
   }
   .sellarea .title__sellarea, .sellarea .title__services, .sellarea .title__process, .sellarea .title__cases, .sellarea .title__tools, .sellarea .title__contact, .services .title__sellarea, .services .title__services, .services .title__process, .services .title__cases, .services .title__tools, .services .title__contact, .process .title__sellarea, .process .title__services, .process .title__process, .process .title__cases, .process .title__tools, .process .title__contact, .cases .title__sellarea, .cases .title__services, .cases .title__process, .cases .title__cases, .cases .title__tools, .cases .title__contact, .tools .title__sellarea, .tools .title__services, .tools .title__process, .tools .title__cases, .tools .title__tools, .tools .title__contact, .contact .title__sellarea, .contact .title__services, .contact .title__process, .contact .title__cases, .contact .title__tools, .contact .title__contact {
     -webkit-text-stroke: 1px #2c2c2f;
     color: #d4d4d4;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .sellarea .container__sellarea .box__sellarea .info__sellarea p {
     width: 80%;
@@ -309,7 +314,7 @@ body #themeToggle {
     content: '';
     width: 100vw;
     height: 100%;
-    right: 40%;
+    right: 25%;
     top: 0;
     background-color: rgba(0, 154, 216, 0.4);
     z-index: -1;
@@ -354,8 +359,8 @@ body #themeToggle {
     margin-bottom: 2rem;
   }
   .services .container__services .box__services .boxcards__services .card__services .img__service .iconify {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
   }
   .process {
     overflow: hidden;
@@ -367,7 +372,7 @@ body #themeToggle {
     margin-left: -1rem;
     padding: 0 1rem;
     width: 100vw;
-    height: 380px;
+    height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -385,14 +390,14 @@ body #themeToggle {
     background-color: #eee;
     margin: 1rem 0.5rem;
     width: 220px;
-    height: 350px;
+    height: 300px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     padding: 0.5rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr 1.5fr;
+        grid-template-rows: 1fr 1.5fr;
     -webkit-transition: 200ms ease-in-out;
     transition: 200ms ease-in-out;
   }
@@ -401,8 +406,8 @@ body #themeToggle {
     height: 60px;
   }
   .process .container__process .box__process .boxcards__process .card__process .img__process .iconify {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     color: #009AD8;
   }
   .process .container__process .box__process .boxcards__process .card__process .cardInfo__process {
@@ -484,12 +489,185 @@ body #themeToggle {
   }
   .cases .container__cases .box__cases .boxcards__cases .card__cases .tags__cases li {
     background-color: rgba(212, 212, 212, 0.4);
-    padding: 0.1rem 0.3rem;
+    padding: 0.1rem 0.5rem;
     list-style: none;
     margin-right: 0.2rem;
     margin-bottom: 0.2rem;
   }
   .cases .container__cases .box__cases .boxcards__cases .card__cases .textCard__cases {
     margin-bottom: 0.5rem;
+  }
+  .tools {
+    position: relative;
+    z-index: 1;
+    height: auto;
+  }
+  .tools::before {
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 154, 216, 0.4);
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  .tools .container__tools .box__tools .boxcards__tools {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tools .container__tools .box__tools .card__tools {
+    height: 80px;
+    width: 80px;
+    background-color: #f0f0f0;
+    margin: 0.25rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .tools .container__tools .box__tools .card__tools .img__tools {
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translateY(0.5rem) scale(1.5);
+            transform: translateY(0.5rem) scale(1.5);
+    -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
+    transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
+  }
+  .tools .container__tools .box__tools .card__tools .img__tools .iconify {
+    width: 100%;
+    height: auto;
+  }
+  .tools .container__tools .box__tools .card__tools .name__tools {
+    color: #009AD8;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
+    transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
+  }
+  .tools .container__tools .box__tools .card__tools:hover > .name__tools {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .tools .container__tools .box__tools .card__tools:hover > .img__tools {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .contact .container__contact .box__contact {
+    margin-bottom: 2rem;
+  }
+  .contact .container__contact .box__contact .info__contact {
+    width: 240px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0.5rem;
+  }
+  .contact .container__contact .box__contact .info__contact .address__contactform, .contact .container__contact .box__contact .info__contact .email__contactform, .contact .container__contact .box__contact .info__contact .phone__contactform {
+    padding: 0.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .contact .container__contact .box__contact .info__contact .address__contactform .icon__contactform, .contact .container__contact .box__contact .info__contact .email__contactform .icon__contactform, .contact .container__contact .box__contact .info__contact .phone__contactform .icon__contactform {
+    margin-top: 2px;
+  }
+  .contact .container__contact .box__contact .info__contact .address__contactform a, .contact .container__contact .box__contact .info__contact .email__contactform a, .contact .container__contact .box__contact .info__contact .phone__contactform a {
+    text-decoration: none;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    color: #2c2c2f;
+  }
+  .contact .container__contact .box__contact .info__contact .address__contactform a:hover, .contact .container__contact .box__contact .info__contact .email__contactform a:hover, .contact .container__contact .box__contact .info__contact .phone__contactform a:hover {
+    color: #2c2c2f;
+  }
+  .contact .container__contact .box__contact .form__contact {
+    background-color: rgba(0, 154, 216, 0.4);
+    padding: 1rem;
+  }
+  .contact .container__contact .box__contact .form__contact .inputs__contactform {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .contact .container__contact .box__contact .input__contactform {
+    width: auto;
+    position: relative;
+    margin: 1.5rem auto;
+  }
+  .contact .container__contact .box__contact .input__contactform label {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.5rem;
+    color: #2c2c2f;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
+  .contact .container__contact .box__contact .input__contactform input, .contact .container__contact .box__contact .input__contactform textarea {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    border-bottom: 1px solid #2c2c2f;
+    padding: 0.25rem 0.5rem;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  .contact .container__contact .box__contact .input__contactform input:focus, .contact .container__contact .box__contact .input__contactform textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .contact .container__contact .box__contact .input__contactform input:focus + label, .contact .container__contact .box__contact .input__contactform textarea:focus + label {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+    font-size: 0.9rem;
+  }
+  .contact .container__contact .box__contact .input__contactform input:valid + label, .contact .container__contact .box__contact .input__contactform textarea:valid + label {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+    font-size: 0.9rem;
+  }
+  .contact .container__contact .box__contact .emailSuccess {
+    display: none;
+    padding: 1rem;
+    border: 2px green solid;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .contact .container__contact .box__contact .emailSuccess p {
+    color: green;
   }
 }
