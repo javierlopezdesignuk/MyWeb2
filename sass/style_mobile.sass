@@ -548,19 +548,19 @@ body
                                 transform: translateY(-1.5rem)
                                 font-size: 0.9rem
                         
-                        
-
 
                     button
                         outline: none
                         border: none
-                        
-                        // &:not(:empty)
-                        //     & + label
-                        //         transform: translateY(-1.5rem) 
-                        
+                        margin: 0
 
-                        
+                .terms__contactform
+                    padding: 0.5rem 0
+                    border: 1px red solid
+                    label
+                        margin-left: 1rem
+                    #terms
+                        width: auto
 
                 .emailSuccess
                     display: none
@@ -570,3 +570,54 @@ body
                     
                     p
                         color: green
+
+
+
+    footer
+        background-color: $bgPriColor
+        color: $fontSecColor
+        .info__footer, .quicklinks__footer, .casestudies__footer, .copyright__footer, .terms__footer
+            width: 100%
+            padding: 0.5rem
+            margin: 0 auto
+            
+            .sociallinks__footer
+                // margin: 1rem auto
+                display: flex
+                justify-content: center
+
+                .iconify
+                    width: 30px
+                    height: 30px
+                    margin: 1rem 1rem
+
+                .detail__contact
+                    display: none
+        
+        .links__footer
+            display: flex
+            flex-flow: row nowrap
+            // width: 90%
+            // margin: 0 auto 1.5rem auto
+            justify-content: space-around
+
+            .casestudies__footer
+                width: auto
+            
+            .quicklinks__footer
+                width: auto
+
+            li
+                list-style: none
+                padding: 0.25rem 0
+
+                a
+                    color: $fontSecColor
+
+        .copyright__footer
+            background-color: $priColor
+            color: $fontPriColor
+            margin: 1rem auto
+            text-align: center
+            // p
+                // font-size: 1.2rem

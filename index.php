@@ -463,9 +463,14 @@
                                 <textarea name="message" id="message" cols="30" placeholder=" " rows="3" required></textarea>
                                 <label for="message">Let me know about our next project!</label>
                             </div>
+                            <div class="input__contactform terms__contactform">
+                                <label for="terms">I agree to share my contact details.</label>
+                                <input type="checkbox" id="terms" name="terms" autocomplete="disabled" required>
+                            </div>
                             <div class="input__contactform ">
                                 <button class="primaryButton" name="formSubmit">Get in touch!</button>
                             </div>
+
                         </div>
                         <div class="emailSuccess">
                             <p>Thanks! I got your request, I'll get in touch soon.</p>
@@ -485,7 +490,7 @@
 
 <footer>
     <div class="info__footer">
-        <div class="address__footer">
+        <!-- <div class="address__footer">
             <span class="iconify icon__contactform" data-icon="el:map-marker" data-inline="false"></span>
             <h3>Javier Lopez</h3>
             <p>290 Main st.
@@ -493,64 +498,58 @@
                 <BR> Falkirk
                 <BR> Scotland
             </p>
-        </div>
-        <div class="email__footer">
-            <span class="iconify icon__contactform" data-icon="ic:baseline-alternate-email" data-inline="false"></span>
-            <p>
-                <a href="mailto:hello@javierlopez.design" class="secondary__button" target="_blank">hello@javierlopez.design</a>
-            </p>
-        </div>
-        <div class="phone__footer">
-            <span class="iconify icon__contactform" data-icon="jam:phone" data-inline="false"></span>
-            <p>
-                <a href="tel:+447963772339">+44 7963 772 339</a>
-            </p>
-        </div>
-        <div class="instagram__footer">
-            <span class="iconify" data-icon="carbon:logo-instagram"></span>
-            <p>
-                <a href="https://www.instagram.com/javierlopez.design" target="_blank">@javierlopez.dessign</a>
-            </p>
-        </div>
-        <div class="linkedin__footer">
-            <span class="iconify" data-icon="bi:linkedin"></span>
-            <p>
-                <a href="https://www.linkedin.com/in/javier-lopez-gonzalez-a094262b" target="_blank">@javierlopez</a>
-            </p>
+        </div> -->
+        <div class="sociallinks__footer">
+            <a href="tel:+447963772339">
+                <span class="iconify icon__contactform" data-icon="jam:phone" data-inline="false"></span>
+                <p class="detail__contact">+44 7963 772 339</p>
+            </a>    
+            <a href="mailto:hello@javierlopez.design" target="_blank" >
+                <span class="iconify icon__contactform" data-icon="ic:baseline-alternate-email" data-inline="false"></span>
+                <p class="detail__contact">hello@javierlopez.design</p>
+            </a>    
+            <a href="https://www.instagram.com/javierlopez.design" target="_blank">
+                <span class="iconify" data-icon="carbon:logo-instagram"></span>
+                <p class="detail__contact">@javierlopez.design</p>
+            </a>    
+            <a href="https://www.linkedin.com/in/javier-lopez-gonzalez-a094262b" target="_blank">
+                <span class="iconify" data-icon="bi:linkedin"></span>
+                <p class="detail__contact">@javierlopez</p>
+            </a>    
         </div>
     </div>
-    <div class="quicklinks__footer">
-        <h4>Quick Links</h4>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">My Process</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Payments</a></li>
-            <li><a href="">My Style Guide</a></li>
-        </ul>
+    <div class="links__footer">
+        <div class="quicklinks__footer">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">My Process</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Payments</a></li>
+                <li><a href="">My Style Guide</a></li>
+                <li></li>
+                <li><a href=""></a>Terms & conditions</li>
+                <li><a href=""></a>Cookies</li>
+            </ul>
+        </div>
+        <div class="casestudies__footer">
+            <h4>Case Studies</h4>
+            <ul>
+                <li><a href="">The Fifth Taste</a></li>
+                <li><a href="">FoxTrk</a></li>
+                <li><a href="">Komorebi</a></li>
+                <li><a href="">Waters of Leith</a></li>
+                <li><a href="">Audt</a></li>
+                <li><a href="">BeFit</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="casestudies__footer">
-        <h4>Case Studies</h4>
-        <ul>
-            <li><a href="">The Fifth Taste</a></li>
-            <li><a href="">FoxTrk</a></li>
-            <li><a href="">Komorebi</a></li>
-            <li><a href="">Waters of Leith</a></li>
-            <li><a href="">Audt</a></li>
-            <li><a href="">BeFit</a></li>
-        </ul>
-    </div>
-
     <div class="copyright__footer">
         <p><span class="iconify" data-icon="bx:bx-copyright"></span> 2021 | <strong>javierlopez.design</strong> | All rights reserved</p>
     </div>
-    <div class="terms__footer">
-        <a href="">Terms & conditions</a>
-        <a href="">Cookies</a>
-    </div>
-
+    
 <BR><BR>
 </footer>
 
