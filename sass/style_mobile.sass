@@ -166,7 +166,7 @@ body
         padding: 2rem 1rem
 
         .title__sellarea,.title__services, .title__process, .title__cases, .title__tools, .title__contact
-            -webkit-text-stroke: 1px $bgPriColor
+            -webkit-text-stroke: 2px $bgPriColor
             color: $bgSecColor
             margin-bottom: 3rem
 
@@ -251,7 +251,6 @@ body
                                 width: 60%
                                 height: 60%
                                 // color: #999
-
 
 
     .process
@@ -458,8 +457,8 @@ body
         .container__contact
             
             .box__contact
-                
                 .info__contact
+
                     width: 240px
                     margin: 0 auto
                     background-color: white
@@ -489,42 +488,56 @@ body
                     .inputs__contactform
                         width: 100%
                         flex-flow: column nowrap
+                        margin: 0 auto
                     h3
-                margin-bottom: 2rem
+                        margin-bottom: 2rem
 
                 .input__contactform
                     width: auto
                     position: relative
                     margin: 1.5rem auto
                     
-
                     label
                         position: absolute
-                        top: 0.2rem
+                        top: 0.3rem
                         left: 0.5rem
                         color: $fontPriColor
                         transform: translateY(0)
+                        pointer-events: none
                         transition: 300ms ease-in-out
                     
                     input, textarea
-                        width: 90%
+                        width: 100%
                         max-width: 450px
                         margin: 0 auto
                         border: none
                         outline: none
-                        font-family: 'Nunito Sans', sans-serif
                         font-size: 1rem
-                        border-bottom: 1px solid $fontPriColor
                         padding: 0.25rem 0.5rem
                         resize: none
-                        background-color: rgba(white, 0.5)
+                        background-color: rgba(white, 0.2)
                         transition: 500ms ease
 
+                        &:invalid
+                            color: darkred
+                            border: 1px solid darkred
 
+                            & + label
+                                transform: translateY(-1.5rem)
+                                color: darkred
+                                font-size: 0.9rem
 
+                        &:placeholder-shown
+                            color: $fontPriColor
+                            background-color: rgba(white, 0.2)
+                            border: none
+                            & + label
+                                transform: translateY(0)
+                                color: $fontPriColor
 
+                                // font-size: 0.9rem
                         &:focus
-                            background-color: rgba(white,0.2)
+                            background-color: rgba(white,0.5)
                             & + label
                                 transform: translateY(-1.5rem)
                                 font-size: 0.9rem
@@ -536,33 +549,18 @@ body
                                 font-size: 0.9rem
                         
                         
-                        // &:not(:placeholder-shown)
-                        //     background-color: blue
 
-                        // // &:required:not(:valid)
-                        // //     background-color: blue
-                        // //     & + label
-                        // //         transform: translateY(-1.5rem)
-                        // //         font-size: 0.9rem
 
+                    button
+                        outline: none
+                        border: none
+                        
                         // &:not(:empty)
-                        //     background-color: green
+                        //     & + label
+                        //         transform: translateY(-1.5rem) 
+                        
 
-
-
-
-                        // // &:valid
-                        // //     & + label
-                        // //         transform: translateY(-1.5rem)
-                        // //         font-size: 0.9rem
-                        // //         color: red
-
-
-
-                        // &:invalid
-                        //     background-color: red
-                        // //     // & + label
-                        // //         // transform: translateY(-1.2rem)
+                        
 
                 .emailSuccess
                     display: none

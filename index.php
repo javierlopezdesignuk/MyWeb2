@@ -216,7 +216,7 @@
         
                         </ul>
                         <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="link__cases" href="">Link to open -></a>
+                        <a class="linkButton" href="">Link to open -></a>
                     </div>
                     
                     <div class="card__cases">
@@ -231,7 +231,7 @@
                             <li>Branding</li>
                         </ul>
                         <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="link__cases" href="">Link to open -></a>
+                        <a class="linkButton" href="">Link to open -></a>
                     </div>
                     
                     <div class="card__cases">
@@ -246,7 +246,7 @@
                             <li>Branding</li>
                         </ul>
                         <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="link__cases" href="">Link to open -></a>
+                        <a class="linkButton" href="">Link to open -></a>
                     </div>
                     
                     <div class="card__cases">
@@ -261,7 +261,7 @@
                             <li>Branding</li>
                         </ul>
                         <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="link__cases" href="">Link to open -></a>
+                        <a class="linkButton" href="">Link to open -></a>
                     </div>
 
                     <div class="card__cases">
@@ -276,82 +276,8 @@
                             <li>Branding</li>
                         </ul>
                         <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="link__cases" href="">Link to open -></a>
+                        <a class="linkButton" href="">Link to open -></a>
                     </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!-- <div class="backgroundCard__cases"></div>
-
-                        <div class="labelCard__cases">
-                            <h3>The Fifth Taste</h3>
-                            <ul class="tags__cases">
-                                <li>Branding</li>
-                                <li>Custom CMS</li>
-                                <li>Ecommerce</li>
-                                <li>Google Maps API</li>
-                            </ul>
-                            <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                            <a href="">Link to open -></a>
-                        </div>
-
-                    </div>
-                    <div class="card__cases">
-                        <div class="backgroundCard__cases"></div>
-
-                        <div class="labelCard__cases">
-                            <h3>FoxTrk</h3>
-                            <ul class="tags__cases">
-                                <li>Branding</li>
-                                <li>Custom CMS</li>
-                                <li>Ecommerce</li>
-                                <li>Google Maps API</li>
-                            </ul>
-                            <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur</p>
-                            <a href="">Link to open -></a>
-                        </div>
-
-                    </div>
-                    <div class="card__cases">
-                        <div class="backgroundCard__cases"></div>
-
-                        <div class="labelCard__cases">
-                            <h3>Komorebi</h3>
-                            <ul class="tags__cases">
-                                <li>Branding</li>
-                                <li>Custom CMS</li>
-                                <li>Ecommerce</li>
-                                <li>Google Maps API</li>
-                            </ul>
-                            <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                            <a href="">Link to open -></a>
-                        </div>
-
-                    </div>
-                    <div class="card__cases">
-                        <div class="backgroundCard__cases"></div>
-
-                        <div class="labelCard__cases">
-                            <h3>Waters of Leith</h3>
-                            <ul class="tags__cases">
-                                <li>Branding</li>
-                                <li>Custom CMS</li>
-                                <li>Ecommerce</li>
-                                <li>Google Maps API</li>
-                            </ul>
-                            <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                            <a href="">Link to open -></a>
-                        </div>
-
-                    </div> -->
-
                 </div>
         </div>
     </div>
@@ -490,8 +416,7 @@
     <div class="container__contact">
         <div class="box__contact">
             <h2 class="title__contact">Let's collaborate!</h2>
-                <div class="info__contact">
-                    <!-- <h3>Contact info</h3> -->
+                <!-- <div class="info__contact">
                     <div class="address__contactform">
                         <span class="iconify icon__contactform" data-icon="el:map-marker" data-inline="false"></span>
                         <p>290 Main st.
@@ -512,28 +437,31 @@
                             <a href="tel:+447963772339">+44 7963 772 339</a>
                         </p>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form__contact" >
                     <form action="" autocomplete="off">
-                        <input autocomplete="false" name="name" type="text" style="display:none;">
+                        <input autocomplete="false" id="hiddeninput" name="name" type="text" style="display:none;">
+                        <input autocomplete="false" id="hiddeninput2" name="website" type="text" style="display:none;">
+
+                        <label for="hiddeninput"></label>
                         <div class="inputs__contactform">
-                            <h3>Leave me a message</h3>
+                            <h3>Drop me a message</h3>
                             <div class="input__contactform">
-                                <input type="text" id="name" name="name" autocomplete="disabled" required>
-                                <label for=" name">Name</label>
+                                <input type="text" id="name" name="name" placeholder=" " autocomplete="disabled" required>
+                                <label for="name">Name</label>
                             </div>
                             <div class="input__contactform ">
-                                <input type="email" id="email" name="email" autocomplete="disabled" required>
+                                <input type="email" id="email" name="email" placeholder=" " autocomplete="disabled" required>
                                 <label for="email">Email</label>
                             </div>
                             <div class="input__contactform ">
-                                <input type="phone" id="phone" name="phone" autocomplete="disabled" required>
-                                <label for="phone ">Phone</label>
+                                <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required>
+                                <label for="phone">Phone</label>
                             </div>
                             <div class="input__contactform ">
-                                <textarea name="message" id="message" cols="30" rows="3" required></textarea>
-                                <label for="message ">Let me know about our next project!</label>
+                                <textarea name="message" id="message" cols="30" placeholder=" " rows="3" required></textarea>
+                                <label for="message">Let me know about our next project!</label>
                             </div>
                             <div class="input__contactform ">
                                 <button class="primaryButton" name="formSubmit">Get in touch!</button>
@@ -556,7 +484,73 @@
 </div>
 
 <footer>
-    <p>   This is the footer</p>
+    <div class="info__footer">
+        <div class="address__footer">
+            <span class="iconify icon__contactform" data-icon="el:map-marker" data-inline="false"></span>
+            <h3>Javier Lopez</h3>
+            <p>290 Main st.
+                <BR>FK1 2QA
+                <BR> Falkirk
+                <BR> Scotland
+            </p>
+        </div>
+        <div class="email__footer">
+            <span class="iconify icon__contactform" data-icon="ic:baseline-alternate-email" data-inline="false"></span>
+            <p>
+                <a href="mailto:hello@javierlopez.design" class="secondary__button" target="_blank">hello@javierlopez.design</a>
+            </p>
+        </div>
+        <div class="phone__footer">
+            <span class="iconify icon__contactform" data-icon="jam:phone" data-inline="false"></span>
+            <p>
+                <a href="tel:+447963772339">+44 7963 772 339</a>
+            </p>
+        </div>
+        <div class="instagram__footer">
+            <span class="iconify" data-icon="carbon:logo-instagram"></span>
+            <p>
+                <a href="https://www.instagram.com/javierlopez.design" target="_blank">@javierlopez.dessign</a>
+            </p>
+        </div>
+        <div class="linkedin__footer">
+            <span class="iconify" data-icon="bi:linkedin"></span>
+            <p>
+                <a href="https://www.linkedin.com/in/javier-lopez-gonzalez-a094262b" target="_blank">@javierlopez</a>
+            </p>
+        </div>
+    </div>
+    <div class="quicklinks__footer">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">My Process</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Payments</a></li>
+            <li><a href="">My Style Guide</a></li>
+        </ul>
+    </div>
+    <div class="casestudies__footer">
+        <h4>Case Studies</h4>
+        <ul>
+            <li><a href="">The Fifth Taste</a></li>
+            <li><a href="">FoxTrk</a></li>
+            <li><a href="">Komorebi</a></li>
+            <li><a href="">Waters of Leith</a></li>
+            <li><a href="">Audt</a></li>
+            <li><a href="">BeFit</a></li>
+        </ul>
+    </div>
+
+    <div class="copyright__footer">
+        <p><span class="iconify" data-icon="bx:bx-copyright"></span> 2021 | <strong>javierlopez.design</strong> | All rights reserved</p>
+    </div>
+    <div class="terms__footer">
+        <a href="">Terms & conditions</a>
+        <a href="">Cookies</a>
+    </div>
+
 <BR><BR>
 </footer>
 
