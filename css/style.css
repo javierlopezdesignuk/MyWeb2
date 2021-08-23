@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap");
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -89,7 +89,8 @@ a {
 .secondaryButton {
   background-color: none;
   color: #009AD8;
-  box-shadow: inset 0 0 0 1px #009AD8;
+  -webkit-box-shadow: inset 0 0 0 1px #009AD8;
+          box-shadow: inset 0 0 0 1px #009AD8;
 }
 
 .linkButton {
@@ -111,9 +112,16 @@ nav {
 nav .navigation {
   width: 100%;
   max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -139,6 +147,7 @@ nav #themeToggle {
 header, .container__sellarea, .services, .process, .cases, .tools, .contact {
   width: 100%;
   min-height: 80vh;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   color: #d4d4d4;
@@ -148,9 +157,13 @@ header, .container__sellarea, .services, .process, .cases, .tools, .contact {
 header .container__header, .container__sellarea .container__header, .services .container__header, .process .container__header, .cases .container__header, .tools .container__header, .contact .container__header {
   width: 90%;
   max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 1rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .container__header .box__header, .container__sellarea .container__header .box__header, .services .container__header .box__header, .process .container__header .box__header, .cases .container__header .box__header, .tools .container__header .box__header, .contact .container__header .box__header {
@@ -187,8 +200,12 @@ header .container__header p, .container__sellarea .container__header p, .service
 .container__sellarea .box__sellarea .info__sellarea {
   width: 100%;
   color: #2c2c2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container__sellarea .box__sellarea .info__sellarea p {
@@ -247,8 +264,12 @@ header .container__header p, .container__sellarea .container__header p, .service
 
 .services .container__services .box__services .boxcards__services {
   color: #2c2c2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .services .container__services .box__services .boxcards__services .card__services {
@@ -305,8 +326,12 @@ header .container__header p, .container__sellarea .container__header p, .service
 
 .process .container__process .box__process .boxcards__process {
   height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: absolute;
   left: 0;
   width: 100vw;
@@ -323,10 +348,14 @@ header .container__header p, .container__sellarea .container__header p, .service
   width: 250px;
   height: 350px;
   padding: 1rem;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   z-index: 10;
 }
@@ -391,8 +420,10 @@ header .container__header p, .container__sellarea .container__header p, .service
 }
 
 .cases .container__cases .box__cases .boxcards__cases {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
 }
 
@@ -413,6 +444,8 @@ header .container__header p, .container__sellarea .container__header p, .service
 
 .cases .container__cases .box__cases .boxcards__cases .card__cases .labelCard__cases .tags__cases {
   font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0.5rem 0 0.2rem 0;
 }
@@ -461,9 +494,16 @@ header .container__header p, .container__sellarea .container__header p, .service
 .tools .container__tools .box__tools .boxcards__tools {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tools .container__tools .box__tools .boxcards__tools .card__tools {
@@ -471,18 +511,30 @@ header .container__header p, .container__sellarea .container__header p, .service
   width: 100px;
   background-color: #f0f0f0;
   margin: 0.25rem;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
 .tools .container__tools .box__tools .boxcards__tools .card__tools .img__tools {
   width: 40px;
   height: 40px;
-  transform: translateY(0.5rem) scale(1.5);
+  -webkit-transform: translateY(0.5rem) scale(1.5);
+          transform: translateY(0.5rem) scale(1.5);
+  -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
   transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
 }
 
@@ -495,16 +547,20 @@ header .container__header p, .container__sellarea .container__header p, .service
   color: #009AD8;
   font-weight: 500;
   margin-top: 0.25rem;
-  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
   transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
 }
 
 .tools .container__tools .box__tools .boxcards__tools .card__tools:hover > .name__tools {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .tools .container__tools .box__tools .boxcards__tools .card__tools:hover > .img__tools {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .contact {
@@ -535,4 +591,3 @@ header .container__header p, .container__sellarea .container__header p, .service
   background-color: white;
   width: 350px;
 }
-/*# sourceMappingURL=style.css.map */

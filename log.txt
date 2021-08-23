@@ -3,10 +3,14 @@ Version log.
 ____________Errors
 * - In css add variables in the class LightMode to get dark mode fully working!!
     Change Icons to something more stylised.
+ - Convert all the icons to local
+ 
 
 
 ____________Walkthrough.
 
- OK - 1. Vanilla JS dark/light mode.
-2. Dropdown menu.
-3. Home Template
+OK - 1. Vanilla JS dark/light mode.
+OK. 2. Dropdown menu.
+OK. 3. Home Template
+4. case study template
+5. form backend
