@@ -8,11 +8,20 @@
 <link rel="stylesheet" href="css/style_mobile.css">
 
 <!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
 
+<!-- Theme -->
+<meta name="theme-color" content="#009AD8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#009AD8" media="(prefers-color-scheme: dark)">
 
 <!-- SEO -->
 
 
 <!-- JS Libraries -->
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 

@@ -4,9 +4,12 @@ ____________Errors
 * - In css add variables in the class LightMode to get dark mode fully working!!
     Change Icons to something more stylised.
  - Convert all the icons to local(can wait so far as performance has been sorted out)
+ - Favicons
+ - format email contact form
+ - footer hover
+
  
- 
- - SCROLL ICONS!!!
+ OK !     - SCROLL ICONS!!!
  
 
 ____________Walkthrough.
@@ -15,9 +18,9 @@ OK - 1. Vanilla JS dark/light mode.
 OK. 2. Dropdown menu.
 OK. 3. Home Template
 OK. 4. case study template
-5. Home Template (desktop)
-6. case study Template (desktop)
-7. contact form backend
+OK. 5. Home Template (desktop)
+CHECK 6. case study Template (desktop)
+OK. 7. contact form backend
 
 Cookies & terms page with pop up
 

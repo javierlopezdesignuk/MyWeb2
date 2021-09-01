@@ -135,6 +135,7 @@ a {
 
 .linkButton::after {
   content: '\2192';
+  font-size: 1.5rem;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -661,8 +662,8 @@ header .container__header .box__header p {
   position: relative;
   min-height: 80vh;
   width: 100%;
+  margin-top: 6rem;
   padding: 0;
-  padding-bottom: 0;
 }
 
 .process .container__process {
@@ -680,6 +681,10 @@ header .container__header .box__header p {
   width: 100%;
   position: relative;
   max-width: 100%;
+}
+
+.process .container__process .box__process .title__process {
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 520px) {
@@ -941,6 +946,7 @@ header .container__header .box__header p {
 
 .cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases img {
   width: 100px;
+  background-color: transparent;
 }
 
 .cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases .mobileMessage {
@@ -1180,6 +1186,7 @@ header .container__header .box__header p {
   background-color: rgba(0, 154, 216, 0.4);
   padding: 1rem;
   width: auto;
+  height: 460px;
 }
 
 @media screen and (min-width: 520px) {
@@ -1201,37 +1208,52 @@ header .container__header .box__header p {
 @media screen and (min-width: 520px) {
   .contact .container__contact .box__contact .form__contact .info__contact {
     display: block;
-    width: 30%;
+    width: 50%;
   }
 }
 
 .contact .container__contact .box__contact .form__contact .inputs__contactform {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 520px) {
   .contact .container__contact .box__contact .form__contact .inputs__contactform {
-    display: block;
-    width: 60%;
+    width: 100%;
     margin-right: 0;
   }
 }
 
-.contact .container__contact .box__contact .form__contact h3 {
+.contact .container__contact .box__contact .form__contact .inputs__contactform h3 {
   margin-bottom: 2rem;
 }
 
-.contact .container__contact .box__contact .input__contactform {
-  width: auto;
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form {
+  width: 100%;
+  right: 0;
+  margin-left: auto;
+}
+
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform {
+  width: 100%;
   position: relative;
   margin: 1.5rem auto;
 }
 
-.contact .container__contact .box__contact .input__contactform label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform label {
   position: absolute;
   top: 0.3rem;
   left: 0.5rem;
@@ -1243,7 +1265,7 @@ header .container__header .box__header p {
   transition: 300ms ease-in-out;
 }
 
-.contact .container__contact .box__contact .input__contactform input, .contact .container__contact .box__contact .input__contactform textarea {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
@@ -1257,73 +1279,74 @@ header .container__header .box__header p {
   transition: 500ms ease;
 }
 
-.contact .container__contact .box__contact .input__contactform input:invalid, .contact .container__contact .box__contact .input__contactform textarea:invalid {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:invalid, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:invalid {
   color: darkred;
   border: 1px solid darkred;
 }
 
-.contact .container__contact .box__contact .input__contactform input:invalid + label, .contact .container__contact .box__contact .input__contactform textarea:invalid + label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:invalid + label, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:invalid + label {
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
   color: darkred;
   font-size: 0.9rem;
 }
 
-.contact .container__contact .box__contact .input__contactform input:placeholder-shown, .contact .container__contact .box__contact .input__contactform textarea:placeholder-shown {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:placeholder-shown, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:placeholder-shown {
   color: #2c2c2f;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
 }
 
-.contact .container__contact .box__contact .input__contactform input:placeholder-shown + label, .contact .container__contact .box__contact .input__contactform textarea:placeholder-shown + label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:placeholder-shown + label, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:placeholder-shown + label {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   color: #2c2c2f;
 }
 
-.contact .container__contact .box__contact .input__contactform input:focus, .contact .container__contact .box__contact .input__contactform textarea:focus {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:focus, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:focus {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.contact .container__contact .box__contact .input__contactform input:focus + label, .contact .container__contact .box__contact .input__contactform textarea:focus + label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:focus + label, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:focus + label {
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
   font-size: 0.9rem;
 }
 
-.contact .container__contact .box__contact .input__contactform input:valid + label, .contact .container__contact .box__contact .input__contactform textarea:valid + label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform input:valid + label, .contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform textarea:valid + label {
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
   font-size: 0.9rem;
 }
 
-.contact .container__contact .box__contact .input__contactform button {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .input__contactform button {
   outline: none;
   border: none;
   margin: 0;
 }
 
-.contact .container__contact .box__contact .terms__contactform {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .terms__contactform {
   padding: 0.5rem 0;
 }
 
-.contact .container__contact .box__contact .terms__contactform label {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .terms__contactform label {
   margin-left: 1rem;
 }
 
-.contact .container__contact .box__contact .terms__contactform #terms {
+.contact .container__contact .box__contact .form__contact .inputs__contactform #form .terms__contactform #terms {
   width: auto;
 }
 
-.contact .container__contact .box__contact .emailSuccess {
+.contact .container__contact .box__contact .form__contact .inputs__contactform .emailSuccess {
   display: none;
   padding: 1rem;
   border: 2px green solid;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.contact .container__contact .box__contact .emailSuccess p {
+.contact .container__contact .box__contact .form__contact .inputs__contactform .emailSuccess p {
   color: green;
+  text-align: center;
 }
 
 footer {

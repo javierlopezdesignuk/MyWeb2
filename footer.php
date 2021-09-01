@@ -33,15 +33,17 @@
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="index.php#">About me</a></li>
-                <li><a href="index.php">My Process</a></li>
-                <li><a href="index.php">Services</a></li>
-                <li><a href=""><s>FAQ</s></a></li>
-                <li><a href=""><s>Payments</s></a></li>
-                <li><a href=""><s>My Style Guide</s></a></li>
+                <li><a href="index.php">About me</a></li>
+                <li><a href="index.php#process">My Process</a></li>
+                <li><a href="index.php#whatido">Services</a></li>
+                <li><a href="index.php#contact">Contact</a></li>
+
+                <!-- <li><a href=""><s>FAQ</s></a></li> -->
+                <!-- <li><a href=""><s>Payments</s></a></li> -->
+                <!-- <li><a href=""><s>My Style Guide</s></a></li> -->
                 <li></li>
-                <li><a href=""></a><s>Terms & conditions</s></li>
-                <li><a href=""></a><s>Cookies</s></li>
+                <li><a href="termsandconditions.php">Terms & conditions</a></li>
+                <li><a href="cookies.php">Cookies</a></li>
             </ul>
         </div>
         <div class="casestudies__footer">
@@ -51,9 +53,9 @@
                 <li><a href=""><s>FoxTrk</s></a></li>
                 <li><a href=""><s>Komorebi</s></a></li>
                 <li><a href=""><s>Waters of Leith</s></a></li>
-                <li><a href=""><s>Classy Massage</s></a></li>
-                <li><a href=""><s>Audt</s></a></li>
-                <li><a href=""><s>BeFit</s></a></li>
+                <!-- <li><a href=""><s>Classy Massage</s></a></li> -->
+                <!-- <li><a href=""><s>Audt</s></a></li> -->
+                <!-- <li><a href=""><s>BeFit</s></a></li> -->
             </ul>
         </div>
     </div>

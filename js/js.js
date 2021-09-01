@@ -45,3 +45,30 @@ target.addEventListener('wheel', event => {
     target.scrollBy({ left: event.deltaY * 100000 })
   }
 })
+
+
+
+// AJAX contact form
+
+$(function () {
+    $('#form').on('submit', function (e) {
+        e.preventDefault();
+        
+        // console.log("form intercepted");
+
+        $.ajax({
+            type: 'post',
+            url: 'includes/contactform.php',
+            // dataType: 'json', 
+            data: $('form').serialize(),
+            success: function (data) {
+                // alert('form was submitted');
+                // console.log(data); // show in console the return of php script
+                // const obj = JSON.parse(data);
+                $('#form').toggle("fast" );
+                $('#feedback__contact').toggle( "fast" );
+            }
+        });
+    
+    });
+});

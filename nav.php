@@ -4,7 +4,7 @@
 
 <nav>
     <div class="navigation">
-        <img class="logo__nav" src="images/logo.svg" alt="My Logo">
+        <a href="index.php"><img class="logo__nav" src="images/logo.svg" alt="My Logo"></a>
         <input type="checkbox" id="toggle-menu" class="nav-toggle">
         <label for="toggle-menu" class="menu__nav" id="menu__nav">
             <span></span>

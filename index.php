@@ -201,7 +201,7 @@
                         </div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img src="images/qr-thefifthtaste.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
                             </div>
                             <div class="infocase__cases">
@@ -225,7 +225,7 @@
                         <div class="img__cases"><img src="images/foxtrk.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img src="images/qr-foxtrk.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
 
                             </div>
@@ -249,11 +249,11 @@
                         <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/komorebi.jpg" alt=""></div>
                         <div class="info__cases">
-                            <div class="qrMessage__cases">
+                            <!-- <div class="qrMessage__cases">
                                 <img src="images/qr-javierlopezdesign.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
 
-                            </div>
+                            </div> -->
                             <div class="infocase__cases">
                                 <h3>Komorebi</h3>
                                 <ul class="tags__cases">
@@ -275,7 +275,7 @@
                         <div class="img__cases"><img src="images/watersofleith.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img src="images/qr-watersofleith.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
 
                             </div>
@@ -295,17 +295,16 @@
 
                     </div>
 
-                    <div class="card__cases">
-                        <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
+                    <!-- <div class="card__cases">
                         <div class="img__cases"><img src="images/audt.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img src="images/qr-classymassage.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
 
                             </div>
                             <div class="infocase__cases">
-                                <h3>Audt</h3>
+                                <h3>Classy Massage</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
                                     <li>Custom CMS</li>
@@ -318,7 +317,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
         </div>
     </div>
@@ -441,10 +440,10 @@
                         </div>
                         
                         <div class="inputs__contactform">
-                            <div class="emailSuccess">
+                            <div id="feedback__contact" class="emailSuccess">
                                 <p>Thanks! I got your request, I'll get in touch soon.</p>
                             </div>
-                            <form action="" autocomplete="off">
+                            <form action="index.php#contact" id="form" method="POST" autocomplete="off">
                                 <input autocomplete="false" id="hiddeninput" name="name" type="text" style="display:none;">
                                 <input autocomplete="false" id="hiddeninput2" name="website" type="text" style="display:none;">
                                 
@@ -458,11 +457,12 @@
                                     <label for="name">Name</label>
                                 </div>
                                 <div class="input__contactform ">
-                                    <input type="email" id="email" name="email" placeholder=" " autocomplete="disabled" required>
+                                    <input type="text" id="email" name="email" placeholder=" " autocomplete="disabled" required>
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="input__contactform ">
-                                    <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required>
+                                    <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required >
+                                    <!-- pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" -->
                                     <label for="phone">Phone</label>
                                 </div>
                                 <div class="input__contactform ">
@@ -474,7 +474,7 @@
                                     <input type="checkbox" id="terms" name="terms" autocomplete="disabled" required>
                                 </div>
                                 <div class="input__contactform ">
-                                    <button class="primaryButton" name="formSubmit">Get in touch!</button>
+                                    <button class="primaryButton" type="submit" name="formSubmit">Get in touch!</button>
                                 </div>
                             </form>
                                 
@@ -508,5 +508,6 @@
 </body>
 
 <script src="js/js.js"></script>
+
 
 </html>
