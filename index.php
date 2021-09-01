@@ -20,15 +20,21 @@
     ?>
     
     <header id="home">
+        <div class="scrollMessage">
+            <img class="scrollWord" src="images/scrollMessage.svg" alt="scroll word">
+            <img class="scrollArrow" src="images/arrow.svg" alt="scroll arrow">
+        </div>
+        <div class="container__header">
             <img class="myPic" src="images/mypic.png" alt="mypic">
             <div class="box__header">
 
                 <h1>Javier Lopez<BR>is not a designer.</h1>
-                <p>Not just a developer either. Let’s call it a problem solver.<BR>Helping startups define their brand identity and stand out online.</p>
-                <a class="primaryButton" href="">Get in touch!</a>
+                <p>Not just a developer either. Let’s call it a problem solver.<BR>Helping start-ups define their brand identity and stand out online.</p>
+                <a class="primaryButton" href="index.php#contact">Get in touch!</a>
                 <!-- <a class="secondaryButton" href="">See my CV</a> -->
                 <!-- <img src="" alt="myself"> -->
             </div>
+        </div>
     </header>
 
 
@@ -39,19 +45,19 @@
             <div class="box__sellarea">
                 <h2 class="title__sellarea">Your goal doesn't fit just any website</h2>
 
-                    <div class="info__sellarea">
-                        <p>Your business is more than just a brand new logotype or a website. 
-                            <s>And often we don’t realise how impactful is a a first sight and the 
-                            feeling that it provides. That’s why a website built from a <strong>process</strong> 
-                            and applied a <strong>tailored solution</strong> will attract the desired leads, 
-                            whatever your goal is.<BR><BR>
-                            When I say process, I don’t mean just a beautiful 
-                            website, although is definitely an important point and might not be 
-                            avoided, but we must ensure that the <strong>performance, the best developing 
-                            practices and a curated user experience</strong> will be applied to convey nice 
-                            looking and bring the leads wanted to</s> your business.</p>
-                        <div class="image__sellarea"></div>
-                    </div>    
+                <div class="info__sellarea">
+                    <p>Your business is more than just a brand new logotype or a website. 
+                        <s>And often we don’t realise how impactful is a a first sight and the 
+                        feeling that it provides. That’s why a website built from a <strong>process</strong> 
+                        and applied a <strong>tailored solution</strong> will attract the desired leads, 
+                        whatever your goal is.<BR><BR>
+                        When I say process, I don’t mean just a beautiful 
+                        website, although is definitely an important point and might not be 
+                        avoided, but we must ensure that the <strong>performance, the best developing 
+                        practices and a curated user experience</strong> will be applied to convey nice 
+                        looking and bring the leads wanted to</s> your business.</p>
+                    <div class="image__sellarea"></div>
+                </div>    
             </div>
         </div>
     </div>
@@ -76,7 +82,7 @@
                         <div class="img__service"><span class="iconify" data-icon="icon-park-outline:analysis" data-flip="horizontal"></span>
 </div>
                         <h3>Audits & Analysis</h3>
-                        <p>Website can’t be just nice and plenty of animations, videos, pics, etc. 
+                        <p>Websites can’t be just nice and plenty of animations, videos, pics, etc. 
                             The site must have the best perfomance, good developing practices applied 
                             and accesibility so any user can enjoy your services.</p>
                     </div>
@@ -98,6 +104,10 @@
 <div id="process" class="process">
     <div class="container__process">
         <div class="box__process">
+            <!-- <div class="scrollMessage">
+                <img class="scrollWord" src="images/scrollMessage.svg" alt="scroll word">
+                <img class="scrollArrow" src="images/arrow.svg" alt="scroll arrow">
+            </div> -->
             <h2 class="title__process">My process</h2>
             
             <div class="extra__process">
@@ -105,7 +115,7 @@
                 <a href="">My process -></a>
             </div>
             
-            <div class="boxcards__process">
+            <div id="boxcards__process__horizontalScroll" class="boxcards__process">
                 <div class="card__process">
                     <div class="img__process"><span class="iconify" data-icon="pixelarticons:notes-multiple"></span></div>
                     <div class="cardInfo__process">
@@ -189,77 +199,125 @@
                         <div class="img__cases" >
                             <img src="images/thefifthtaste.jpg" alt="">
                         </div>
-                        <h3>The Fifth Taste</h3>
-                        <ul class="tags__cases">
-                            <li>Branding</li>
-                            <li>Custom CMS</li>
-                            <li>Ecommerce</li>
-                            <li>Google Maps API</li>
-                            <li>Branding</li>
-        
-                        </ul>
-                        <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="linkButton" href="casestudy.php">Open case study ></a>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>The Fifth Taste</h3>
+                                <ul class="tags__cases">
+                                    <li>Branding</li>
+                                    <li>Custom CMS</li>
+                                    <li>Ecommerce</li>
+                                    <li>Google Maps API</li>
+                                    <li>Branding</li>
+                
+                                </ul>
+                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                <a class="linkButton" href="casestudy.php">Open case study</a>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="card__cases">
                         <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/foxtrk.jpg" alt=""></div>
-                        <h3>FoxTrk</h3>
-                        <ul class="tags__cases">
-                            <li>Branding</li>
-                            <li>Custom CMS</li>
-                            <li>Ecommerce</li>
-                            <li>Google Maps API</li>
-                            <li>Branding</li>
-                        </ul>
-                        <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="linkButton" href="">Link to open -></a>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>FoxTrk</h3>
+                                <ul class="tags__cases">
+                                    <li>Branding</li>
+                                    <li>Custom CMS</li>
+                                    <li>Ecommerce</li>
+                                    <li>Google Maps API</li>
+                                    <li>Branding</li>
+                                </ul>
+                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                <a class="linkButton" href="">Link to open</a>
+                            </div>
+                        </div>
+
                     </div>
                     
                     <div class="card__cases">
                         <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/komorebi.jpg" alt=""></div>
-                        <h3>Komorebi</h3>
-                        <ul class="tags__cases">
-                            <li>Branding</li>
-                            <li>Custom CMS</li>
-                            <li>Ecommerce</li>
-                            <li>Google Maps API</li>
-                            <li>Branding</li>
-                        </ul>
-                        <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="linkButton" href="">Link to open -></a>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>Komorebi</h3>
+                                <ul class="tags__cases">
+                                    <li>Branding</li>
+                                    <li>Custom CMS</li>
+                                    <li>Ecommerce</li>
+                                    <li>Google Maps API</li>
+                                    <li>Branding</li>
+                                </ul>
+                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                <a class="linkButton" href="">Link to open</a>
+                            </div>
+                        </div>
+
                     </div>
                     
                     <div class="card__cases">
                         <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/watersofleith.jpg" alt=""></div>
-                        <h3>Waters of Leith</h3>
-                        <ul class="tags__cases">
-                            <li>Branding</li>
-                            <li>Custom CMS</li>
-                            <li>Ecommerce</li>
-                            <li>Google Maps API</li>
-                            <li>Branding</li>
-                        </ul>
-                        <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="linkButton" href="">Link to open -></a>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>Waters of Leith</h3>
+                                <ul class="tags__cases">
+                                    <li>Branding</li>
+                                    <li>Custom CMS</li>
+                                    <li>Ecommerce</li>
+                                    <li>Google Maps API</li>
+                                    <li>Branding</li>
+                                </ul>
+                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                <a class="linkButton" href="">Link to open</a>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="card__cases">
                         <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/audt.jpg" alt=""></div>
-                        <h3>Audt</h3>
-                        <ul class="tags__cases">
-                            <li>Branding</li>
-                            <li>Custom CMS</li>
-                            <li>Ecommerce</li>
-                            <li>Google Maps API</li>
-                            <li>Branding</li>
-                        </ul>
-                        <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                        <a class="linkButton" href="">Link to open -></a>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-javierlopezdesign.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>Audt</h3>
+                                <ul class="tags__cases">
+                                    <li>Branding</li>
+                                    <li>Custom CMS</li>
+                                    <li>Ecommerce</li>
+                                    <li>Google Maps API</li>
+                                    <li>Branding</li>
+                                </ul>
+                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                <a class="linkButton" href="">Link to open</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
         </div>
@@ -349,46 +407,81 @@
     <div class="container__contact">
         <div class="box__contact">
             <h2 class="title__contact">Let's collaborate!</h2>
-                <div class="form__contact" >
-                    <form action="" autocomplete="off">
-                        <input autocomplete="false" id="hiddeninput" name="name" type="text" style="display:none;">
-                        <input autocomplete="false" id="hiddeninput2" name="website" type="text" style="display:none;">
-
-                        <label for="hiddeninput"></label>
+                <div class="form__contact">
+                    
+                        <div class="info__contact">
+                            <div class="address__contactform">
+                                <!-- <h3>Javier Lopez</h3> -->
+                                <span class="iconify icon__contactform" data-icon="el:map-marker" data-inline="false"></span> 
+                                <p>
+                                    <!-- 290 Main st. -->
+                                    FK1 2QA
+                                    <BR> Falkirk
+                                    <BR> Scotland
+                                </p>
+                            </div>
+                            <div class="sociallinks__contact">
+                                <a href="tel:+447963772339">
+                                    <svg class="iconify" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M9 2h6a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H9zm3 15a1 1 0 1 1 0-2a1 1 0 0 1 0 2z" fill="currentColor"/></svg>
+                                    <p class="detail__contact">+44 7963 772 339</p>
+                                </a>    
+                                <a href="mailto:hello@javierlopez.design" target="_blank" >
+                                    <svg class="iconify" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8s8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5s2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47c.65.89 1.77 1.47 2.96 1.47c1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3s3 1.34 3 3s-1.34 3-3 3z" fill="currentColor"/></svg>
+                                    <p class="detail__contact">hello@javierlopez.design</p>
+                                </a>    
+                                <a href="https://www.instagram.com/javierlopez.design" target="_blank" rel="noreferrer">
+                                    <svg class="iconify" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248a4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008a3.004 3.004 0 0 1 0 6.008z" fill="currentColor"/><circle cx="16.806" cy="7.207" r="1.078" fill="currentColor"/><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42a4.6 4.6 0 0 0-2.633 2.632a6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71c0 2.442 0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419a4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688a2.987 2.987 0 0 1-1.712 1.711a4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055c-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311a2.985 2.985 0 0 1-1.719-1.711a5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654c0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311a2.991 2.991 0 0 1 1.712 1.712a5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655c0 2.436 0 2.698-.043 3.654h-.011z" fill="currentColor"/></svg>
+                                    <p class="detail__contact">@javierlopez.design</p>
+                                </a>    
+                                <a href="https://www.linkedin.com/in/javier-lopez-gonzalez-a094262b" target="_blank" rel="noreferrer">
+                                    <svg class="iconify" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"/></svg>                
+                                    <p class="detail__contact">@javierlopez</p>
+                                </a>    
+                            </div>
+                        </div>
+                        
                         <div class="inputs__contactform">
-                            <h3>Drop me a message</h3>
-                            <div class="input__contactform">
-                                <input type="text" id="name" name="name" placeholder=" " autocomplete="disabled" required>
-                                <label for="name">Name</label>
+                            <div class="emailSuccess">
+                                <p>Thanks! I got your request, I'll get in touch soon.</p>
                             </div>
-                            <div class="input__contactform ">
-                                <input type="email" id="email" name="email" placeholder=" " autocomplete="disabled" required>
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="input__contactform ">
-                                <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required>
-                                <label for="phone">Phone</label>
-                            </div>
-                            <div class="input__contactform ">
-                                <textarea name="message" id="message" cols="30" placeholder=" " rows="3" required></textarea>
-                                <label for="message">Let me know about our next project!</label>
-                            </div>
-                            <div class="input__contactform terms__contactform">
-                                <label for="terms">I agree to share my contact details.</label>
-                                <input type="checkbox" id="terms" name="terms" autocomplete="disabled" required>
-                            </div>
-                            <div class="input__contactform ">
-                                <button class="primaryButton" name="formSubmit">Get in touch!</button>
-                            </div>
-
+                            <form action="" autocomplete="off">
+                                <input autocomplete="false" id="hiddeninput" name="name" type="text" style="display:none;">
+                                <input autocomplete="false" id="hiddeninput2" name="website" type="text" style="display:none;">
+                                
+                                <label for="hiddeninput"></label>
+                                <label for="hiddeninput2"></label>
+                                
+                                
+                                <h3>Drop me a message</h3>
+                                <div class="input__contactform">
+                                    <input type="text" id="name" name="name" placeholder=" " autocomplete="disabled" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="input__contactform ">
+                                    <input type="email" id="email" name="email" placeholder=" " autocomplete="disabled" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="input__contactform ">
+                                    <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required>
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="input__contactform ">
+                                    <textarea name="message" id="message" cols="30" placeholder=" " rows="3" required></textarea>
+                                    <label for="message">Let me know about our next project!</label>
+                                </div>
+                                <div class="input__contactform terms__contactform">
+                                    <label for="terms">I agree to share my contact details.</label>
+                                    <input type="checkbox" id="terms" name="terms" autocomplete="disabled" required>
+                                </div>
+                                <div class="input__contactform ">
+                                    <button class="primaryButton" name="formSubmit">Get in touch!</button>
+                                </div>
+                            </form>
+                                
                         </div>
-                        <div class="emailSuccess">
-                            <p>Thanks! I got your request, I'll get in touch soon.</p>
-                        </div>
 
 
 
-                    </form>
 
 
 

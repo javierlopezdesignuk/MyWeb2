@@ -3,14 +3,28 @@ Version log.
 ____________Errors
 * - In css add variables in the class LightMode to get dark mode fully working!!
     Change Icons to something more stylised.
- - Convert all the icons to local
+ - Convert all the icons to local(can wait so far as performance has been sorted out)
  
-
+ 
+ - SCROLL ICONS!!!
+ 
 
 ____________Walkthrough.
 
 OK - 1. Vanilla JS dark/light mode.
 OK. 2. Dropdown menu.
 OK. 3. Home Template
-4. case study template
-5. form backend
+OK. 4. case study template
+5. Home Template (desktop)
+6. case study Template (desktop)
+7. contact form backend
+
+Cookies & terms page with pop up
+
+8. my style guide
+
+9. my process page
+10. my services page
+11. payments page
+
+

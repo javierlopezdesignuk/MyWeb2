@@ -3,7 +3,6 @@
 @import 'typography.sass'
 @import 'buttons.sass'
 
-
 body
     background-color: $bgSecColor
     // background-color: #333
@@ -18,13 +17,42 @@ body
         left: 1rem
         z-index: 10000
         cursor: pointer
-
+    
 .num__process
     @extend h2
 
-// @media screen and ( max-width: $midScreen )
+
+
+.scrollMessage
+    position: absolute
+    transform: scale(0.3)
+    bottom: 0
+    right: 0
+    z-index: 1
+    filter: invert(0.8)
+    @media screen and ( min-width: $midScreen )
+        transform: scale(0.5)
+
+    .scrollArrow
+        transform: rotate(90deg) translateX(-1rem)
+        margin: 1.5rem auto 0 auto
+        animation-name: scrollMessageVer
+        animation-duration: 1s
+        animation-iteration-count: infinite
+
+        @keyframes scrollMessageVer
+            0%
+                transform: rotate(90deg) translateX(-1.5rem) scale(1.1)
+            50%
+                transform: rotate(90deg) translateX(0rem) scale(0.9)
+            100%
+                transform: rotate(90deg) translateX(-1.5rem) scale(1.1)
+
+
+
+// @media screen and ( min-width: $midScreen )
 nav
-    background-color: rgba($bgPriColor,0.5)
+    background-color: rgba($bgPriColor,0.8)
     backdrop-filter: blur(4px)
     position: fixed
     top: 0
@@ -51,6 +79,7 @@ nav
             display: flex
             align-items: center
             width: 30px
+            cursor: pointer
 
 
             span
@@ -118,10 +147,12 @@ nav
 
 
         li
+            position: relative
             list-style: none
             width: 100%
             margin: 0.5rem
-
+            cursor: pointer
+            
             a
                 width: 100%
                 padding: 0.5rem 1rem
@@ -129,53 +160,114 @@ nav
                 font-size: 3rem
                 font-weight: 500
             
+
             &:last-child > a
                 color: $priColor
 
+            &:hover > a
+                color: $fontSecColor
+                    
 
+            @media screen and ( min-width: $midScreen )
+                &::before
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: -6rem
+                    left: 0
+                    font-size: 12rem
+                    font-weight: 900
+                    color: rgba($priColor,0.1)
+                    content: attr(link-section)
+                    z-index: -1
+                    transform-origin: center bottom
+                    transform: scale(0,0)
+                    transition: all 0.3s ease-in-out
 
-header
-    padding: 6rem 1rem 1rem 1rem
-    width: 100%
-    min-height: 95vh
-    background-color: $bgPriColor
-    display: flex
-    flex-direction: column
-    // align-items: center
-    // justify-content: center
-
-
-    .myPic
-        margin: 0 auto 2rem auto
-        width: 160px
-        height: 221px
+                &:hover
+                    // background-color: $priColor
+                    &::before
+                        transform: scale(1,1)
     
-    .box__header
-        h1
-            line-height: 2.5rem
-            margin: 1rem 0
+header
+    width: 100%
+    padding: 6rem 1rem 1rem 1rem
+    height: 95vh
+    background-color: $bgPriColor
+    display: grid
+    place-items: center center
+    position: relative
+        
+    
+                
+    .container__header
+        display: flex
+        width: 100%
+        // height: 100%
+        max-width: $wrapper
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
 
-        p
-            color: $bgSecColor
+        @media screen and ( min-width: $midScreen )
+            flex-direction: row-reverse
+           
+        .myPic
+            margin: 0 auto 2rem auto
+            width: 160px
+            height: 221px
+
+            @media screen and ( min-width: $midScreen )
+                width: calc(160px * 1.5)
+                height: calc(221px * 1.5)
+                margin: 0 0 2rem 0
+        
+        .box__header
+            h1
+                line-height: 2.5rem
+                margin: 1rem 0
+                @media screen and ( min-width: $midScreen )
+                    line-height: 4rem
+            p
+                color: $bgSecColor
 
 
 .sellarea, .services, .process, .cases, .tools, .contact
+
     min-height: 80vh
-    // display: grid
-    // place-items: center
     width: 100%
-    padding: 2rem 1rem
+    padding: 4rem 1rem 2rem 1rem        
+
+    @media screen and ( min-width: $midScreen )
+
+        .container__sellarea, .container__services, .container__process
+            max-width: $wrapper
+            margin: 0 auto
+
 
     .title__sellarea,.title__services, .title__process, .title__cases, .title__tools, .title__contact
         -webkit-text-stroke: 2px $bgPriColor
         color: $bgSecColor
         margin-bottom: 3rem
-
+        
+        @media screen and ( min-width: $midScreen )
+            margin-bottom: 5rem
     
+
 .sellarea
+    display: grid
+    place-items: center
+    
     .container__sellarea
         .box__sellarea
             .info__sellarea
+                display: flex
+                flex-direction: column
+
+                @media screen and ( min-width: $midScreen )
+                    flex-direction: row
+                    gap: 1rem
+
                 p
                     width: 80%
                     // margin: 0 auto
@@ -189,6 +281,10 @@ header
                     background-size: cover
                     position: relative
 
+                    @media screen and ( min-width: $midScreen )
+                        margin: 0 auto
+                        width: 400px
+
                     &::before
                         position: absolute
                         content: ''
@@ -200,7 +296,13 @@ header
                         background-color: rgba($priColor,0.4)  
                         z-index: -1
 
-
+                        @media screen and ( min-width: $midScreen )
+                            width: 100%
+                            height: 80%
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: 2rem
+    
 .services  
     .container__services
         .box__services
@@ -219,12 +321,22 @@ header
                     background-color: rgba($priColor,0.4)  
                     z-index: -1
                     
+                    @media screen and ( min-width: $midScreen )
+                        right: 60%
+
+                    
             .boxcards__services
                 width: 90%
                 max-width: 280px
                 margin: 0 auto
                 display: flex
                 flex-flow: column nowrap
+
+                @media screen and ( min-width: $midScreen )
+                    max-width: $wrapper
+                    flex-flow: row nowrap
+
+
 
                 .card__services
                     // width: 300px
@@ -235,7 +347,7 @@ header
                     padding: 1rem
                     margin: 0.5rem
                     background-color: #eee
-                    transition: 500ms ease-in-out
+                    transition: 300ms ease-in-out
 
                     &:hover
                         background-color: $priColor
@@ -256,27 +368,68 @@ header
 
 .process
     overflow: hidden
+    position: relative
+    min-height: 80vh
+    width: 100%
+    padding: 0
+    padding-bottom: 0
 
     .container__process
+        width: 100%
+
+        @media screen and ( min-width: $midScreen )
+            max-width: 100%
+
+
         .box__process
-
+            margin: 0 auto
+            width: 100%
+            position: relative
+            max-width: 100%
+                
             .title__process
+                @media screen and ( min-width: $midScreen )
+                    max-width: $wrapper
+                    margin: 4rem auto 4rem auto
 
+
+
+
+            .scrollMessage
+                position: absolute
+                filter: invert(0)
+                bottom: -5rem
+                right: -2rem
+                .scrollArrow
+                    transform: rotate(0) translateY(-0.5rem)
+                    animation-name: scrollMessageHor
+
+                    @keyframes scrollMessageHor
+                        0%
+                            transform: rotate(0) translateY(-0.5rem) translateX(0rem)
+                        50%
+                            transform: rotate(0) translateY(-0.5rem) translateX(1.5rem)
+                        100%
+                            transform: rotate(0) translateY(-0.5rem) translateX(0rem)
+            
+            
             .extra__process
                 display: none    
 
             .boxcards__process
-                margin-left: -1rem
+                position: absolute
+                // background-color: red
+                left: 0
                 padding: 0 1rem
                 width: 100vw
                 height: 350px
                 display: flex
                 flex-flow: row nowrap
                 overflow-x: scroll
+                scrollbar-width: none
                 
                 &::-webkit-scrollbar
                     display: none
-            
 
                 .card__process
                     position: relative
@@ -289,6 +442,13 @@ header
                     display: grid
                     grid-template-rows: 1fr 1.5fr
                     transition: 200ms ease-in-out
+                    
+                    @media screen and ( min-width: $midScreen )
+                        width: 300px
+                        height: 320px
+                        
+                        &:first-child
+                            margin-left: 30%
 
                     .img__process
                         width: 60px
@@ -330,6 +490,9 @@ header
 
 .cases
     .container__cases
+        @media screen and ( min-width: $bigScreen )
+            width: $wrapper
+            margin: 0 auto
         
         .box__cases
             
@@ -339,9 +502,34 @@ header
                     background-color: rgba($priColor, 0.4)
                     // height: 350px
                     margin: 1rem auto
-                    padding: 1rem
+                    padding: 1rem 
                     position: relative
                     margin-top: 6rem
+                    max-width: 550px
+
+                    @media screen and ( min-width: $bigScreen )
+                        background-color: transparent
+                        padding: 0
+                        margin: 0
+                        // margin-top: 2rem
+
+                        width: 100%
+                        min-height: 500px
+                        max-width: 100%
+
+
+
+                        &::before
+                            content: ''
+                            width: 70%
+                            height: 100%
+                            background-color: rgba($priColor, 0.4) 
+                            position: absolute
+                            right: 0
+                            z-index: -1
+
+
+                        
 
                     .img__cases
                         width: 90%
@@ -352,37 +540,66 @@ header
                         left: 50%
                         transform: translateX(-50%)
 
+                        @media screen and ( min-width: $bigScreen )
+                            max-width: 550px 
+                            height: 90%
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: 0
+
                         img
                             width: 100%
                             height: 100%
                             object-position: center center
                             object-fit: cover
-
-
-
-
                     
-                    h3
+                    .info__cases
                         margin-top: calc(250px - 2.5rem)
-                
-                    .tags__cases
-                        font-size: 0.8rem
-                        width: 100%
-                        display: flex
-                        flex-flow: row wrap
-                        line-height: 1rem
-                        margin: 0.5rem 0 0.3rem 0
-                                                    
-                        li
-                            background-color: rgba($bgSecColor, 0.4)
-                            padding: 0.1rem 0.5rem
-                            list-style: none
-                            margin-right: 0.2rem
-                            margin-bottom: 0.2rem
+                        @media screen and ( min-width: $bigScreen )
+                            margin: 6rem 0 0 550px
+                            // margin-left: 550px
+                            padding: 1.5rem 1rem
+                            height: 500px
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+
+                        .qrMessage__cases
+                            display: none
+                            position: relative
+
                             
+                            @media screen and ( min-width: $bigScreen )
+                                display: block
+                                width: 200px
+
+                            img
+                                width: 100px
+                            
+                            .mobileMessage
+                                position: absolute
+                                width: 150px
+                                right: -4rem
+    
+                        .tags__cases
+                            font-size: 0.8rem
+                            width: 100%
+                            display: flex
+                            flex-flow: row wrap
+                            line-height: 1rem
+                            margin: 0.5rem 0 0.3rem 0
+                                                        
+                            li
+                                background-color: rgba($bgSecColor, 0.4)
+                                padding: 0.1rem 0.5rem
+                                list-style: none
+                                margin-right: 0.2rem
+                                margin-bottom: 0.2rem
+                                
                     
-                    .textCard__cases
-                        margin-bottom: 0.5rem
+                        .textCard__cases
+                            margin-bottom: 0.5rem
+                            width: 100%
 
 
 .tools
@@ -400,9 +617,14 @@ header
         z-index: -1
         top: 50%
         left: 0
-        transform: translateY(-45%)
+        transform: translateY(-40%)
+        @media screen and ( min-width: $midScreen )
+            transform: translateY(-35%)
+
 
     .container__tools
+        max-width: $wrapper
+        margin: auto
         .box__tools
 
             .title__tools
@@ -425,12 +647,18 @@ header
                 justify-content: center
                 align-items: center
                 overflow: hidden
+                @media screen and ( min-width: $midScreen )
+                    height: 150px
+                    width: 150px
 
                 .img__tools
                     width: 30px
                     height: 30px
-                    transform: translateY(0.5rem) scale(1.5)
+                    transform: translateY(1rem) scale(1.5)
                     transition: 0.5s cubic-bezier(0.47,-0.38, 0.20, 2)
+                    @media screen and ( min-width: $midScreen )
+                        width: 40px
+                        height: 40px
 
                     .iconify
                         width: 100%
@@ -442,54 +670,95 @@ header
                     margin-top: 0.25rem
                     transform: translateY(40px)
                     transition: 0.5s cubic-bezier(0.47,-0.38, 0.52, 1.46)
+                    @media screen and ( min-width: $midScreen )
+                        transform: translateY(80px)
 
 
                 &:hover > .name__tools
                     transform: translateY(0)
+                    @media screen and ( min-width: $midScreen )
+                        transform: translateY(10px)
+
 
                 &:hover > .img__tools
-                    // filter: grayscale(0)
-                    // opacity: 1
-
+                    
                     transform: translateY(0)
 
 .contact
 
     .container__contact
-        
+        max-width: $wrapper
+        margin: 0 auto
+
         .box__contact
             .info__contact
-
                 width: 240px
                 margin: 0 auto
-                background-color: white
-                padding: 0.5rem
+                // background-color: white
+                // padding: 0.5rem
 
-
-                .address__contactform, .email__contactform, .phone__contactform
-                    padding: 0.5rem 0
+                .address__contactform
                     display: flex
-                    // align-items: center
-                    gap: 0.5rem
-
                     .icon__contactform
-                        margin-top: 2px
-                    
-                    a
-                        text-decoration: none
-                        transition: 300ms ease-in-out
-                        color: $fontPriColor
+                        margin: 0.125rem 1rem 0.125rem 0
 
+
+                .sociallinks__contact
+                    margin: 1rem 0
+                    display: flex
+                    flex-flow: column nowrap
+                    justify-content: center
+                    grid-gap: 1rem
+
+                    .iconify
+                        width: 20px
+                        height: 20px
+                        margin: 0.125rem 1rem 0.125rem 0
+
+                    a
+                        display: flex
+                        flex-flow: row nowrap
+                        color: $fontPriColor
+                        transition: 0.3s ease-in-out
                         &:hover
-                            color: $fontPriColor
+                            color: $fontSecColor
+
+                    .detail__contact
+                        display: none
+                        @media screen and ( min-width: $midScreen )
+                            display: block
+                            font-size: 1rem
+
+
+
             .form__contact
                 background-color: rgba($priColor , 0.4 )
                 padding: 1rem
+                width: auto
+                @media screen and ( min-width: $midScreen )
+                    display: flex
+                    flex-flow: row nowrap
+                
+                .info__contact
+                    display: none
+                    @media screen and ( min-width: $midScreen )
+                        display: block
+                        // background-color: transparent
+                        width: 30%
+
 
                 .inputs__contactform
-                    width: 100%
                     flex-flow: column nowrap
                     margin: 0 auto
+
+                    @media screen and ( min-width: $midScreen )
+                        display: block
+                        width: 60%
+                        margin-right: 0
+
+
+
+
                 h3
                     margin-bottom: 2rem
 
@@ -509,7 +778,7 @@ header
                 
                 input, textarea
                     width: 100%
-                    max-width: 450px
+                    max-width: 550px
                     margin: 0 auto
                     border: none
                     outline: none
@@ -572,6 +841,7 @@ header
                 p
                     color: green
 
+    
 
 
 footer

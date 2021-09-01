@@ -31,4 +31,17 @@
     });
 
 
-    
+
+// Horizontal scroll in process boxcards
+const target = document.querySelector('#boxcards__process__horizontalScroll')
+
+target.addEventListener('wheel', event => {
+  const toLeft  = event.deltaY < 0 && target.scrollLeft > 0
+  const toRight = event.deltaY > 0 && target.scrollLeft < target.scrollWidth - target.clientWidth
+
+  if (toLeft || toRight) {
+    event.preventDefault()
+    // target.scrollLeft += event.deltaY * 100000
+    target.scrollBy({ left: event.deltaY * 100000 })
+  }
+})

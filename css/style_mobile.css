@@ -233,7 +233,7 @@ body #themeToggle {
 }
 
 nav {
-  background-color: rgba(44, 44, 47, 0.5);
+  background-color: rgba(44, 44, 47, 0.8);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   position: fixed;
@@ -660,17 +660,33 @@ header .container__header .box__header p {
   overflow: hidden;
   position: relative;
   min-height: 80vh;
-  height: auto;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 0;
 }
 
 .process .container__process {
-  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 520px) {
+  .process .container__process {
+    max-width: 100%;
+  }
 }
 
 .process .container__process .box__process {
-  max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
   position: relative;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 520px) {
+  .process .container__process .box__process .title__process {
+    max-width: 1100px;
+    margin: 4rem auto 4rem auto;
+  }
 }
 
 .process .container__process .box__process .scrollMessage {
@@ -725,7 +741,6 @@ header .container__header .box__header p {
 .process .container__process .box__process .boxcards__process {
   position: absolute;
   left: 0;
-  margin-left: -15rem;
   padding: 0 1rem;
   width: 100vw;
   height: 350px;
@@ -976,8 +991,20 @@ header .container__header .box__header p {
   z-index: -1;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+@media screen and (min-width: 520px) {
+  .tools::before {
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+}
+
+.tools .container__tools {
+  max-width: 1100px;
+  margin: auto;
 }
 
 .tools .container__tools .box__tools .boxcards__tools {
@@ -1018,13 +1045,27 @@ header .container__header .box__header p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 520px) {
+  .tools .container__tools .box__tools .card__tools {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 .tools .container__tools .box__tools .card__tools .img__tools {
   width: 30px;
   height: 30px;
-  -webkit-transform: translateY(0.5rem) scale(1.5);
-          transform: translateY(0.5rem) scale(1.5);
+  -webkit-transform: translateY(1rem) scale(1.5);
+          transform: translateY(1rem) scale(1.5);
   -webkit-transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
   transition: 0.5s cubic-bezier(0.47, -0.38, 0.2, 2);
+}
+
+@media screen and (min-width: 520px) {
+  .tools .container__tools .box__tools .card__tools .img__tools {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .tools .container__tools .box__tools .card__tools .img__tools .iconify {
@@ -1042,9 +1083,23 @@ header .container__header .box__header p {
   transition: 0.5s cubic-bezier(0.47, -0.38, 0.52, 1.46);
 }
 
+@media screen and (min-width: 520px) {
+  .tools .container__tools .box__tools .card__tools .name__tools {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+}
+
 .tools .container__tools .box__tools .card__tools:hover > .name__tools {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (min-width: 520px) {
+  .tools .container__tools .box__tools .card__tools:hover > .name__tools {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 
 .tools .container__tools .box__tools .card__tools:hover > .img__tools {
@@ -1052,48 +1107,118 @@ header .container__header .box__header p {
           transform: translateY(0);
 }
 
+.contact .container__contact {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .contact .container__contact .box__contact .info__contact {
   width: 240px;
   margin: 0 auto;
-  background-color: white;
-  padding: 0.5rem;
 }
 
-.contact .container__contact .box__contact .info__contact .address__contactform, .contact .container__contact .box__contact .info__contact .email__contactform, .contact .container__contact .box__contact .info__contact .phone__contactform {
-  padding: 0.5rem 0;
+.contact .container__contact .box__contact .info__contact .address__contactform {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.5rem;
 }
 
-.contact .container__contact .box__contact .info__contact .address__contactform .icon__contactform, .contact .container__contact .box__contact .info__contact .email__contactform .icon__contactform, .contact .container__contact .box__contact .info__contact .phone__contactform .icon__contactform {
-  margin-top: 2px;
+.contact .container__contact .box__contact .info__contact .address__contactform .icon__contactform {
+  margin: 0.125rem 1rem 0.125rem 0;
 }
 
-.contact .container__contact .box__contact .info__contact .address__contactform a, .contact .container__contact .box__contact .info__contact .email__contactform a, .contact .container__contact .box__contact .info__contact .phone__contactform a {
-  text-decoration: none;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+.contact .container__contact .box__contact .info__contact .sociallinks__contact {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1rem;
+}
+
+.contact .container__contact .box__contact .info__contact .sociallinks__contact .iconify {
+  width: 20px;
+  height: 20px;
+  margin: 0.125rem 1rem 0.125rem 0;
+}
+
+.contact .container__contact .box__contact .info__contact .sociallinks__contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   color: #2c2c2f;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.contact .container__contact .box__contact .info__contact .address__contactform a:hover, .contact .container__contact .box__contact .info__contact .email__contactform a:hover, .contact .container__contact .box__contact .info__contact .phone__contactform a:hover {
-  color: #2c2c2f;
+.contact .container__contact .box__contact .info__contact .sociallinks__contact a:hover {
+  color: #d4d4d4;
+}
+
+.contact .container__contact .box__contact .info__contact .sociallinks__contact .detail__contact {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  .contact .container__contact .box__contact .info__contact .sociallinks__contact .detail__contact {
+    display: block;
+    font-size: 1rem;
+  }
 }
 
 .contact .container__contact .box__contact .form__contact {
   background-color: rgba(0, 154, 216, 0.4);
   padding: 1rem;
+  width: auto;
+}
+
+@media screen and (min-width: 520px) {
+  .contact .container__contact .box__contact .form__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
+.contact .container__contact .box__contact .form__contact .info__contact {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  .contact .container__contact .box__contact .form__contact .info__contact {
+    display: block;
+    width: 30%;
+  }
 }
 
 .contact .container__contact .box__contact .form__contact .inputs__contactform {
-  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 520px) {
+  .contact .container__contact .box__contact .form__contact .inputs__contactform {
+    display: block;
+    width: 60%;
+    margin-right: 0;
+  }
 }
 
 .contact .container__contact .box__contact .form__contact h3 {
@@ -1120,7 +1245,7 @@ header .container__header .box__header p {
 
 .contact .container__contact .box__contact .input__contactform input, .contact .container__contact .box__contact .input__contactform textarea {
   width: 100%;
-  max-width: 450px;
+  max-width: 550px;
   margin: 0 auto;
   border: none;
   outline: none;
