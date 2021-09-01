@@ -699,9 +699,11 @@ header
                 // padding: 0.5rem
 
                 .address__contactform
-                    display: flex
-                    .icon__contactform
-                        margin: 0.125rem 1rem 0.125rem 0
+                    display: none
+                    @media screen and ( min-width: $midScreen )
+                        display: flex
+                        .icon__contactform
+                            margin: 0.125rem 1rem 0.125rem 0
 
 
                 .sociallinks__contact

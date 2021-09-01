@@ -1124,13 +1124,18 @@ header .container__header .box__header p {
 }
 
 .contact .container__contact .box__contact .info__contact .address__contactform {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
-.contact .container__contact .box__contact .info__contact .address__contactform .icon__contactform {
-  margin: 0.125rem 1rem 0.125rem 0;
+@media screen and (min-width: 520px) {
+  .contact .container__contact .box__contact .info__contact .address__contactform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact .container__contact .box__contact .info__contact .address__contactform .icon__contactform {
+    margin: 0.125rem 1rem 0.125rem 0;
+  }
 }
 
 .contact .container__contact .box__contact .info__contact .sociallinks__contact {

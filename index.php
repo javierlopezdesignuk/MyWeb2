@@ -443,7 +443,7 @@
                             <div id="feedback__contact" class="emailSuccess">
                                 <p>Thanks! I got your request, I'll get in touch soon.</p>
                             </div>
-                            <form action="index.php#contact" id="form" method="POST" autocomplete="off">
+                            <form action="" id="form" method="POST" autocomplete="off">
                                 <input autocomplete="false" id="hiddeninput" name="name" type="text" style="display:none;">
                                 <input autocomplete="false" id="hiddeninput2" name="website" type="text" style="display:none;">
                                 
