@@ -18,26 +18,26 @@
 
 h1 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 4rem;
+  font-size: 2.6rem;
   color: white;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 520px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 5rem;
   }
 }
 
 h2, .num__process, .next__casestudy .nextlink__casestudy {
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 2.5rem;
   font-family: 'Abril Fatface', cursive;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 520px) {
   h2, .num__process, .next__casestudy .nextlink__casestudy {
-    font-size: 3rem;
-    line-height: 2rem;
+    font-size: 5rem;
+    line-height: 4rem;
   }
 }
 
@@ -56,6 +56,12 @@ p {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 520px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
 strong {
   font-weight: 700;
 }
@@ -69,25 +75,49 @@ a {
   font-size: 1rem;
 }
 
-s {
-  text-decoration: line-through;
-}
-
 .button, .primaryButton, .secondaryButton {
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   font-size: 1.2rem;
   margin: 1.5rem 0;
   font-weight: 400;
 }
 
+@media screen and (min-width: 520px) {
+  .button, .primaryButton, .secondaryButton {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
 .primaryButton {
   color: #d4d4d4;
   background-color: #009AD8;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 3rem;
+}
+
+.primaryButton::after {
+  content: '\2192';
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-60%) translateX(-1rem);
+          transform: translateY(-60%) translateX(-1rem);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .primaryButton:hover {
   background-color: -50;
+}
+
+.primaryButton:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(-60%) translateX(0.5rem);
+          transform: translateY(-60%) translateX(0.5rem);
 }
 
 .secondaryButton {
@@ -98,7 +128,31 @@ s {
 }
 
 .linkButton {
-  color: orange;
+  color: #2c2c2f;
+  font-weight: 700;
+  position: relative;
+}
+
+.linkButton::after {
+  content: '\2192';
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-1rem);
+          transform: translateY(-50%) translateX(-1rem);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.linkButton:hover {
+  background-color: -50;
+}
+
+.linkButton:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) translateX(0.5rem);
+          transform: translateY(-50%) translateX(0.5rem);
 }
 
 body {
@@ -116,6 +170,66 @@ body #themeToggle {
   left: 1rem;
   z-index: 10000;
   cursor: pointer;
+}
+
+.scrollMessage {
+  position: absolute;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-filter: invert(0.8);
+          filter: invert(0.8);
+}
+
+@media screen and (min-width: 520px) {
+  .scrollMessage {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+.scrollMessage .scrollArrow {
+  -webkit-transform: rotate(90deg) translateX(-1rem);
+          transform: rotate(90deg) translateX(-1rem);
+  margin: 1.5rem auto 0 auto;
+  -webkit-animation-name: scrollMessageVer;
+          animation-name: scrollMessageVer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scrollMessageVer {
+  0% {
+    -webkit-transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+            transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(90deg) translateX(0rem) scale(0.9);
+            transform: rotate(90deg) translateX(0rem) scale(0.9);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+            transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+  }
+}
+
+@keyframes scrollMessageVer {
+  0% {
+    -webkit-transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+            transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(90deg) translateX(0rem) scale(0.9);
+            transform: rotate(90deg) translateX(0rem) scale(0.9);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+            transform: rotate(90deg) translateX(-1.5rem) scale(1.1);
+  }
 }
 
 nav {
@@ -159,6 +273,7 @@ nav .navigation .menu__nav {
       -ms-flex-align: center;
           align-items: center;
   width: 30px;
+  cursor: pointer;
 }
 
 nav .navigation .menu__nav span {
@@ -248,9 +363,11 @@ nav .menu {
 }
 
 nav .menu li {
+  position: relative;
   list-style: none;
   width: 100%;
   margin: 0.5rem;
+  cursor: pointer;
 }
 
 nav .menu li a {
@@ -265,11 +382,134 @@ nav .menu li:last-child > a {
   color: #009AD8;
 }
 
+nav .menu li:hover > a {
+  color: #d4d4d4;
+}
+
+@media screen and (min-width: 520px) {
+  nav .menu li::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -6rem;
+    left: 0;
+    font-size: 12rem;
+    font-weight: 900;
+    color: rgba(0, 154, 216, 0.1);
+    content: attr(link-section);
+    z-index: -1;
+    -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  nav .menu li:hover::before {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
 header {
-  padding: 6rem 1rem 1rem 1rem;
   width: 100%;
-  min-height: 95vh;
+  padding: 6rem 1rem 1rem 1rem;
+  height: 95vh;
   background-color: #2c2c2f;
+  display: -ms-grid;
+  display: grid;
+  place-items: center center;
+  position: relative;
+}
+
+header .container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 520px) {
+  header .container__header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+header .container__header .myPic {
+  margin: 0 auto 2rem auto;
+  width: 160px;
+  height: 221px;
+}
+
+@media screen and (min-width: 520px) {
+  header .container__header .myPic {
+    width: calc(160px * 1.5);
+    height: calc(221px * 1.5);
+    margin: 0 0 2rem 0;
+  }
+}
+
+header .container__header .box__header h1 {
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 520px) {
+  header .container__header .box__header h1 {
+    line-height: 4rem;
+  }
+}
+
+header .container__header .box__header p {
+  color: #d4d4d4;
+}
+
+.sellarea, .services, .process, .cases, .tools, .contact {
+  min-height: 80vh;
+  width: 100%;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+@media screen and (min-width: 520px) {
+  .sellarea .container__sellarea, .sellarea .container__services, .sellarea .container__process, .services .container__sellarea, .services .container__services, .services .container__process, .process .container__sellarea, .process .container__services, .process .container__process, .cases .container__sellarea, .cases .container__services, .cases .container__process, .tools .container__sellarea, .tools .container__services, .tools .container__process, .contact .container__sellarea, .contact .container__services, .contact .container__process {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.sellarea .title__sellarea, .sellarea .title__services, .sellarea .title__process, .sellarea .title__cases, .sellarea .title__tools, .sellarea .title__contact, .services .title__sellarea, .services .title__services, .services .title__process, .services .title__cases, .services .title__tools, .services .title__contact, .process .title__sellarea, .process .title__services, .process .title__process, .process .title__cases, .process .title__tools, .process .title__contact, .cases .title__sellarea, .cases .title__services, .cases .title__process, .cases .title__cases, .cases .title__tools, .cases .title__contact, .tools .title__sellarea, .tools .title__services, .tools .title__process, .tools .title__cases, .tools .title__tools, .tools .title__contact, .contact .title__sellarea, .contact .title__services, .contact .title__process, .contact .title__cases, .contact .title__tools, .contact .title__contact {
+  -webkit-text-stroke: 2px #2c2c2f;
+  color: #d4d4d4;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 520px) {
+  .sellarea .title__sellarea, .sellarea .title__services, .sellarea .title__process, .sellarea .title__cases, .sellarea .title__tools, .sellarea .title__contact, .services .title__sellarea, .services .title__services, .services .title__process, .services .title__cases, .services .title__tools, .services .title__contact, .process .title__sellarea, .process .title__services, .process .title__process, .process .title__cases, .process .title__tools, .process .title__contact, .cases .title__sellarea, .cases .title__services, .cases .title__process, .cases .title__cases, .cases .title__tools, .cases .title__contact, .tools .title__sellarea, .tools .title__services, .tools .title__process, .tools .title__cases, .tools .title__tools, .tools .title__contact, .contact .title__sellarea, .contact .title__services, .contact .title__process, .contact .title__cases, .contact .title__tools, .contact .title__contact {
+    margin-bottom: 5rem;
+  }
+}
+
+.sellarea {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.sellarea .container__sellarea .box__sellarea .info__sellarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,31 +519,14 @@ header {
           flex-direction: column;
 }
 
-header .myPic {
-  margin: 0 auto 2rem auto;
-  width: 160px;
-  height: 221px;
-}
-
-header .box__header h1 {
-  line-height: 2.5rem;
-  margin: 1rem 0;
-}
-
-header .box__header p {
-  color: #d4d4d4;
-}
-
-.sellarea, .services, .process, .cases, .tools, .contact {
-  min-height: 80vh;
-  width: 100%;
-  padding: 2rem 1rem;
-}
-
-.sellarea .title__sellarea, .sellarea .title__services, .sellarea .title__process, .sellarea .title__cases, .sellarea .title__tools, .sellarea .title__contact, .services .title__sellarea, .services .title__services, .services .title__process, .services .title__cases, .services .title__tools, .services .title__contact, .process .title__sellarea, .process .title__services, .process .title__process, .process .title__cases, .process .title__tools, .process .title__contact, .cases .title__sellarea, .cases .title__services, .cases .title__process, .cases .title__cases, .cases .title__tools, .cases .title__contact, .tools .title__sellarea, .tools .title__services, .tools .title__process, .tools .title__cases, .tools .title__tools, .tools .title__contact, .contact .title__sellarea, .contact .title__services, .contact .title__process, .contact .title__cases, .contact .title__tools, .contact .title__contact {
-  -webkit-text-stroke: 2px #2c2c2f;
-  color: #d4d4d4;
-  margin-bottom: 3rem;
+@media screen and (min-width: 520px) {
+  .sellarea .container__sellarea .box__sellarea .info__sellarea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 .sellarea .container__sellarea .box__sellarea .info__sellarea p {
@@ -320,6 +543,13 @@ header .box__header p {
   position: relative;
 }
 
+@media screen and (min-width: 520px) {
+  .sellarea .container__sellarea .box__sellarea .info__sellarea .image__sellarea {
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
 .sellarea .container__sellarea .box__sellarea .info__sellarea .image__sellarea::before {
   position: absolute;
   content: '';
@@ -331,6 +561,17 @@ header .box__header p {
           transform: translateX(-50%);
   background-color: rgba(0, 154, 216, 0.4);
   z-index: -1;
+}
+
+@media screen and (min-width: 520px) {
+  .sellarea .container__sellarea .box__sellarea .info__sellarea .image__sellarea::before {
+    width: 100%;
+    height: 80%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 2rem;
+  }
 }
 
 .services .container__services .box__services .title__services {
@@ -350,6 +591,12 @@ header .box__header p {
   z-index: -1;
 }
 
+@media screen and (min-width: 520px) {
+  .services .container__services .box__services .title__services::before {
+    right: 60%;
+  }
+}
+
 .services .container__services .box__services .boxcards__services {
   width: 90%;
   max-width: 280px;
@@ -361,6 +608,16 @@ header .box__header p {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 520px) {
+  .services .container__services .box__services .boxcards__services {
+    max-width: 1100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
 }
 
 .services .container__services .box__services .boxcards__services .card__services {
@@ -375,8 +632,8 @@ header .box__header p {
   padding: 1rem;
   margin: 0.5rem;
   background-color: #eee;
-  -webkit-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .services .container__services .box__services .boxcards__services .card__services:hover {
@@ -401,6 +658,64 @@ header .box__header p {
 
 .process {
   overflow: hidden;
+  position: relative;
+  min-height: 80vh;
+  height: auto;
+}
+
+.process .container__process {
+  max-width: 100%;
+}
+
+.process .container__process .box__process {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.process .container__process .box__process .scrollMessage {
+  position: absolute;
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  bottom: -5rem;
+  right: -2rem;
+}
+
+.process .container__process .box__process .scrollMessage .scrollArrow {
+  -webkit-transform: rotate(0) translateY(-0.5rem);
+          transform: rotate(0) translateY(-0.5rem);
+  -webkit-animation-name: scrollMessageHor;
+          animation-name: scrollMessageHor;
+}
+
+@-webkit-keyframes scrollMessageHor {
+  0% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+  }
+  50% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(1.5rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(1.5rem);
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+  }
+}
+
+@keyframes scrollMessageHor {
+  0% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+  }
+  50% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(1.5rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(1.5rem);
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+            transform: rotate(0) translateY(-0.5rem) translateX(0rem);
+  }
 }
 
 .process .container__process .box__process .extra__process {
@@ -408,7 +723,9 @@ header .box__header p {
 }
 
 .process .container__process .box__process .boxcards__process {
-  margin-left: -1rem;
+  position: absolute;
+  left: 0;
+  margin-left: -15rem;
   padding: 0 1rem;
   width: 100vw;
   height: 350px;
@@ -420,6 +737,7 @@ header .box__header p {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .process .container__process .box__process .boxcards__process::-webkit-scrollbar {
@@ -441,6 +759,16 @@ header .box__header p {
       grid-template-rows: 1fr 1.5fr;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
+}
+
+@media screen and (min-width: 520px) {
+  .process .container__process .box__process .boxcards__process .card__process {
+    width: 300px;
+    height: 320px;
+  }
+  .process .container__process .box__process .boxcards__process .card__process:first-child {
+    margin-left: 30%;
+  }
 }
 
 .process .container__process .box__process .boxcards__process .card__process .img__process {
@@ -495,12 +823,40 @@ header .box__header p {
   color: #d4d4d4;
 }
 
+@media screen and (min-width: 1100px) {
+  .cases .container__cases {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
 .cases .container__cases .box__cases .boxcards__cases .card__cases {
   background-color: rgba(0, 154, 216, 0.4);
   margin: 1rem auto;
   padding: 1rem;
   position: relative;
   margin-top: 6rem;
+  max-width: 550px;
+}
+
+@media screen and (min-width: 1100px) {
+  .cases .container__cases .box__cases .boxcards__cases .card__cases {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 500px;
+    max-width: 100%;
+  }
+  .cases .container__cases .box__cases .boxcards__cases .card__cases::before {
+    content: '';
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 154, 216, 0.4);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 .cases .container__cases .box__cases .boxcards__cases .card__cases .img__cases {
@@ -514,6 +870,17 @@ header .box__header p {
           transform: translateX(-50%);
 }
 
+@media screen and (min-width: 1100px) {
+  .cases .container__cases .box__cases .boxcards__cases .card__cases .img__cases {
+    max-width: 550px;
+    height: 90%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+  }
+}
+
 .cases .container__cases .box__cases .boxcards__cases .card__cases .img__cases img {
   width: 100%;
   height: 100%;
@@ -523,11 +890,51 @@ header .box__header p {
      object-fit: cover;
 }
 
-.cases .container__cases .box__cases .boxcards__cases .card__cases h3 {
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases {
   margin-top: calc(250px - 2.5rem);
 }
 
-.cases .container__cases .box__cases .boxcards__cases .card__cases .tags__cases {
+@media screen and (min-width: 1100px) {
+  .cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases {
+    margin: 6rem 0 0 550px;
+    padding: 1.5rem 1rem;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases {
+  display: none;
+  position: relative;
+}
+
+@media screen and (min-width: 1100px) {
+  .cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases {
+    display: block;
+    width: 200px;
+  }
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases img {
+  width: 100px;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .qrMessage__cases .mobileMessage {
+  position: absolute;
+  width: 150px;
+  right: -4rem;
+}
+
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .tags__cases {
   font-size: 0.8rem;
   width: 100%;
   display: -webkit-box;
@@ -541,7 +948,7 @@ header .box__header p {
   margin: 0.5rem 0 0.3rem 0;
 }
 
-.cases .container__cases .box__cases .boxcards__cases .card__cases .tags__cases li {
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .tags__cases li {
   background-color: rgba(212, 212, 212, 0.4);
   padding: 0.1rem 0.5rem;
   list-style: none;
@@ -549,8 +956,9 @@ header .box__header p {
   margin-bottom: 0.2rem;
 }
 
-.cases .container__cases .box__cases .boxcards__cases .card__cases .textCard__cases {
+.cases .container__cases .box__cases .boxcards__cases .card__cases .info__cases .textCard__cases {
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .tools {
