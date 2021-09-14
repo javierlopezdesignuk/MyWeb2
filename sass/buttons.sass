@@ -21,11 +21,12 @@
 
 
     &::after
-        content: '\2192'
+        content: url('https://api.iconify.design/bi/arrow-right-short.svg?height=32')
         font-weight: 700
+        filter: invert(0.9)
         position: absolute
         top: 50%
-        transform: translateY(-60%) translateX(-1rem)
+        transform: translateY(-40%) translateX(-1rem)
         opacity: 0
         transition: all 0.3s ease-in-out
 
@@ -33,7 +34,7 @@
         background-color: -50
         &::after
             opacity: 1
-            transform: translateY(-60%) translateX(0.5rem)
+            transform: translateY(-40%) translateX(0)
 
 
 .secondaryButton
@@ -48,16 +49,20 @@
     color: $fontPriColor
     font-weight: 700
     position: relative
+    margin-top: 1.5rem
+    @media screen and ( min-width: $midScreen )
+        font-size: 1.2rem
+
 
     // background-color: $bgSecColor
     // padding: 0.5rem 2rem
     &::after
-        content: '\2192'
-        font-size: 1.5rem
+        content: url('https://api.iconify.design/bi/arrow-right-short.svg?height=24')
+        // font-size: 1.5rem
         font-weight: 700
         position: absolute
         top: 50%
-        transform: translateY(-50%) translateX(-1rem)
+        transform: translateY(-40%) translateX(-1rem)
         opacity: 0
         transition: all 0.3s ease-in-out
 
@@ -65,5 +70,5 @@
         background-color: -50
         &::after
             opacity: 1
-            transform: translateY(-50%) translateX(0.5rem)
+            transform: translateY(-40%) translateX(0)
     

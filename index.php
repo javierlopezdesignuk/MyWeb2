@@ -8,11 +8,29 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <?php
         include_once("includes/HTML_headers.php");
-    ?>
+
+        ?>
 
 </head>
 <body>
-    
+    <?php
+    if(!isset($_COOKIE['cookiesAccepted'])){
+    ?>
+        <div class="cookies__message">
+            <div class="message">
+                <h3>Privacy Policy & Cookies</h3>
+                <p>We use cookies to serve personalized content and targeted advertisements to you, 
+                    which gives you a better browsing experience and lets us analyze site traffic. 
+                    Review <a href="cookies.php">our cookie information</a> to learn more.</p>
+                    <button class="primaryButton" onclick="createCookie()" class="btn btn-yellow" type="button">Got it!</button>
+        
+            </div>
+
+
+        </div>
+    <?php
+    }
+    ?>
 
     <!-- Navigation menu -->
     <?php
@@ -29,7 +47,7 @@
             <div class="box__header">
 
                 <h1>Javier Lopez<BR>is not a designer.</h1>
-                <p>Not just a developer either. Let’s call it a problem solver.<BR>Helping start-ups define their brand identity and stand out online.</p>
+                <p>Not just a developer either. Let’s call it a problem solver. Helping start-ups define their brand identity and stand out online.</p>
                 <a class="primaryButton" href="index.php#contact">Get in touch!</a>
                 <!-- <a class="secondaryButton" href="">See my CV</a> -->
                 <!-- <img src="" alt="myself"> -->
@@ -47,7 +65,7 @@
 
                 <div class="info__sellarea">
                     <p>Your business is more than just a brand new logotype or a website. 
-                        <s>And often we don’t realise how impactful is a a first sight and the 
+                        <s>And often we don’t realise how impactful is at a first sight and the 
                         feeling that it provides. That’s why a website built from a <strong>process</strong> 
                         and applied a <strong>tailored solution</strong> will attract the desired leads, 
                         whatever your goal is.<BR><BR>
@@ -195,9 +213,9 @@
                 <div class="boxcards__cases">
                     
                     <div class="card__cases">
-                        <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
-                        <div class="img__cases" >
-                            <img src="images/thefifthtaste.jpg" alt="">
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/thefifthtaste.jpg" alt="">
+                            <img class="logo__cases" src="images/t5t/logo-t5t.svg" alt="thefifthtaste logo">
                         </div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
@@ -208,20 +226,36 @@
                                 <h3>The Fifth Taste</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
-                                    <li>Custom CMS</li>
+                                    <li>Web development</li>
                                     <li>Ecommerce</li>
+                                    <li>Custom CMS</li>
                                     <li>Google Maps API</li>
-                                    <li>Branding</li>
+                                    <li>SEO</li>
                 
                                 </ul>
-                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="casestudy.php">Open case study</a>
+                                <p class="textCard__cases">A homey kitchen company running in Edinburgh, tasty food from Spain, a multi-awarded 
+                                                            chef who needed to have her brand and website the core of the business showing her 
+                                                            thoughts and expertise.</p>
+                                <a class="linkButton" href="casestudy.php?case=thefifthtaste">Open case study</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="card__cases">
-                        <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
+
+                    <div class="workInProgress">
+                        <span class="iconify" data-icon="feather:alert-triangle"></span> 
+                        <h3>Work in progress...</h3>
+                        <p>Apologies, I'm working hard to showcase my work, and will be available soon. Meantime, don't hesitate to 
+                            <a href="index.php#contact">get in touch</a>
+                            if you have any inquiries.</p>
+                        
+                        <!-- <p>I'm currently working on getting ready more case studies to showcase, 
+                            apologies, and <a href="index.php#contact">get in touch</a> with any 
+                            question.  </p> -->
+                    </div>
+
+
+                    <!-- <div class="card__cases">
                         <div class="img__cases"><img src="images/foxtrk.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
@@ -233,45 +267,38 @@
                                 <h3>FoxTrk</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
-                                    <li>Custom CMS</li>
-                                    <li>Ecommerce</li>
-                                    <li>Google Maps API</li>
-                                    <li>Branding</li>
+                                    <li>Web Development</li>
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <li>Charts.js</li>
+
                                 </ul>
                                 <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="">Link to open</a>
+                                <a class="linkButton" href="casestudy.php?case=foxtrk">Link to open</a>
                             </div>
                         </div>
 
                     </div>
                     
                     <div class="card__cases">
-                        <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/komorebi.jpg" alt=""></div>
                         <div class="info__cases">
-                            <!-- <div class="qrMessage__cases">
-                                <img src="images/qr-javierlopezdesign.svg" alt="">
-                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+                            <div class="qrMessage__cases">
 
-                            </div> -->
+                            </div>
                             <div class="infocase__cases">
                                 <h3>Komorebi</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
-                                    <li>Custom CMS</li>
-                                    <li>Ecommerce</li>
-                                    <li>Google Maps API</li>
-                                    <li>Branding</li>
                                 </ul>
                                 <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="">Link to open</a>
+                                <a class="linkButton" href="casestudy.php?case=komorebi">Link to open</a>
                             </div>
                         </div>
 
                     </div>
                     
                     <div class="card__cases">
-                        <!-- <img src="images/thefifthtaste.jpg" alt="thefifthtaste project"> -->
                         <div class="img__cases"><img src="images/watersofleith.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
@@ -283,19 +310,16 @@
                                 <h3>Waters of Leith</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
-                                    <li>Custom CMS</li>
-                                    <li>Ecommerce</li>
-                                    <li>Google Maps API</li>
-                                    <li>Branding</li>
+                                    <li>Landing Page</li>
                                 </ul>
                                 <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="">Link to open</a>
+                                <a class="linkButton" href="casestudy.php?case=watersofleith">Link to open</a>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- <div class="card__cases">
+                    <div class="card__cases">
                         <div class="img__cases"><img src="images/audt.jpg" alt=""></div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
@@ -304,16 +328,16 @@
 
                             </div>
                             <div class="infocase__cases">
-                                <h3>Classy Massage</h3>
+                                <h3>Audt</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
-                                    <li>Custom CMS</li>
-                                    <li>Ecommerce</li>
-                                    <li>Google Maps API</li>
-                                    <li>Branding</li>
+                                    <li>Web Development</li>
+                                    <li>Python</li>
+                                    <li>SQLite</li>
+                                    <li>Google Lighthouse</li>
                                 </ul>
                                 <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="">Link to open</a>
+                                <a class="linkButton" href="casestudy.php?case=audt">Link to open</a>
                             </div>
                         </div>
 
@@ -461,8 +485,8 @@
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="input__contactform ">
-                                    <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" required >
-                                    <!-- pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" -->
+                                    <input type="phone" id="phone" name="phone" placeholder=" " autocomplete="disabled" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" required >
+                                    <!--  -->
                                     <label for="phone">Phone</label>
                                 </div>
                                 <div class="input__contactform ">

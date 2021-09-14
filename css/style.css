@@ -99,12 +99,14 @@ a {
 }
 
 .primaryButton::after {
-  content: '\2192';
+  content: url("https://api.iconify.design/bi/arrow-right-short.svg?height=32");
   font-weight: 700;
+  -webkit-filter: invert(0.9);
+          filter: invert(0.9);
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-60%) translateX(-1rem);
-          transform: translateY(-60%) translateX(-1rem);
+  -webkit-transform: translateY(-40%) translateX(-1rem);
+          transform: translateY(-40%) translateX(-1rem);
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -116,8 +118,8 @@ a {
 
 .primaryButton:hover::after {
   opacity: 1;
-  -webkit-transform: translateY(-60%) translateX(0.5rem);
-          transform: translateY(-60%) translateX(0.5rem);
+  -webkit-transform: translateY(-40%) translateX(0);
+          transform: translateY(-40%) translateX(0);
 }
 
 .secondaryButton {
@@ -131,16 +133,22 @@ a {
   color: #2c2c2f;
   font-weight: 700;
   position: relative;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 520px) {
+  .linkButton {
+    font-size: 1.2rem;
+  }
 }
 
 .linkButton::after {
-  content: '\2192';
-  font-size: 1.5rem;
+  content: url("https://api.iconify.design/bi/arrow-right-short.svg?height=24");
   font-weight: 700;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-1rem);
-          transform: translateY(-50%) translateX(-1rem);
+  -webkit-transform: translateY(-40%) translateX(-1rem);
+          transform: translateY(-40%) translateX(-1rem);
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -152,8 +160,8 @@ a {
 
 .linkButton:hover::after {
   opacity: 1;
-  -webkit-transform: translateY(-50%) translateX(0.5rem);
-          transform: translateY(-50%) translateX(0.5rem);
+  -webkit-transform: translateY(-40%) translateX(0);
+          transform: translateY(-40%) translateX(0);
 }
 
 body {

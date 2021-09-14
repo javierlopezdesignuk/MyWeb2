@@ -9,10 +9,12 @@
 
     function modeSwitch() {
         isLight = !isLight;
-        isLight ? toggle.innerText = "🌞" : toggle.innerText = "🌚";
+        // isLight ? toggle.innerText = "🌞" : toggle.innerText = "🌚";
+        isLight ? toggle.innerHTML = '<span id="toggleIcon" style="color: white;" class="iconify" data-icon="icon-park-outline:sun"></span>' : toggle.innerHTML = '<span id="toggleIcon" style="color: white;" class="iconify" data-icon="bx:bx-moon"></span>';
         var rootElement = document.body;
         rootElement.classList.toggle("lightMode");
     }
+    
 // nav menu stuff
     var checkbox = document.querySelector('#toggle-menu');
     var icon = document.querySelector('#menu__nav');
@@ -33,18 +35,21 @@
 
 
 // Horizontal scroll in process boxcards
-const target = document.querySelector('#boxcards__process__horizontalScroll')
+const target = document.querySelector('#boxcards__process__horizontalScroll');
 
-target.addEventListener('wheel', event => {
-  const toLeft  = event.deltaY < 0 && target.scrollLeft > 0
-  const toRight = event.deltaY > 0 && target.scrollLeft < target.scrollWidth - target.clientWidth
+// Check if boxcards exists
+if(target != null){
+    target.addEventListener('wheel', event => {
+      const toLeft  = event.deltaY < 0 && target.scrollLeft > 0
+      const toRight = event.deltaY > 0 && target.scrollLeft < target.scrollWidth - target.clientWidth
+    
+      if (toLeft || toRight) {
+        event.preventDefault()
+        target.scrollBy({ left: event.deltaY * 100000000 })
+      }
+    });
 
-  if (toLeft || toRight) {
-    event.preventDefault()
-    // target.scrollLeft += event.deltaY * 100000
-    target.scrollBy({ left: event.deltaY * 100000 })
-  }
-})
+};
 
 
 
@@ -72,3 +77,23 @@ $(function () {
     
     });
 });
+
+
+
+
+// cookie functions__________________________________________________________________________
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    window.location.href = "<?php echo $_SERVER['PHP_SELF'];?>";
+    return false;
+}  
+
+function createCookie() {
+    console.log("Cookie created");
+    document.cookie = "cookiesAccepted=yes; path=/";
+    document.location.reload(true);
+};

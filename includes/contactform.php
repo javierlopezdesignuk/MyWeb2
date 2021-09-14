@@ -9,12 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $message = $_POST['message'];
     $terms = $_POST['terms'];
 
-
     $headers = "MIME-Version: 1.0\n"; 
     $headers .= "Content-type: text/html; charset=utf8\n"; 
     $headers .= "From: javierlopez.design <hello@javierlopez.design>\n";
 
-    $mailBody = " Hi! new contact from the website javierlopez.design > ". $email;
+    $mailBody = " Hi! new contact from javierlopez.design > ". $email;
     $mailBody .= "\nName: " . $name;
     $mailBody .= "\nPhone: " . $phone;
     $mailBody .= "\nEmail: " . $phone;
@@ -22,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mailBody .= "\nMessage: " . $message;
 
     // $EmailTo="hello@javierlopez.design";
-    $EmailTo="jlog80@gmail.com";
+    $EmailTo="mrlopezuk@gmail.com";
 
     $Subject="New contact!";
 

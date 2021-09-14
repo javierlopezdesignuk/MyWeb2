@@ -14,10 +14,12 @@
 <link rel="manifest" href="images/site.webmanifest">
 
 <!-- Theme -->
-<meta name="theme-color" content="#009AD8" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#009AD8" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#009AD8">
 
 <!-- SEO -->
+
+
+<!-- meta social media -->
 
 
 <!-- JS Libraries -->
@@ -25,3 +27,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
+<!-- Cookies -->
+<!-- <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="ac3cf9ca-6bfb-4940-81e8-b6389a21df38"></script> -->

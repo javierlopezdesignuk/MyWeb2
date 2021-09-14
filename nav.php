@@ -1,5 +1,6 @@
 
-<div id="themeToggle">🌞</div>
+<div id="themeToggle"><span id="toggleIcon" style="color: white;" class="iconify" data-icon="icon-park-outline:sun"></span></div>
+
 
 
 <nav>
