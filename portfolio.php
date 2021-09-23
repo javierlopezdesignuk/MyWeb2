@@ -9,7 +9,8 @@ if ($_GET['case']== 'thefifthtaste'){
         <li>Ecommerce</li>
         <li>Custom CMS</li>
         <li>Google Maps API</li>
-        <li>SEO</li>";
+        <li>SEO</li>
+        <li>Paypal</li>";
     
     $title = "The Fifth Taste";
 
@@ -22,7 +23,18 @@ if ($_GET['case']== 'thefifthtaste'){
 
     $goals = "Long project moving whole shop from Shopify and condense an ecommerce website with a blog, adding a fully customized CMS where the client needs to manage the business.";
 
-    $img_header = "images/t5t/mockupt5t.jpg";
+    $url_project = "https://javierlopez.design/clients/thefifthtaste";
+
+    $img_1 = "images/t5t/mockupt5t.jpg";
+    $img_2 = "images/t5t/branding-t5t.png";
+    $img_3 = "images/t5t/t5t-before-after.png";  
+    $img_4 = "images/t5t/mockup-classes.jpg";
+    $img_5 = "images/t5t/mockup-order.jpg";
+    $img_6 = "images/t5t/mockup-admin.jpg";
+    $img_7 = "images/t5t/mockup-cart.jpg";
+    $img_8 = "images/t5t/logo-responsiveness.png";
+    $img_9 = "images/t5t/mockup-classes.jpg";
+
     
     $brief = "The Fifth Taste, previously named VanesaSpanishFood, was running her business on Shopify, and felt that the platform wasn't 
             enough for her project. She wanted a shop but also her own place to share her thoughts, experiences, travels and 
@@ -32,8 +44,6 @@ if ($_GET['case']== 'thefifthtaste'){
              communicate her feelings and value. Build her brand style full of meaning with what 
              she wanted.";
     
-    $img_brief1 = "images/t5t/branding-t5t.png";
-    $img_brief2 = "images/t5t/logo-t5t.svg";  
 
     $problems = "This project had been planned with several stages, rebrand, copy, website, ecommerce, blog and online classes.
                 </p><BR><p>
@@ -44,24 +54,19 @@ if ($_GET['case']== 'thefifthtaste'){
                 Some stages and milestones were delayed because the all the copy had to be checked, and the scope had been extended due 
                 to the development ";
     
-    $img_problem = "images/t5t/wireframing.jpg";
 
     $solutions = "This project has taken around 8 months to be completed, one of the right decissions was to settle the brand
                     styles in early stages, because everything built from then kept the client essence.  ";
     
     
-    $img_solution2= "images/t5t/leather-folder.jpg";
-    $img_solution1= "images/t5t/mockup-order.jpg";
 
-    $conclusion = "The project";
+    $conclusion = "This project has been quite challenging, working with a timer as the business needed to be online as soon as possible with all the features and a tested checkout to give her customers an easy way to pay and enjoy her food.
+    <br>
+    I learnt that I should develop the CMS in the first instance and I would save a lot of time with the site's copy, in that way the copywriter could work on his way applying SEO with no disruptions to the rest of the development, that cost to the project an unespected week in the scope. 
+    Overall I've enjoyed this project developing and reasearching different kinds of checkouts. Applied Google Maps API sorted out a huge issue figuring out the delivery fees.";
 
-    $img_conclusion = "images/t5t/mockup-admin.jpg";
 
-    $pic1_examples_conclusion = "images/t5t/logo-responsiveness.png";
-    $pic2_examples_conclusion = "images/t5t/mockup-cart.jpg";
-    $pic3_examples_conclusion = "images/t5t/mockup-classes.jpg";
-
-    $nextProjectLink = "casestudy.php?case=foxtrk";
+    $nextProjectLink = "portfolio.php?case=foxtrk";
 
     $nextProjectName = "FoxTrk";
 
@@ -77,19 +82,36 @@ if ($_GET['case'] == 'foxtrk'){
     
     $title = "FoxTrk";
 
-    $tagline = "";
+    $tagline = "FoxTRK brings the assistance to those riders who are working and want to 
+                keep their work and incomes tracked, get insights on their figures 
+                while they keep the focus on the road!";
 
     $challenges = "";
 
     $goals = "";
 
+    $url_project = "https://app.foxtrk.com";
+
+    $img_1 = "images/foxtrk/mobile.jpg";
+    $img_2 = "images/foxtrk/brand-style.png";
+    $img_3 = "images/foxtrk/foxtrk-before-after.png";  
+    $img_4 = "images/foxtrk/dark-theme-charts.png";
+    $img_5 = "images/foxtrk/leather-folder.jpg";
+    $img_6 = "images/foxtrk/mockup-mobile.jpg";
+    $img_7 = "images/foxtrk/mockup-responsive.png";
+    $img_8 = "images/foxtrk/mockup-responsive.png";
+    $img_9 = "images/foxtrk/mockup-responsive.png";
+    $img_10 = "images/foxtrk/mockup-responsive.png";
+
     $brief = "";
 
-    $problems = "";
-    
-    $conclusion = "";
+    // $problems = "";
 
-    $nextProjectLink = "casestudy.php?case=komorebi";
+    $solutions = "";
+
+    // $conclusion = "";
+
+    $nextProjectLink = "portfolio.php?case=komorebi";
 
     $nextProjectName = "Komorebi";
 
@@ -97,16 +119,30 @@ if ($_GET['case'] == 'foxtrk'){
 if ($_GET['case'] == 'komorebi'){
     
     $tags = "   <li>Branding</li>
-                <li></li>
                 ";
     
+    $url_project = "";
+
     $title = "Komorebi";
 
-    $tagline = "";
+    $tagline = "A photographer freelance deserved to print her style and feeling with a Logotype and watermark
+    for her pictures.";
 
     $challenges = "";
 
     $goals = "";
+
+    $img_1 = "images/komorebi/logo-drafts.png";
+    $img_2 = "images/komorebi/logo-test.png";
+    $img_3 = "images/komorebi/brand-style-guide.jpg";  
+    $img_4 = "images/komorebi/business-cards.jpg";
+    $img_5 = "images/komorebi/";
+    $img_6 = "images/komorebi/";
+    $img_7 = "images/komorebi/";
+    $img_8 = "images/komorebi/";
+    $img_9 = "images/komorebi/";
+    $img_10 = "images/komorebi/";
+
 
     $brief = "";
 
@@ -114,9 +150,12 @@ if ($_GET['case'] == 'komorebi'){
     
     $conclusion = "";
 
-    $nextProjectLink = "casestudy.php?case=watersofleith";
+    $solutions = "";
 
-    $nextProjectName = "Waters of Leith";
+
+    $nextProjectLink = "portfolio.php?case=audt";
+
+    $nextProjectName = "Audt";
 
 }
 
@@ -142,7 +181,7 @@ if ($_GET['case'] == 'watersofleith'){
     
     $conclusion = "";
 
-    $nextProjectLink = "casestudy.php?case=audt";
+    $nextProjectLink = "portfolio.php?case=audt";
 
     $nextProjectName = "Audt";
 
@@ -174,7 +213,7 @@ if ($_GET['case'] == 'audt'){
     
     $conclusion = "";
 
-    $nextProjectLink = "casestudy.php?case=thefifthtaste";
+    $nextProjectLink = "portfolio.php?case=thefifthtaste";
 
     $nextProjectName = "The Fifth Taste";
 
@@ -191,7 +230,7 @@ if ($_GET['case'] == 'audt'){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javierlopez.design - Case Study</title>
+    <title>Javierlopez.design - Portfolio</title>
     <?php
         include_once("includes/HTML_headers.php");
     ?>
@@ -213,7 +252,16 @@ if ($_GET['case'] == 'audt'){
         </div>
         <h1 class="title__casestudy"><?php echo $title;?></h1>
         <p class="tagline__casestudy"><?php echo $tagline;?></p>
+        <br>
+        <?php if($url_project){
+                ?>
+                <a class="linkButton" target="blank" href="<?php echo $url_project;?>">Open live project</a>
+                <?php
+            }
+        ?>
     </div>
+
+
 
     <div class="box__goals__casestudy">
         <div class="challenges__casestudy">
@@ -227,77 +275,55 @@ if ($_GET['case'] == 'audt'){
         </div>
     </div>
 
-    <div class="firstimage__casestudy">
-        <img src="<?php echo $img_header;?>" alt="">
-    </div>
-   
+
+
+    <section class="image1">
+        <img src="<?php echo $img_1;?>" alt="">
+    </section>
+    
+
     <div class="brief__casestudy">
         <h3>Brief</h3>
         <p><?php echo $brief;?></p>
     </div>
+
+    <section class="image2">
+        <img src="<?php echo $img_2;?>" alt="">
+    </section>
+
+    <section class="image3">
+        <img src="<?php echo $img_3;?>" alt="">
+    </section>
     
-    <div class="imgBox__brief__casestudy">
-        <!-- <div class="pic__brief__casestudy"> -->
-            <img class="pic1__brief__casestudy" src="<?php echo $img_brief1;?>" alt="">
-        <!-- </div> -->
-        <!-- <div class="pic2__brief__casestudy"> -->
-            <img class="pic2__brief__casestudy" src="<?php echo $img_brief2;?>" alt="">
-        <!-- </div> -->
+    <section class="image4">
+        <img src="<?php echo $img_4;?>" alt="">
+    </section>    
+    
+    <section class="image5">
+        <img src="<?php echo $img_5;?>" alt="">
+    </section>    
+
+    <section class="image6">
+        <img src="<?php echo $img_6;?>" alt="">
+    </section>
+   
+    <section class="image7">
+        <img src="<?php echo $img_7;?>" alt="">
+    </section> 
+
+    
+    <div class="solution__casestudy">
+        <h3>Solutions</h3>
+        <p><?php echo $solutions;?></p>
     </div>
 
-    <div class="problems__casestudy">
-        <h3>Problems</h3>
-        <p><?php echo $problems;?></p>
-    </div>
-
-    <div class="box__solution__casestudy">
-        <div class="img__problem__casestudy">
-            <img class="pic__problem__casestudy" src="<?php echo $img_problem;?>" alt="">
-        </div>
-        <div class="solution__casestudy">
-            <h3>Solutions</h3>
-            <p><?php echo $solutions;?></p>
-        </div>
-    </div>
-
-    <div class="imgBox__solution__casestudy">
-        <div class="pic__solution__casestudy">
-            <img class="pic__solution__casestudy" src="<?php echo $img_solution1;?>" alt="">
-        </div>
-        <div class="pic2__solution__casestudy">
-            <img class="pic2__solution__casestudy" src="<?php echo $img_solution2;?>" alt="">
-        </div>
-    </div>
-
-    <div class="conclusion__casestudy">
-        <div class="img__conclusion__casestudy">
-            <img src="<?php echo $img_conclusion;?>" alt="">
-        </div>
-        <div class="info__conclusion__casestudy">
-            <h3>Conclusions & Challenges</h3>
-            <p><?php echo $conclusion;?></p>
-        </div>
-    </div>
-
-    <div class="imgBox__examples__casestudy">
-        <div class="pic1__examples__casestudy">
-            <img  src="<?php echo $pic1_examples_conclusion;?>" alt="">    
-        </div>
-        <div class="pic2__examples__casestudy">
-            <img  src="<?php echo $pic2_examples_conclusion;?>" alt="">
-        </div>
-
-        <div class="pic3__examples__casestudy">
-            <img src="<?php echo $pic3_examples_conclusion;?>" alt="">
-        </div>
-    </div>
-
-    <!-- <div class="next__casestudy">
+    
+    <div class="next__casestudy">
         <a href="<?php echo $nextProjectLink;?>" class="nextlink__casestudy">next project
         <span class="iconify" data-icon="bi:arrow-right-short"></span>
-
-  <?php echo $nextProjectName;?></a> -->
+        <?php echo $nextProjectName;?></a>
     </div>
+
 
 
     <?php 

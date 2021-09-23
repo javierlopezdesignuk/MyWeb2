@@ -22,12 +22,16 @@ OK. 5. Home Template (desktop)
 OK 6. case study Template (desktop)
 OK. 7. contact form backend
 
-Cookies & terms page with pop up
+OK. Cookies
+
+terms page with pop up
 
 8. my style guide
 
 9. my process page
+
 10. my services page
+
 11. payments page
 
 

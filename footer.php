@@ -33,28 +33,29 @@
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="index.php">About me</a></li>
+                <!-- <li><a href="index.php">About me</a></li> -->
                 <li><a href="index.php#process">My Process</a></li>
                 <li><a href="index.php#whatido">Services</a></li>
+                <li><a href="index.php#portfolio">Portfolio</a></li>
                 <li><a href="index.php#contact">Contact</a></li>
 
                 <!-- <li><a href=""><s>FAQ</s></a></li> -->
                 <!-- <li><a href=""><s>Payments</s></a></li> -->
                 <!-- <li><a href=""><s>My Style Guide</s></a></li> -->
                 <li></li>
-                <li><a href="termsandconditions.php">Terms & conditions</a></li>
+                <!-- <li><a href="termsandconditions.php">Terms & conditions</a></li> -->
                 <li><a href="cookies.php">Cookies</a></li>
             </ul>
         </div>
         <div class="casestudies__footer">
-            <h4>Case Studies</h4>
+            <h4>Portfolio</h4>
             <ul>
-                <li><a href=""><s>The Fifth Taste</s></a></li>
-                <li><a href=""><s>FoxTrk</s></a></li>
-                <li><a href=""><s>Komorebi</s></a></li>
-                <li><a href=""><s>Waters of Leith</s></a></li>
+                <li><a href="casestudy.php?case=thefifthtaste"><s>The Fifth Taste</s></a></li>
+                <!-- <li><a href=""><s>FoxTrk</s></a></li> -->
+                <!-- <li><a href=""><s>Komorebi</s></a></li> -->
+                <!-- <li><a href=""><s>Waters of Leith</s></a></li> -->
                 <!-- <li><a href=""><s>Classy Massage</s></a></li> -->
-                <!-- <li><a href=""><s>Audt</s></a></li> -->
+                <!-- <li><a href="casestudy.php?case=audt"><s>Audt</s></a></li> -->
                 <!-- <li><a href=""><s>BeFit</s></a></li> -->
             </ul>
         </div>

@@ -43,7 +43,7 @@
             <img class="scrollArrow" src="images/arrow.svg" alt="scroll arrow">
         </div>
         <div class="container__header">
-            <img class="myPic" src="images/mypic.png" alt="mypic">
+            <img class="myPic" src="images/mypic-Big.png" alt="mypic">
             <div class="box__header">
 
                 <h1>Javier Lopez<BR>is not a designer.</h1>
@@ -130,7 +130,7 @@
             
             <div class="extra__process">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ab officia nobis repellat earum perspiciatis magnam quos provident nostrum repellendus.</p>
-                <a href="">My process -></a>
+                <a href="process.php">My process -></a>
             </div>
             
             <div id="boxcards__process__horizontalScroll" class="boxcards__process">
@@ -206,12 +206,16 @@
 
 <!-- CASE STUDIES -->
 
-<div id="casestudies" class="cases">
+<div id="portfolio" class="cases">
     <div class="container__cases">
         <div class="box__cases">
-            <h2 class="title__cases">Case Studies</h2>
+            <h2 class="title__cases">Portfolio</h2>
                 <div class="boxcards__cases">
                     
+
+
+
+                    <!-- Thefifthtaste -->
                     <div class="card__cases">
                         <div class="img__cases">
                             <img class="backImage__cases" src="images/thefifthtaste.jpg" alt="">
@@ -231,38 +235,34 @@
                                     <li>Custom CMS</li>
                                     <li>Google Maps API</li>
                                     <li>SEO</li>
-                
+                                    <li>Paypal</li>
+                                                                       
                                 </ul>
                                 <p class="textCard__cases">A homey kitchen company running in Edinburgh, tasty food from Spain, a multi-awarded 
-                                                            chef who needed to have her brand and website the core of the business showing her 
-                                                            thoughts and expertise.</p>
-                                <a class="linkButton" href="casestudy.php?case=thefifthtaste">Open case study</a>
+                                    chef who needed to have her brand and website the core of the business showing her 
+                                    thoughts and expertise.</p>
+                                    <a class="linkButton" href="portfolio.php?case=thefifthtaste">Open project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-
-                    <div class="workInProgress">
-                        <span class="iconify" data-icon="feather:alert-triangle"></span> 
-                        <h3>Work in progress...</h3>
-                        <p>Apologies, I'm working hard to showcase my work, and will be available soon. Meantime, don't hesitate to 
-                            <a href="index.php#contact">get in touch</a>
-                            if you have any inquiries.</p>
                         
-                        <!-- <p>I'm currently working on getting ready more case studies to showcase, 
-                            apologies, and <a href="index.php#contact">get in touch</a> with any 
-                            question.  </p> -->
-                    </div>
 
 
-                    <!-- <div class="card__cases">
-                        <div class="img__cases"><img src="images/foxtrk.jpg" alt=""></div>
+
+
+                    <!-- Foxtrk -->
+                    <div class="card__cases">
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/foxtrk/delivery-rider.jpg" alt="Photo by Norma Mortenson from Pexels">
+                            <img class="logo__cases" src="images/foxtrk/logo-foxtrk.svg" alt="foxtrk logo">
+                        </div>
+
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-                                <img src="images/qr-foxtrk.svg" alt="">
+                                <img src="images/qr-foxtrk.svg" alt="qrcode foxtrk">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
-
                             </div>
+
                             <div class="infocase__cases">
                                 <h3>FoxTrk</h3>
                                 <ul class="tags__cases">
@@ -271,40 +271,152 @@
                                     <li>PHP</li>
                                     <li>MySQL</li>
                                     <li>Charts.js</li>
-
+                                    <li>Personal Project</li>
                                 </ul>
-                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="casestudy.php?case=foxtrk">Link to open</a>
+
+                                <p class="textCard__cases">
+                                    FoxTrk brings the assistance to those riders who are working and want to 
+                                    keep their work and incomes tracked, get insights on their figures 
+                                    while they keep the focus on the road.
+                                </p>
+                                    <a class="linkButton" href="portfolio.php?case=foxtrk">Open project</a>
+                                </div>
                             </div>
                         </div>
+                        
+      
 
-                    </div>
-                    
+
+
+
+                    <!-- KOMOREBI -->
                     <div class="card__cases">
-                        <div class="img__cases"><img src="images/komorebi.jpg" alt=""></div>
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/komorebi/komorebi.jpg" alt="">
+                            <img class="logo__cases" src="images/komorebi/logo.svg" alt="komorebi logo">
+                        </div>
+
                         <div class="info__cases">
                             <div class="qrMessage__cases">
-
+                                <!-- <img src="images/qr-foxtrk.svg" alt="qrcode foxtrk">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message"> -->
                             </div>
+
                             <div class="infocase__cases">
                                 <h3>Komorebi</h3>
                                 <ul class="tags__cases">
                                     <li>Branding</li>
+                                    
                                 </ul>
-                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="casestudy.php?case=komorebi">Link to open</a>
+
+                                <p class="textCard__cases">
+                                    A photographer freelance deserved to print her style and feeling with a Logotype and watermark
+                                    for her pictures.
+                                </p>
+                                    <a class="linkButton" href="portfolio.php?case=komorebi">Open project</a>
+                                </div>
                             </div>
                         </div>
-
+                        
                     </div>
-                    
+<!--                     
                     <div class="card__cases">
-                        <div class="img__cases"><img src="images/watersofleith.jpg" alt=""></div>
+                        <div class="img__cases">
+                            <img src="images/foxtrk.jpg" alt="">
+                            <img class="logo__cases" src="images/t5t/logo-t5t.svg" alt="thefifthtaste logo">
+                        </div>
                         <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                <img src="images/qr-foxtrk.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+                                
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>FoxTrk</h3>
+                            <ul class="tags__cases">
+                                <li>Branding</li>
+                                <li>Web Development</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Charts.js</li>
+                                
+                            </ul>
+                            <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                            <a class="linkButton" href="casestudy.php?case=foxtrk">Link to open</a>
+                        </div>
+                    </div> -->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+                        
+                        <!-- <div class="card__cases">
+                            <div class="img__cases">
+                                <img class="backImage__cases" src="images/audt.jpg" alt="">
+                                <img class="logo__cases" src="images/t5t/logo-t5t.svg" alt="thefifthtaste logo">
+                            
+                            </div>
+                            <div class="info__cases">
+                                <div class="qrMessage__cases">
+                                    <img src="images/qr-classymassage.svg" alt="">
+                                    <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
+                                    
+                                </div>
+                                <div class="infocase__cases">
+                                    <h3>Audt</h3>
+                                    <ul class="tags__cases">
+                                        <li>Branding</li>
+                                        <li>Web Development</li>
+                                        <li>Python</li>
+                                        <li>SQLite</li>
+                                        <li>Google Lighthouse</li>
+                                    </ul>
+                                    <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                    <a class="linkButton" href="casestudy.php?case=audt">Link to open</a>
+                                </div>
+                            </div>
+                            
+                        </div>  -->
+                        
+                        
+                        
+                        
+                        
+                    
+                    <!-- <div class="card__cases">
+                        <div class="img__cases"><img src="images/komorebi.jpg" alt=""></div>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                
+                                </div>
+                                <div class="infocase__cases">
+                                    <h3>Komorebi</h3>
+                                    <ul class="tags__cases">
+                                        <li>Branding</li>
+                                    </ul>
+                                    <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
+                                    <a class="linkButton" href="casestudy.php?case=komorebi">Link to open</a>
+                                </div>
+                            </div>
+                            
+                        </div> -->
+                        
+                        <!-- <div class="card__cases">
+                            <div class="img__cases"><img src="images/watersofleith.jpg" alt=""></div>
+                            <div class="info__cases">
                             <div class="qrMessage__cases">
                                 <img src="images/qr-watersofleith.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
-
+                                
                             </div>
                             <div class="infocase__cases">
                                 <h3>Waters of Leith</h3>
@@ -316,42 +428,26 @@
                                 <a class="linkButton" href="casestudy.php?case=watersofleith">Link to open</a>
                             </div>
                         </div>
-
-                    </div>
-
-                    <div class="card__cases">
-                        <div class="img__cases"><img src="images/audt.jpg" alt=""></div>
-                        <div class="info__cases">
-                            <div class="qrMessage__cases">
-                                <img src="images/qr-classymassage.svg" alt="">
-                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message">
-
-                            </div>
-                            <div class="infocase__cases">
-                                <h3>Audt</h3>
-                                <ul class="tags__cases">
-                                    <li>Branding</li>
-                                    <li>Web Development</li>
-                                    <li>Python</li>
-                                    <li>SQLite</li>
-                                    <li>Google Lighthouse</li>
-                                </ul>
-                                <p class="textCard__cases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum numquam perspiciatis nulla perferendis neque veritatis autem, qui ullam fuga recusandae?</p>
-                                <a class="linkButton" href="casestudy.php?case=audt">Link to open</a>
-                            </div>
-                        </div>
-
+                        
                     </div> -->
+                    
+                    <div class="workInProgress">
+                        <span class="iconify" data-icon="feather:alert-triangle"></span> 
+                        <h3>Work in progress...</h3>
+                        <p>Apologies, I'm working hard to showcase my work, and will be available soon. Meantime, don't hesitate to 
+                            <a href="index.php#contact">get in touch</a>
+                            if you have any inquiries.</p>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
-</div>
-
-<!-- My tools -->
-<div class="tools">
-    <div class="container__tools">
-        <div class="box__tools">
-            <h2 class="title__tools">My Tools</h2>
+    
+    <!-- My tools -->
+    <div class="tools">
+        <div class="container__tools">
+            <div class="box__tools">
+                <h2 class="title__tools">My Tools</h2>
                 <div class="boxcards__tools">
                     
                     <div class="card__tools">
@@ -481,7 +577,7 @@
                                     <label for="name">Name</label>
                                 </div>
                                 <div class="input__contactform ">
-                                    <input type="text" id="email" name="email" placeholder=" " autocomplete="disabled" required>
+                                    <input type="email" id="email" name="email" placeholder=" " autocomplete="disabled" required>
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="input__contactform ">
@@ -494,7 +590,9 @@
                                     <label for="message">Let me know about our next project!</label>
                                 </div>
                                 <div class="input__contactform terms__contactform">
-                                    <label for="terms">I agree to share my contact details.</label>
+                                    <label for="terms">
+                                            I agree to share my contact details.
+                                    </label>
                                     <input type="checkbox" id="terms" name="terms" autocomplete="disabled" required>
                                 </div>
                                 <div class="input__contactform ">

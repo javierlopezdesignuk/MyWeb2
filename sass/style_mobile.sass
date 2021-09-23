@@ -15,7 +15,6 @@ body
     position: relative
     box-sizing: border-box
 
-
     #themeToggle
         margin-left: auto
         margin-right: 1rem
@@ -30,6 +29,15 @@ body
         display: grid
         place-items: center
         transition: all 0.5s ease-in-out
+
+    
+    
+    
+        display: none
+    
+    
+    
+    
         span
             transition: all 0.5s ease-in-out
 
@@ -394,8 +402,10 @@ header
                             transform: translateY(-50%)
                             left: 2rem
     
-.services  
+.services
+    min-height: 70vh
     .container__services
+        
         .box__services
             .title__services
                 display: block
@@ -665,7 +675,7 @@ header
                         .logo__cases
                             opacity: 0
                             position: absolute
-                            height: 190px
+                            height: 150px
                             width: auto
                             z-index: 10000
                             left: 50%
@@ -988,10 +998,15 @@ header
                         .terms__contactform
                             padding: 0.5rem 0
                             // border: 1px red solid
+
                             label
                                 margin-left: 1rem
+
                             #terms
+                                // display: none
                                 width: auto
+
+
 
                     .emailSuccess
                         display: none
@@ -1128,11 +1143,14 @@ footer
     max-width: $wrapper
     padding: 0.5rem
     columns: 2
-    margin: 0 auto
+    margin: 2rem auto 4rem auto
+
 
     .challenges__casestudy, .goals__casestudy
         max-width: 200px
         margin: 0 auto
+        @media screen and ( min-width: $midScreen )
+            max-width: 350px
 
         h2
             font-size: 1.5rem
@@ -1142,221 +1160,247 @@ footer
             @media screen and ( min-width: $midScreen )
                 font-size: 1rem
 
-    
-.firstimage__casestudy
-    width: 100% 
-    height: 180px
-    margin: 4rem auto
-    max-width: $wrapper
-    background-color: grey
-    position: relative
-    display: grid
-    place-items: center center
-    // overflow: hidden
-
-    @media screen and ( min-width: $midScreen )
-        height: 480px
-        margin: 8rem auto
-
-    &::before
-        position: absolute
-        content: ''
-        z-index: -1
-        width: 66%
-        height: 120%
-        background-color: rgba($priColor,0.4)
-        right: 0
-        top: 50%
-        transform: translateY(-50%)
-
-    img
-        width: 100%
-        height: 180px
-        object-position: center
-        object-fit: cover
-        @media screen and ( min-width: $midScreen )
-            height: 480px
-
-
-
-
-.brief__casestudy
+section
     width: 100%
-    max-width: $wrapper
-    padding: 1rem
-    margin: 2rem auto
-    @media screen and ( min-width: $midScreen )
-        margin: 8rem auto
-        max-width: 600px
-
-
-.imgBox__brief__casestudy
-    width: 100%
-    max-width: $wrapper
-    // padding: 1rem
-    position: relative
-    margin-bottom: 220px
-    margin: 0 auto
-    @media screen and ( min-width: $midScreen )
-        margin: 8rem auto
-
-
-    .pic1__brief__casestudy
-        width: 100%
-        padding: 0.5rem
-        // height: 180px
-        // background-color: grey
-        // @media screen and ( min-width: $midScreen )
-        //     height: 300px
-        //     padding: 0.5rem
-        // img
-        //     width: 100%
-        //     height: 80%
-        //     object-fit: cover
-        //     // object-position: center
-        @media screen and ( min-width: $midScreen )
-            padding: 0
-
-
-
-
-    .pic2__brief__casestudy
-        position: absolute
-        width: 140px
-        height: 140px
-        bottom: -6rem
-        right: 0
-        margin: -4rem 2rem 1rem auto
-        background-color: rgba(white,0.5)
-        padding: 1rem
-        // border-radius: 50%
-        backdrop-filter: blur(5px)
-        border: .25rem solid rgba($priColor,0.4)
-
-        @media screen and ( min-width: $midScreen )
-            height: 300px
-            width: 300px
-            padding: 3rem
-            right: 3rem
-            border: .5rem solid rgba($priColor,0.4)
-
-
-
-
-.problems__casestudy
-    width: 80%
-    padding: 1rem
-    margin: 10rem auto
-    @media screen and ( min-width: $midScreen )
-        max-width: 600px
-
-
-
-.box__solution__casestudy
-    width: 100%
-    max-width: $wrapper
-    padding: 1rem
     margin: 2rem auto
     display: flex
-    flex-flow: row nowrap
-    @media screen and ( min-width: $midScreen )
-        margin: 8rem auto
-
-    .img__problem__casestudy
-        width: 70%
-        height: 210px
-        background-color: grey
-        position: relative
-        @media screen and ( min-width: $midScreen )
-            width: 450px
-            height: 410px
-
-        img
-            width: 100%
-            height: 100%
-            // display: none
-            object-fit: cover
-
-        &::before
-            position: absolute
-            content: ''
-            width: 70%
-            height: 120%
-            background-color: rgba($priColor , 0.4 )
-            z-index: -1
-            left: -1rem
-            top: 50%
-            transform: translateY(-50%)
+    justify-content: center
+       
+    img
+        width: 100%
+        max-height: 80vh
+        object-fit: cover
+        max-width: 1200px
 
 
 
-
-    .solution__casestudy
-        width: 70%
-        max-width: 400px
-        padding-left: 0.5rem
-        @media screen and ( min-width: $midScreen )
-            padding-left: 2rem
+.brief__casestudy, .solution__casestudy
+    padding: 1rem
+    max-width: 70ch
+    margin: 40vh auto
 
 
+// .image3
+//     width: 250px
 
-.imgBox__solution__casestudy
-    width: 100%
-    // padding: 1rem
-    margin: 4rem auto
-    position: relative
-    overflow: hidden
-    @media screen and ( min-width: $midScreen )
-        max-width: $wrapper
-        margin: 8rem auto
-
-    &::before
-        position: absolute
-        content: ''
-        width: 120%
-        height: 180px
-        background-color: rgba($priColor , 0.4 )
-        z-index: -1
-        left: -1rem
-        top: 50%
-        transform: translateY(-40%)
-        @media screen and ( min-width: $midScreen )
-            width: 70%
+    
 
 
 
-    .pic__solution__casestudy
-        width: 70%
-        max-width: 650px
-        height: 280px
-        // background-color: grey
-        margin-left: auto
-        margin-right: 0.5rem
-        @media screen and ( min-width: $midScreen )
-            width: 30%
-            margin-left: 4rem
-            width: 450px
+// .firstimage__casestudy
+//     width: 100% 
+//     height: 180px
+//     margin: 4rem auto
+//     max-width: $wrapper
+//     background-color: grey
+//     position: relative
+//     display: grid
+//     place-items: center center
+//     // overflow: hidden
 
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
+//     @media screen and ( min-width: $midScreen )
+//         height: 480px
+//         margin: 8rem auto
 
-    .pic2__solution__casestudy
-        width: 38%
-        max-width: 400px
-        height: 180px
-        margin: 0.5rem
-        // background-color: transparent
-        @media screen and ( min-width: $midScreen )
-            width: 100%
-            height: auto
-            margin-left: auto
+//     &::before
+//         position: absolute
+//         content: ''
+//         z-index: -1
+//         width: 66%
+//         height: 120%
+//         background-color: rgba($priColor,0.4)
+//         right: 0
+//         top: 50%
+//         transform: translateY(-50%)
 
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
+//     img
+//         width: 100%
+//         height: 180px
+//         object-position: center
+//         object-fit: cover
+//         @media screen and ( min-width: $midScreen )
+//             height: 480px
+
+
+
+
+// .brief__casestudy
+//     width: 100%
+//     max-width: $wrapper
+//     padding: 1rem
+//     margin: 2rem auto
+//     @media screen and ( min-width: $midScreen )
+//         margin: 8rem auto
+//         max-width: 600px
+
+
+// .imgBox__brief__casestudy
+//     width: 100%
+//     max-width: $wrapper
+//     // padding: 1rem
+//     position: relative
+//     margin-bottom: 220px
+//     margin: 0 auto
+//     @media screen and ( min-width: $midScreen )
+//         margin: 8rem auto
+
+
+//     .pic1__brief__casestudy
+//         width: 100%
+//         padding: 0.5rem
+//         // height: 180px
+//         // background-color: grey
+//         // @media screen and ( min-width: $midScreen )
+//         //     height: 300px
+//         //     padding: 0.5rem
+//         // img
+//         //     width: 100%
+//         //     height: 80%
+//         //     object-fit: cover
+//         //     // object-position: center
+//         @media screen and ( min-width: $midScreen )
+//             padding: 0
+
+
+
+
+//     .pic2__brief__casestudy
+//         position: absolute
+//         width: 140px
+//         height: 140px
+//         bottom: -6rem
+//         right: 0
+//         margin: -4rem 2rem 1rem auto
+//         background-color: rgba(white,0.5)
+//         padding: 1rem
+//         // border-radius: 50%
+//         backdrop-filter: blur(5px)
+//         border: .25rem solid rgba($priColor,0.4)
+
+//         @media screen and ( min-width: $midScreen )
+//             height: 300px
+//             width: 300px
+//             padding: 3rem
+//             right: 3rem
+//             border: .5rem solid rgba($priColor,0.4)
+
+
+
+
+// .problems__casestudy
+//     width: 80%
+//     padding: 1rem
+//     margin: 10rem auto
+//     @media screen and ( min-width: $midScreen )
+//         max-width: 600px
+
+
+
+// .box__solution__casestudy
+//     width: 100%
+//     max-width: $wrapper
+//     padding: 1rem
+//     margin: 2rem auto
+//     display: flex
+//     flex-flow: row nowrap
+//     @media screen and ( min-width: $midScreen )
+//         margin: 8rem auto
+
+//     .img__problem__casestudy
+//         width: 70%
+//         height: 210px
+//         background-color: grey
+//         position: relative
+//         @media screen and ( min-width: $midScreen )
+//             width: 450px
+//             height: 410px
+
+//         img
+//             width: 100%
+//             height: 100%
+//             // display: none
+//             object-fit: cover
+
+//         &::before
+//             position: absolute
+//             content: ''
+//             width: 70%
+//             height: 120%
+//             background-color: rgba($priColor , 0.4 )
+//             z-index: -1
+//             left: -1rem
+//             top: 50%
+//             transform: translateY(-50%)
+
+
+
+
+//     .solution__casestudy
+//         width: 70%
+//         max-width: 400px
+//         padding-left: 0.5rem
+//         @media screen and ( min-width: $midScreen )
+//             padding-left: 2rem
+
+
+
+// .imgBox__solution__casestudy
+//     width: 100%
+//     // padding: 1rem
+//     margin: 4rem auto
+//     position: relative
+//     overflow: hidden
+//     @media screen and ( min-width: $midScreen )
+//         max-width: $wrapper
+//         margin: 8rem auto
+
+//     &::before
+//         position: absolute
+//         content: ''
+//         width: 120%
+//         height: 180px
+//         background-color: rgba($priColor , 0.4 )
+//         z-index: -1
+//         left: -1rem
+//         top: 50%
+//         transform: translateY(-40%)
+//         @media screen and ( min-width: $midScreen )
+//             width: 70%
+
+
+
+//     .pic__solution__casestudy
+//         width: 70%
+//         max-width: 650px
+//         height: 280px
+//         // background-color: grey
+//         margin-left: auto
+//         margin-right: 0.5rem
+//         @media screen and ( min-width: $midScreen )
+//             width: 30%
+//             margin-left: 4rem
+//             width: 450px
+
+//         img
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
+
+//     .pic2__solution__casestudy
+//         width: 38%
+//         max-width: 400px
+//         height: 180px
+//         margin: 0.5rem
+//         // background-color: transparent
+//         @media screen and ( min-width: $midScreen )
+//             width: 100%
+//             height: auto
+//             margin-left: auto
+
+//         img
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
 
 
 
@@ -1364,100 +1408,100 @@ footer
 
 
     
-.conclusion__casestudy
-    width: 100%
-    max-width: $wrapper
-    padding: 1rem
-    margin: 0 auto
-    @media screen and ( min-width: $midScreen )
-        margin: 8rem auto
+// .conclusion__casestudy
+//     width: 100%
+//     max-width: $wrapper
+//     padding: 1rem
+//     margin: 0 auto
+//     @media screen and ( min-width: $midScreen )
+//         margin: 8rem auto
 
-    .img__conclusion__casestudy
-        width: 100%
-        height: 220px
-        // background-color: grey
-        @media screen and ( min-width: $midScreen )
-            width: 750px
-            height: 450px
-            margin-left: auto
+//     .img__conclusion__casestudy
+//         width: 100%
+//         height: 220px
+//         // background-color: grey
+//         @media screen and ( min-width: $midScreen )
+//             width: 750px
+//             height: 450px
+//             margin-left: auto
 
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
+//         img
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
 
-    .info__conclusion__casestudy
-        margin-top: 1rem
-        @media screen and ( min-width: $midScreen )
-            width: 750px
-            margin-left: auto
-
-
+//     .info__conclusion__casestudy
+//         margin-top: 1rem
+//         @media screen and ( min-width: $midScreen )
+//             width: 750px
+//             margin-left: auto
 
 
 
 
-.imgBox__examples__casestudy
-    width: 100%
-    max-width: $wrapper
-    margin: 4rem auto
-    position: relative
-    overflow: hidden
-    @media screen and ( min-width: $midScreen )
-        margin: 8rem auto
-        position: inherit
+
+
+// .imgBox__examples__casestudy
+//     width: 100%
+//     max-width: $wrapper
+//     margin: 4rem auto
+//     position: relative
+//     overflow: hidden
+//     @media screen and ( min-width: $midScreen )
+//         margin: 8rem auto
+//         position: inherit
         
-    &::before
-        position: absolute
-        content: ''
-        width: 170vw
-        height: 180px
-        background-color: rgba($priColor , 0.4 )
-        z-index: -1
-        left: -50%
-        top: 60%
+//     &::before
+//         position: absolute
+//         content: ''
+//         width: 170vw
+//         height: 180px
+//         background-color: rgba($priColor , 0.4 )
+//         z-index: -1
+//         left: -50%
+//         top: 60%
 
-    .pic1__examples__casestudy
-        width: 100%
-        height: 220px
-        background-color: grey
-        @media screen and ( min-width: $midScreen )
-            width: 550px
-            height: 250px
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
-
-
-    .pic2__examples__casestudy
-        width: 60%
-        height: 200px
-        // background-color: purple
-        margin: 3rem auto 0 1rem
-        @media screen and ( min-width: $midScreen )
-            width: 550px
-            height: 420px
-            margin: 0 0 0 auto
-        img
-            width: 100%
-            height: 100%
-            object-fit: cover
+//     .pic1__examples__casestudy
+//         width: 100%
+//         height: 220px
+//         background-color: grey
+//         @media screen and ( min-width: $midScreen )
+//             width: 550px
+//             height: 250px
+//         img
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
 
 
-    .pic3__examples__casestudy
-        width: 300px
-        height: 300px
-        // background-color: grey
-        margin: 4rem 1rem 2rem auto
-        @media screen and ( min-width: $midScreen )
-            width: 450px
-            height: 650px
-            margin: -15rem 0
-        img
-            width: 100%
-            height: 60%
-            object-fit: cover
+//     .pic2__examples__casestudy
+//         width: 60%
+//         height: 200px
+//         // background-color: purple
+//         margin: 3rem auto 0 1rem
+//         @media screen and ( min-width: $midScreen )
+//             width: 550px
+//             height: 420px
+//             margin: 0 0 0 auto
+//         img
+//             width: 100%
+//             height: 100%
+//             object-fit: cover
+
+
+//     .pic3__examples__casestudy
+//         width: 300px
+//         height: 300px
+//         // background-color: grey
+//         margin: 4rem 1rem 2rem auto
+//         @media screen and ( min-width: $midScreen )
+//             width: 450px
+//             height: 650px
+//             margin: -15rem 0
+//         img
+//             width: 100%
+//             height: 60%
+//             object-fit: cover
 
 
 

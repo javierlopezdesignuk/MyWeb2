@@ -12,10 +12,11 @@
 
         </label>
         <ul class="menu" id="menu">
+            <!-- link section will show that text as background -->
             <li link-section="Home"><a class="menuItem"  href="index.php#home">Home</a></li>
             <li link-section="What I do!"><a class="menuItem"  href="index.php#whatido">What I do!</a></li>
             <li link-section="My Process"><a class="menuItem"  href="index.php#process">My Process</a></li>
-            <li link-section="Case Studies"><a class="menuItem"  href="index.php#casestudies">Case studies</a></li>
+            <li link-section="Portfolio"><a class="menuItem"  href="index.php#portfolio">Portfolio</a></li>
             <li link-section="Get in touch!"><a class="menuItem"  href="index.php#contact">Get in touch!</a></li>
         </ul>
     </div>
