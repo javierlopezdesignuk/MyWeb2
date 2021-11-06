@@ -476,6 +476,14 @@
                         <p class="name__tools">Javascript</p>
                     </div>
                     <div class="card__tools">
+                        <div class="img__tools"><span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-reactjs"></span></div>
+                        <p class="name__tools">ReactJS</p>
+                    </div>
+                    <div class="card__tools">
+                        <div class="img__tools"><span class="iconify" data-inline="false" data-icon="fontisto:nodejs"></span></div>
+                        <p class="name__tools">NodeJS</p>
+                    </div>
+                    <div class="card__tools">
                         <div class="img__tools"><span class="iconify" data-inline="false" data-icon="akar-icons:github-fill"></span></div>
                         <p class="name__tools">Github</p>
                     </div>
