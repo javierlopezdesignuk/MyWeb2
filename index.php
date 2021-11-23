@@ -212,8 +212,32 @@
             <h2 class="title__cases">Portfolio</h2>
                 <div class="boxcards__cases">
                     
-
-
+<!-- Waves chill music player -->
+                    <div class="card__cases">
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/waves/waves_thum.jpg" alt="">
+                            <img class="logo__cases" src="images/waves/waves.svg" alt="thefifthtaste logo">
+                        </div>
+                        <div class="info__cases">
+                     <div class="qrMessage__cases">
+                                <!-- <img src="images/qr-thefifthtaste.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message"> -->
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>Waves Player</h3>
+                                <ul class="tags__cases">
+                                    <li>Personal project</li>
+                                    <li>ReactJs</li>
+                                    <li>Front End Development</li>
+                                </ul>
+                                <p class="textCard__cases">In my pathway learning ReactJs I wanted to
+                                    develop a music player, responsive and connected to chillhop.com servers to play the music
+                                    in their servers. Can be installed as webapp in any mobile.
+                                </p>
+                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/musicplayer">Open project</a>
+                                </div>
+                            </div>
+                        </div>
 
                     <!-- Thefifthtaste -->
                     <div class="card__cases">
