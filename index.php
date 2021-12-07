@@ -211,8 +211,10 @@
         <div class="box__cases">
             <h2 class="title__cases">Portfolio</h2>
                 <div class="boxcards__cases">
+
+
 <!-- My weather App -->
-<div class="card__cases">
+                    <div class="card__cases">
                         <div class="img__cases">
                             <img class="backImage__cases" src="images/weather/weather_thum.jpg" alt="">
                             <img class="logo__cases" src="images/weather/weather.svg" alt="MyweatherApp Logo">
@@ -267,7 +269,7 @@
                             </div>
                         </div>
 
-                    <!-- Thefifthtaste -->
+<!-- Thefifthtaste -->
                     <div class="card__cases">
                         <div class="img__cases">
                             <img class="backImage__cases" src="images/thefifthtaste.jpg" alt="">
@@ -299,11 +301,10 @@
                         </div>
 
 <!-- Audt -->
-                        <!-- Waves chill music player -->
                     <div class="card__cases">
                         <div class="img__cases">
-                            <img class="backImage__cases" src="images/waves/waves_thum.jpg" alt="">
-                            <img class="logo__cases" src="images/waves/waves.svg" alt="thefifthtaste logo">
+                            <img class="backImage__cases" src="images/audt/audt_thum.jpg" alt="statistics">
+                            <img class="logo__cases" src="images/audt/audt.svg" alt="audt logo">
                         </div>
                         <div class="info__cases">
                             <div class="qrMessage__cases">
@@ -320,9 +321,9 @@
                                     <li>Google Lighthouse</li>
                                 </ul>
                                 <p class="textCard__cases">
-
+                                    My own tool to carry out the Google Lighthouse tests in any website, focused on Performance, Accesibility, Best Practices and SEO, also dead links and missed ALT property in images.
                                 </p>
-                                    <a class="linkButton" target="_blank" href="https://audt.javierlopez.design">Open project</a>
+                                    <a class="linkButton" target="_blank" href="http://audt.javierlopez.design">Open project</a>
                                 </div>
                             </div>
                         </div>
