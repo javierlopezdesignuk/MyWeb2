@@ -211,7 +211,35 @@
         <div class="box__cases">
             <h2 class="title__cases">Portfolio</h2>
                 <div class="boxcards__cases">
-                    
+<!-- My weather App -->
+<div class="card__cases">
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/weather/weather_thum.jpg" alt="">
+                            <img class="logo__cases" src="images/weather/weather.svg" alt="MyweatherApp Logo">
+                        </div>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                    <!-- <img src="images/qr-thefifthtaste.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message"> -->
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>My Weather</h3>
+                                <ul class="tags__cases">
+                                    <li>Personal project</li>
+                                    <li>ReactJs</li>
+                                    <li>Front End Development</li>
+                                    <li>OpenWeatherMap API</li>
+                                </ul>
+                                <p class="textCard__cases">App which will get your position and display the current weather
+                                    . Can be installed as webapp in any mobile.
+                                </p>
+                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/myweather">Open project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
 <!-- Waves chill music player -->
                     <div class="card__cases">
                         <div class="img__cases">
@@ -219,8 +247,8 @@
                             <img class="logo__cases" src="images/waves/waves.svg" alt="thefifthtaste logo">
                         </div>
                         <div class="info__cases">
-                     <div class="qrMessage__cases">
-                                <!-- <img src="images/qr-thefifthtaste.svg" alt="">
+                            <div class="qrMessage__cases">
+                                    <!-- <img src="images/qr-thefifthtaste.svg" alt="">
                                 <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message"> -->
                             </div>
                             <div class="infocase__cases">
@@ -269,7 +297,35 @@
                                 </div>
                             </div>
                         </div>
-                        
+
+<!-- Audt -->
+                        <!-- Waves chill music player -->
+                    <div class="card__cases">
+                        <div class="img__cases">
+                            <img class="backImage__cases" src="images/waves/waves_thum.jpg" alt="">
+                            <img class="logo__cases" src="images/waves/waves.svg" alt="thefifthtaste logo">
+                        </div>
+                        <div class="info__cases">
+                            <div class="qrMessage__cases">
+                                    <!-- <img src="images/qr-thefifthtaste.svg" alt="">
+                                <img class="mobileMessage" src="images/mobileMessage.svg" alt="mobile message"> -->
+                            </div>
+                            <div class="infocase__cases">
+                                <h3>Audt Web audits tool</h3>
+                                <ul class="tags__cases">
+                                    <li>University Project</li>
+                                    <li>Python</li>
+                                    <li>Flask</li>
+                                    <li>Sass</li>
+                                    <li>Google Lighthouse</li>
+                                </ul>
+                                <p class="textCard__cases">
+
+                                </p>
+                                    <a class="linkButton" target="_blank" href="https://audt.javierlopez.design">Open project</a>
+                                </div>
+                            </div>
+                        </div>
 
 
 
