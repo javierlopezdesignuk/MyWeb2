@@ -500,7 +500,7 @@ nav .menu li a {
   font-weight: 500;
 }
 
-nav .menu li:last-child > a {
+nav .menu li:nth-last-of-type(1) > a {
   color: #009AD8;
 }
 
@@ -531,6 +531,26 @@ nav .menu li:hover > a {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1);
   }
+}
+
+nav .socialIconsNav {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: rgba(0, 154, 216, 0.1);
+}
+
+nav .socialIconsNav .menuItem {
+  margin: 0 1rem;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+nav .socialIconsNav .menuItem:hover {
+  color: #d4d4d4;
+}
+
+nav .socialIconsNav .menuItem .iconify {
+  font-size: 2rem;
 }
 
 header {
@@ -1759,6 +1779,39 @@ section img {
   padding: 1rem;
   max-width: 70ch;
   margin: 40vh auto;
+}
+
+.error404 {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8de6a !important;
+  padding: 0.5rem;
+}
+
+.error404 h1 {
+  font-size: 6rem;
+  margin-top: 3rem;
+}
+
+.error404 h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.error404 a {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
 }
 
 .next__casestudy {
