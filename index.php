@@ -235,7 +235,7 @@
                                 <p class="textCard__cases">App which will get your position and display the current weather
                                     . Can be installed as webapp in any mobile.
                                 </p>
-                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/myweather">Open project</a>
+                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/myweather">Open live site</a>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                                     develop a music player, responsive and connected to chillhop.com servers to play the music
                                     in their servers. Can be installed as webapp in any mobile.
                                 </p>
-                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/musicplayer">Open project</a>
+                                    <a class="linkButton" target="_blank" href="https://javierlopez.design/musicplayer">Open live site</a>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +295,7 @@
                                 <p class="textCard__cases">A homey kitchen company running in Edinburgh, tasty food from Spain, a multi-awarded 
                                     chef who needed to have her brand and website the core of the business showing her 
                                     thoughts and expertise.</p>
-                                    <a class="linkButton" href="portfolio.php?case=thefifthtaste">Open project</a>
+                                    <a class="linkButton" href="portfolio.php?case=thefifthtaste">Open case study</a>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +323,7 @@
                                 <p class="textCard__cases">
                                     My own tool to carry out the Google Lighthouse tests in any website, focused on Performance, Accesibility, Best Practices and SEO, also dead links and missed ALT property in images.
                                 </p>
-                                    <a class="linkButton" target="_blank" href="http://audt.javierlopez.design">Open project</a>
+                                    <a class="linkButton" target="_blank" href="http://audt.javierlopez.design">Open live site</a>
                                 </div>
                             </div>
                         </div>
@@ -360,7 +360,7 @@
                                     keep their work and incomes tracked, get insights on their figures 
                                     while they keep the focus on the road.
                                 </p>
-                                    <a class="linkButton" href="portfolio.php?case=foxtrk">Open project</a>
+                                    <a class="linkButton" href="portfolio.php?case=foxtrk">Open case study</a>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +394,7 @@
                                     A photographer freelance deserved to print her style and feeling with a Logotype and watermark
                                     for her pictures.
                                 </p>
-                                    <a class="linkButton" href="portfolio.php?case=komorebi">Open project</a>
+                                    <a class="linkButton" href="portfolio.php?case=komorebi">Open case study</a>
                                 </div>
                             </div>
                         </div>
